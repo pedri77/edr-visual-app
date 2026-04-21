@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EDR/XDR Decision Studio</title>
+  <meta name="description" content="Valoracion visual de EDR/XDR: telemetria Windows/Linux/macOS, Gartner, Forrester, CVEs e incidentes.">
+  <link rel="stylesheet" href="./styles.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="hero-copy">
+      <div class="brand-lockup">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <p class="eyebrow">EDR/XDR Decision Studio</p>
+      </div>
+      <h1>Valoracion visual de 26 EDR/XDR en Windows, Linux y macOS</h1>
+      <p class="hero-sub">Fuente de telemetria: <a href="https://github.com/tsale/EDR-Telemetry" target="_blank" rel="noopener">tsale/EDR-Telemetry</a>. Enriquecido con Gartner MQ, Forrester Wave, CVEs e incidentes publicos.</p>
+      <div class="hero-metrics">
+        <button class="hero-chip" data-view="matrix">Matriz telemetria</button>
+        <button class="hero-chip" data-view="ranking">Ranking</button>
+        <button class="hero-chip" data-view="vendors">Fichas</button>
+        <button class="hero-chip" data-view="compare">Comparar</button>
+        <button class="hero-chip" data-view="risks">CVEs e incidentes</button>
+        <button class="hero-chip" data-view="scoring">Scoring por perfil</button>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-button" id="exportPdf" type="button" title="Descargar PDF">PDF</button>
+      <button class="icon-button" id="resetApp" type="button" title="Restablecer">Reset</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="rail">
+      <button class="rail-item active" data-view="matrix" type="button">Matriz</button>
+      <button class="rail-item" data-view="ranking" type="button">Ranking</button>
+      <button class="rail-item" data-view="vendors" type="button">Vendors</button>
+      <button class="rail-item" data-view="compare" type="button">Comparar</button>
+      <button class="rail-item" data-view="risks" type="button">Riesgos</button>
+      <button class="rail-item" data-view="scoring" type="button">Scoring</button>
+      <button class="rail-item" data-view="about" type="button">Metodologia</button>
+    </aside>
+
+    <section class="stage">
+      <!-- MATRIZ -->
+      <article class="view" id="view-matrix">
+        <header class="view-head">
+          <h2>Matriz de telemetria por SO</h2>
+          <p>Heatmap de cobertura. Cambia de SO para ver vendors y categorias aplicables.</p>
+        </header>
+
+        <div class="controls-row">
+          <div class="os-tabs" role="tablist">
+            <button class="os-tab active" data-os="windows">Windows</button>
+            <button class="os-tab" data-os="linux">Linux</button>
+            <button class="os-tab" data-os="macos">macOS</button>
+          </div>
+          <div class="legend" id="legend"></div>
+        </div>
+
+        <div class="matrix-wrap">
+          <table class="matrix" id="matrix"></table>
+        </div>
+      </article>
+
+      <!-- RANKING -->
+      <article class="view hidden" id="view-ranking">
+        <header class="view-head">
+          <h2>Ranking de cobertura</h2>
+          <p>Score calculado sobre las features aplicables a cada SO. Yes=1, Partial=0.5, EventLog=0.6, Enabling=0.7, No/Pending=0.</p>
+        </header>
+        <div class="ranking-grid" id="rankingGrid"></div>
+      </article>
+
+      <!-- VENDORS -->
+      <article class="view hidden" id="view-vendors">
+        <header class="view-head">
+          <h2>Fichas por vendor</h2>
+          <p>Gartner/Forrester, cobertura por SO, CVEs notables, incidentes, fortalezas y cautelas.</p>
+        </header>
+        <div class="vendor-grid" id="vendorGrid"></div>
+      </article>
+
+      <!-- COMPARE -->
+      <article class="view hidden" id="view-compare">
+        <header class="view-head">
+          <h2>Comparar hasta 3 vendors</h2>
+          <p>Selecciona y cruza cobertura de telemetria feature a feature.</p>
+        </header>
+        <div class="compare-controls" id="compareControls"></div>
+        <div class="compare-wrap">
+          <table class="matrix" id="compareMatrix"></table>
+        </div>
+      </article>
+
+      <!-- RISKS -->
+      <article class="view hidden" id="view-risks">
+        <header class="view-head">
+          <h2>CVEs e incidentes publicos</h2>
+          <p>Historia conocida de vulnerabilidades del propio agente y fugas/bugs de impacto. CVEs tirados de NVD + seleccion curada.</p>
+        </header>
+        <div class="compare-controls" id="riskFilters" style="margin-bottom:14px"></div>
+        <div class="risk-columns">
+          <section>
+            <h3>CVEs notables por vendor</h3>
+            <div class="risk-list" id="cveList"></div>
+          </section>
+          <section>
+            <h3>Incidentes publicos</h3>
+            <div class="risk-list" id="incidentList"></div>
+          </section>
+        </div>
+      </article>
+
+      <!-- SCORING -->
+      <article class="view hidden" id="view-scoring">
+        <header class="view-head">
+          <h2>Scoring ponderado por perfil</h2>
+          <p>Elige un preset o ajusta pesos y ve el top 5 recomendado.</p>
+        </header>
+        <div class="scoring-layout">
+          <aside class="scoring-controls" id="scoringControls"></aside>
+          <div class="scoring-results" id="scoringResults"></div>
+        </div>
+      </article>
+
+      <!-- ABOUT -->
+      <article class="view hidden" id="view-about">
+        <header class="view-head">
+          <h2>Metodologia y fuentes</h2>
+        </header>
+        <div class="about-card">
+          <h3>Datos de telemetria</h3>
+          <p>Proyecto abierto <a href="https://github.com/tsale/EDR-Telemetry" target="_blank" rel="noopener">tsale/EDR-Telemetry</a>. Ultimo import: <span id="lastImport"></span>.</p>
+          <h3>Score de cobertura</h3>
+          <ul>
+            <li>Yes = 1.0 punto</li>
+            <li>Via EnablingTelemetry = 0.7 (requiere activacion explicita)</li>
+            <li>Via EventLogs = 0.6 (depende de WinEventLog subyacente)</li>
+            <li>Partially = 0.5</li>
+            <li>No / Pending Response = 0</li>
+          </ul>
+          <h3>Gartner / Forrester</h3>
+          <p>Gartner MQ Endpoint Protection Platforms 2024 y Forrester Wave XDR Q2 2024. Posiciones resumidas; validar informe original antes de decision de compra.</p>
+          <h3>CVEs e incidentes</h3>
+          <p>Seleccion curada de vulnerabilidades publicadas en NVD y noticias de prensa. No es exhaustivo; complementar con feed NVD propio.</p>
+          <h3>Limitaciones</h3>
+          <ul>
+            <li>Los vendors no cubren los mismos subsets en Linux/macOS que en Windows.</li>
+            <li>Sysmon y Auditd se incluyen como referencia de telemetria nativa, no son EDR.</li>
+            <li>Algunos campos ENS estan marcados como "no evidenciado publicamente"; contactar al fabricante.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Construido sobre datos publicos de tsale/EDR-Telemetry. Este proyecto no esta afiliado a ningun fabricante. <span id="buildStamp"></span></small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.3/dist/jspdf.plugin.autotable.min.js"></script>
+  <script src="./data.js?v=2"></script>
+  <script src="./app.js?v=2"></script>
+</body>
+</html>

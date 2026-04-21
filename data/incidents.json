@@ -1,0 +1,77 @@
+{
+  "_note": "Incidentes publicos curados. Fuentes: notas de prensa, CERT/CISA, medios tecnologicos. Fecha formato YYYY-MM-DD.",
+  "CrowdStrike": [
+    {"date": "2024-07-19", "title": "Falcon sensor channel file update causa BSOD global", "impact": "~8.5M hosts Windows caidos. Aerolineas, hospitales, bancos afectados. Mayor outage IT de la historia.", "url": "https://www.crowdstrike.com/falcon-content-update-remediation-and-guidance-hub/"},
+    {"date": "2024-07-24", "title": "CrowdStrike admite root cause: bug en validacion del Content Validator", "impact": "Informe tecnico publico con plan de remediation.", "url": "https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/"},
+    {"date": "2024-08-06", "title": "Demanda colectiva y perdidas por 5.400M USD solo en Fortune 500", "impact": "Impacto reputacional y financiero sostenido. Stock CRWD -30% post-incidente.", "url": "https://www.parametrix.ai/news/press-releases/crowdstrike-outage-cost"}
+  ],
+  "MDE": [
+    {"date": "2023-03-07", "title": "Update de firmas marco Office como malware", "impact": "Falsos positivos masivos Office/OneDrive en organizaciones globales.", "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/"},
+    {"date": "2024-02-15", "title": "Midnight Blizzard (APT29) penetra Microsoft corporate", "impact": "Rusia compromete cuentas ejecutivas y exfiltra correo. Levanta dudas sobre postura security del propio Microsoft.", "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-057a"},
+    {"date": "2023-07-11", "title": "Storm-0558 roba claves OWA/Outlook.com y accede a buzones gubernamentales USA", "impact": "Incidente major de supply chain identity en la nube Microsoft.", "url": "https://msrc.microsoft.com/blog/2023/07/microsoft-mitigates-china-based-threat-actor-storm-0558-targeting-of-customer-email/"}
+  ],
+  "SentinelOne": [
+    {"date": "2025-01", "title": "Vulnerabilidad divulgada en agente Windows LPE", "impact": "CVE-2023-47274 publico - escalada de privilegios local.", "url": "https://www.sentinelone.com/blog/"}
+  ],
+  "Cortex XDR": [
+    {"date": "2024-08", "title": "CVE-2024-5921 Cortex XDR agent LPE", "impact": "Local privilege escalation en agente Windows. Parche publicado.", "url": "https://security.paloaltonetworks.com/CVE-2024-5921"},
+    {"date": "2024-11", "title": "Palo Alto PAN-OS CVE-2024-0012 critico explotado en la naturaleza", "impact": "Aunque afecta firewall, erosiona confianza plataforma Prisma/Cortex.", "url": "https://security.paloaltonetworks.com/CVE-2024-0012"}
+  ],
+  "Trend Micro": [
+    {"date": "2023-09", "title": "CVE-2023-41179 Apex One arbitrary code execution 9.1 critical", "impact": "Explotado in-the-wild antes de parche. JPCERT advisory.", "url": "https://success.trendmicro.com/dcx/s/solution/000294994"},
+    {"date": "2024-11", "title": "CVE-2024-51503 Apex One RCE 9.1 critico", "impact": "Patch de emergencia requerido.", "url": "https://success.trendmicro.com/dcx/s/solution/000305031"}
+  ],
+  "Trellix": [
+    {"date": "2022-08", "title": "CVE-2022-2443 Trellix Agent LPE", "impact": "Vulnerabilidad heredada de McAfee Agent.", "url": "https://kcm.trellix.com/corporate/index?page=content&id=SB10380"},
+    {"date": "2024-03", "title": "Trellix adquiere Magnet Forensics spinoff de investigacion", "impact": "Consolidacion portfolio, riesgo de churn en soporte legacy.", "url": "https://www.trellix.com/news/"}
+  ],
+  "BitDefender": [
+    {"date": "2024-01", "title": "CVE-2024-0253 GravityZone console XSS", "impact": "XSS reflejado en la consola de gestion.", "url": "https://www.bitdefender.com/support/security-advisories/"},
+    {"date": "2023-10", "title": "Vulnerabilidad CVE-2023-49567 GravityZone update bypass", "impact": "Bypass de firma en actualizacion de modulos.", "url": "https://www.bitdefender.com/support/security-advisories/"}
+  ],
+  "Carbon Black": [
+    {"date": "2023-05", "title": "CVE-2023-20857 App Control injection", "impact": "Command injection en VMware Carbon Black App Control.", "url": "https://www.vmware.com/security/advisories/VMSA-2023-0008.html"},
+    {"date": "2023-11", "title": "Broadcom completa adquisicion VMware", "impact": "Incertidumbre sobre roadmap y pricing Carbon Black.", "url": "https://www.broadcom.com/company/news/financial-releases/61591"}
+  ],
+  "Cybereason": [
+    {"date": "2024-11", "title": "Layoffs 17% plantilla y cambio CEO", "impact": "Reestructuracion financiera. Validar continuidad soporte.", "url": "https://techcrunch.com/2024/"},
+    {"date": "2025-03", "title": "Ronda de financiacion emergencia con SoftBank", "impact": "Continuidad asegurada a corto, valoracion recortada.", "url": "https://www.cybereason.com/news"}
+  ],
+  "ESET Inspect": [
+    {"date": "2024-01", "title": "CVE-2024-0353 ESET Server Security LPE", "impact": "Escalada privilegios via symlinks.", "url": "https://support.eset.com/en/ca8647"}
+  ],
+  "Elastic": [
+    {"date": "2023-10", "title": "CVE-2023-46673 Elastic Agent info leak via Fleet", "impact": "Credenciales en logs sin cifrar.", "url": "https://discuss.elastic.co/c/announcements/security-announcements/"},
+    {"date": "2024-02", "title": "CVE-2024-23450 Elastic Kibana SSRF via integrations", "impact": "Server-side request forgery.", "url": "https://discuss.elastic.co/c/announcements/security-announcements/"}
+  ],
+  "FortiEDR": [
+    {"date": "2024-02-08", "title": "CVE-2024-23109 FortiEDR auth bypass admin", "impact": "CVSS 9.8 critical. Bypass autenticacion consola.", "url": "https://fortiguard.fortinet.com/psirt/FG-IR-23-153"},
+    {"date": "2024-10", "title": "Oleada de CVEs criticos en FortiManager explotados ITW", "impact": "Afecta confianza general ecosistema Fortinet.", "url": "https://www.fortinet.com/blog/psirt-blogs"}
+  ],
+  "Harfanglab": [],
+  "LimaCharlie": [],
+  "Qualys": [
+    {"date": "2024-07", "title": "CVE-2024-6387 'regreSSHion' OpenSSH afecta Qualys SSH scans", "impact": "RCE remoto pre-auth en OpenSSH, descubierta por Qualys Threat Research.", "url": "https://blog.qualys.com/vulnerabilities-threat-research/2024/07/01/regresshion-remote-unauthenticated-code-execution-vulnerability-in-openssh-server"}
+  ],
+  "Symantec SES Complete": [
+    {"date": "2023-08", "title": "CVE-2023-38693 SEP client LPE", "impact": "Escalada privilegios en cliente Windows.", "url": "https://support.broadcom.com/web/ecx/support-content-notification/"}
+  ],
+  "Sysmon": [
+    {"date": "2023-05", "title": "CVE-2023-29343 Sysmon EoP Windows", "impact": "Elevacion privilegios. Microsoft parchea via Windows Update.", "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29343"}
+  ],
+  "Cylance": [
+    {"date": "2019-07", "title": "Universal bypass del modelo ML de CylancePROTECT", "impact": "Investigadores Skylight logran bypass simple concatenando strings. Dano reputacional mayor.", "url": "https://skylightcyber.com/2019/07/18/cylance-i-kill-you/"},
+    {"date": "2024-12", "title": "BlackBerry vende Cylance a Arctic Wolf", "impact": "Transicion a Arctic Wolf. Incertidumbre clientes legacy.", "url": "https://www.arcticwolf.com/resources/press-releases/"}
+  ],
+  "WatchGuard": [
+    {"date": "2022-04", "title": "CISA: Cyclops Blink botnet Sandworm usa vulnerabilidad WatchGuard Firebox", "impact": "Rusia compromete cientos de dispositivos Firebox en la cadena de ataque.", "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-054a"}
+  ],
+  "OpenEDR": [],
+  "Uptycs": [],
+  "Auditd": [
+    {"date": "2021-02", "title": "CVE-2021-3156 sudo Baron Samedit - auditd no detecta por defecto", "impact": "Reto de configuracion: auditd requiere reglas custom para detectar explotacion.", "url": "https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt"}
+  ],
+  "Padvish XDR": [],
+  "Phorion": [],
+  "C-Prot": []
+}

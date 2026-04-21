@@ -1,0 +1,944 @@
+{
+  "CrowdStrike": [
+    {
+      "id": "CVE-2022-2841",
+      "severity": "Low",
+      "score": 2.7,
+      "published": "2022-08-22",
+      "description": "A vulnerability was found in CrowdStrike Falcon 6.31.14505.0/6.42.15610/6.44.15806. It has been classified as problematic. Affected is an unknown function of the component Uninstallation Handler. The manipulation leads to missing authorizat"
+    },
+    {
+      "id": "CVE-2025-1146",
+      "severity": "High",
+      "score": 8.1,
+      "published": "2025-02-12",
+      "description": "CrowdStrike uses industry-standard TLS (transport layer security) to secure communications from the Falcon sensor to the CrowdStrike cloud. CrowdStrike has identified a validation logic error in the Falcon sensor for Linux, Falcon Kubernete"
+    },
+    {
+      "id": "CVE-2025-42701",
+      "severity": "Medium",
+      "score": 5.6,
+      "published": "2025-10-08",
+      "description": "A race condition exists in the Falcon sensor for Windows that could allow an attacker, with the prior ability to execute code on a host, to delete arbitrary files. CrowdStrike released a security fix for this issue in Falcon sensor for Wind"
+    },
+    {
+      "id": "CVE-2025-42706",
+      "severity": "Medium",
+      "score": 6.5,
+      "published": "2025-10-08",
+      "description": "A logic error exists in the Falcon sensor for Windows that could allow an attacker, with the prior ability to execute code on a host, to delete arbitrary files. CrowdStrike released a security fix for this issue in Falcon sensor for Windows"
+    }
+  ],
+  "MDE": [
+    {
+      "id": "CVE-2011-0037",
+      "severity": "High",
+      "score": 7.2,
+      "published": "2011-02-25",
+      "description": "Microsoft Malware Protection Engine before 1.1.6603.0, as used in Microsoft Malicious Software Removal Tool (MSRT), Windows Defender, Security Essentials, Forefront Client Security, Forefront Endpoint Protection 2010, and Windows Live OneCa"
+    },
+    {
+      "id": "CVE-2018-0986",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2018-04-04",
+      "description": "A remote code execution vulnerability exists when the Microsoft Malware Protection Engine does not properly scan a specially crafted file, leading to memory corruption, aka \"Microsoft Malware Protection Engine Remote Code Execution Vulnerab"
+    },
+    {
+      "id": "CVE-2020-17090",
+      "severity": "Medium",
+      "score": 5.3,
+      "published": "2020-11-11",
+      "description": "Microsoft Defender for Endpoint Security Feature Bypass Vulnerability"
+    },
+    {
+      "id": "CVE-2021-40444",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2021-09-15",
+      "description": "<p>Microsoft is investigating reports of a remote code execution vulnerability in MSHTML that affects Microsoft Windows. Microsoft is aware of targeted attacks that attempt to exploit this vulnerability by using specially-crafted Microsoft "
+    },
+    {
+      "id": "CVE-2022-23278",
+      "severity": "Medium",
+      "score": 5.9,
+      "published": "2022-03-09",
+      "description": "Microsoft Defender for Endpoint Spoofing Vulnerability"
+    },
+    {
+      "id": "CVE-2022-33637",
+      "severity": "Medium",
+      "score": 6.5,
+      "published": "2022-07-12",
+      "description": "Microsoft Defender for Endpoint Tampering Vulnerability"
+    },
+    {
+      "id": "CVE-2022-35828",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2022-09-13",
+      "description": "Microsoft Defender for Endpoint for Mac Elevation of Privilege Vulnerability"
+    },
+    {
+      "id": "CVE-2023-21809",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-02-14",
+      "description": "Microsoft Defender for Endpoint Security Feature Bypass Vulnerability"
+    },
+    {
+      "id": "CVE-2024-21315",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2024-02-13",
+      "description": "Microsoft Defender for Endpoint Protection Elevation of Privilege Vulnerability"
+    },
+    {
+      "id": "CVE-2024-43614",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2024-10-08",
+      "description": "Relative path traversal in Microsoft Defender for Endpoint allows an authorized attacker to perform spoofing locally."
+    },
+    {
+      "id": "CVE-2024-49057",
+      "severity": "High",
+      "score": 8.1,
+      "published": "2024-12-12",
+      "description": "Microsoft Defender for Endpoint on Android Spoofing Vulnerability"
+    },
+    {
+      "id": "CVE-2025-26684",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2025-05-13",
+      "description": "External control of file name or path in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally."
+    },
+    {
+      "id": "CVE-2025-47161",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2025-05-15",
+      "description": "Improper access control in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally."
+    }
+  ],
+  "SentinelOne": [],
+  "Cortex XDR": [
+    {
+      "id": "CVE-2020-1991",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2020-04-08",
+      "description": "An insecure temporary file vulnerability in Palo Alto Networks Traps allows a local authenticated Windows user to escalate privileges or overwrite system files. This issue affects Palo Alto Networks Traps 5.0 versions before 5.0.8; 6.1 vers"
+    },
+    {
+      "id": "CVE-2020-2020",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2020-12-09",
+      "description": "An improper handling of exceptional conditions vulnerability in Cortex XDR Agent allows a local authenticated Windows user to create files in the software's internal program directory that prevents the Cortex XDR Agent from starting. The ex"
+    },
+    {
+      "id": "CVE-2020-2049",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2020-12-09",
+      "description": "A local privilege escalation vulnerability exists in Palo Alto Networks Cortex XDR Agent on the Windows platform that allows an authenticated local Windows user to execute programs with SYSTEM privileges. This requires the user to have the "
+    },
+    {
+      "id": "CVE-2021-3041",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2021-06-10",
+      "description": "A local privilege escalation vulnerability exists in the Palo Alto Networks Cortex XDR agent on Windows platforms that enables an authenticated local Windows user to execute programs with SYSTEM privileges. This requires the user to have th"
+    },
+    {
+      "id": "CVE-2021-3042",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2021-07-15",
+      "description": "A local privilege escalation (PE) vulnerability exists in the Palo Alto Networks Cortex XDR agent on Windows platforms that enables an authenticated local Windows user to execute programs with SYSTEM privileges. Exploiting this vulnerabilit"
+    },
+    {
+      "id": "CVE-2022-0012",
+      "severity": "Medium",
+      "score": 6.1,
+      "published": "2022-01-12",
+      "description": "An improper link resolution before file access vulnerability exists in the Palo Alto Networks Cortex XDR agent on Windows platforms that enables a local user to delete arbitrary system files and impact the system integrity or cause a denial"
+    },
+    {
+      "id": "CVE-2022-0013",
+      "severity": "Medium",
+      "score": 5.0,
+      "published": "2022-01-12",
+      "description": "A file information exposure vulnerability exists in the Palo Alto Networks Cortex XDR agent that enables a local attacker to read the contents of arbitrary files on the system with elevated privileges when generating a support file. This is"
+    },
+    {
+      "id": "CVE-2022-0014",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2022-01-12",
+      "description": "An untrusted search path vulnerability exists in the Palo Alto Networks Cortex XDR agent that enables a local attacker with file creation privilege in the Windows root directory (such as C:\\) to store a program that can then be unintentiona"
+    },
+    {
+      "id": "CVE-2022-0015",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2022-01-12",
+      "description": "A local privilege escalation (PE) vulnerability exists in the Palo Alto Networks Cortex XDR agent that enables an authenticated local user to execute programs with elevated privileges. This issue impacts: Cortex XDR agent 5.0 versions earli"
+    },
+    {
+      "id": "CVE-2022-0025",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2022-05-11",
+      "description": "A local privilege escalation (PE) vulnerability exists in Palo Alto Networks Cortex XDR agent software on Windows that enables an authenticated local user with file creation privilege in the Windows root directory (such as C:\\) to execute a"
+    },
+    {
+      "id": "CVE-2022-0026",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2022-05-11",
+      "description": "A local privilege escalation (PE) vulnerability exists in Palo Alto Networks Cortex XDR agent software on Windows that enables an authenticated local user with file creation privilege in the Windows root directory (such as C:\\) to execute a"
+    },
+    {
+      "id": "CVE-2022-0029",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2022-09-14",
+      "description": "An improper link resolution vulnerability in the Palo Alto Networks Cortex XDR agent on Windows devices allows a local attacker to read files on the system with elevated privileges when generating a tech support file."
+    },
+    {
+      "id": "CVE-2023-0001",
+      "severity": "Medium",
+      "score": 6.0,
+      "published": "2023-02-08",
+      "description": "An information exposure vulnerability in the Palo Alto Networks Cortex XDR agent on Windows devices allows a local system administrator to disclose the admin password for the agent in cleartext, which bad actors can then use to execute priv"
+    },
+    {
+      "id": "CVE-2023-0002",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2023-02-08",
+      "description": "A problem with a protection mechanism in the Palo Alto Networks Cortex XDR agent on Windows devices allows a local user to execute privileged cytool commands that disable or uninstall the agent.\n"
+    },
+    {
+      "id": "CVE-2023-3280",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2023-09-13",
+      "description": "A problem with a protection mechanism in the Palo Alto Networks Cortex XDR agent on Windows devices allows a local user to disable the agent.\n\n"
+    }
+  ],
+  "Trend Micro": [
+    {
+      "id": "CVE-2019-9489",
+      "severity": "High",
+      "score": 7.5,
+      "published": "2019-04-05",
+      "description": "A directory traversal vulnerability in Trend Micro Apex One, OfficeScan (versions XG and 11.0), and Worry-Free Business Security (versions 10.0, 9.5 and 9.0) could allow an attacker to modify arbitrary files on the affected product's manage"
+    },
+    {
+      "id": "CVE-2019-18188",
+      "severity": "High",
+      "score": 7.5,
+      "published": "2019-10-28",
+      "description": "Trend Micro Apex One could be exploited by an attacker utilizing a command injection vulnerability to extract files from an arbitrary zip file to a specific folder on the Apex One server, which could potentially lead to remote code executio"
+    },
+    {
+      "id": "CVE-2019-18189",
+      "severity": "Critical",
+      "score": 9.8,
+      "published": "2019-10-28",
+      "description": "A directory traversal vulnerability in Trend Micro Apex One, OfficeScan (11.0, XG) and Worry-Free Business Security (9.5, 10.0) may allow an attacker to bypass authentication and log on to an affected product's management console as a root "
+    },
+    {
+      "id": "CVE-2019-19691",
+      "severity": "Medium",
+      "score": 4.9,
+      "published": "2019-12-20",
+      "description": "A vulnerability in Trend Micro Apex One and OfficeScan XG could allow an attacker to expose a masked credential key by manipulating page elements using development tools. Note that the attacker must already have admin/root privileges on the"
+    },
+    {
+      "id": "CVE-2019-19692",
+      "severity": "Medium",
+      "score": 6.1,
+      "published": "2019-12-20",
+      "description": "Trend Micro Apex One (2019) is affected by a cross-site scripting (XSS) vulnerability on the product console. Note that the Japanese version of the product is NOT affected."
+    },
+    {
+      "id": "CVE-2020-8467",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2020-03-18",
+      "description": "A migration tool component of Trend Micro Apex One (2019) and OfficeScan XG contains a vulnerability which could allow remote attackers to execute arbitrary code on affected installations (RCE). An attempted attack requires user authenticat"
+    },
+    {
+      "id": "CVE-2020-8468",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2020-03-18",
+      "description": "Trend Micro Apex One (2019), OfficeScan XG and Worry-Free Business Security (9.0, 9.5, 10.0) agents are affected by a content validation escape vulnerability which could allow an attacker to manipulate certain agent client components. An at"
+    },
+    {
+      "id": "CVE-2020-8470",
+      "severity": "High",
+      "score": 7.5,
+      "published": "2020-03-18",
+      "description": "Trend Micro Apex One (2019), OfficeScan XG and Worry-Free Business Security (9.0, 9.5, 10.0) server contains a vulnerable service DLL file that could allow an attacker to delete any file on the server with SYSTEM level privileges. Authentic"
+    },
+    {
+      "id": "CVE-2020-8598",
+      "severity": "Critical",
+      "score": 9.8,
+      "published": "2020-03-18",
+      "description": "Trend Micro Apex One (2019), OfficeScan XG and Worry-Free Business Security (9.0, 9.5, 10.0) server contains a vulnerable service DLL file that could allow a remote attacker to execute arbitrary code on affected installations with SYSTEM le"
+    },
+    {
+      "id": "CVE-2020-8599",
+      "severity": "Critical",
+      "score": 9.8,
+      "published": "2020-03-18",
+      "description": "Trend Micro Apex One (2019) and OfficeScan XG server contain a vulnerable EXE file that could allow a remote attacker to write arbitrary data to an arbitrary path on affected installations and bypass ROOT login. Authentication is not requir"
+    },
+    {
+      "id": "CVE-2020-24556",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2020-09-01",
+      "description": "A vulnerability in Trend Micro Apex One, OfficeScan XG SP1, Worry-Free Business Security 10 SP1 and Worry-Free Business Security Services on Microsoft Windows may allow an attacker to create a hard link to any file on the system, which then"
+    },
+    {
+      "id": "CVE-2020-24557",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2020-09-01",
+      "description": "A vulnerability in Trend Micro Apex One and Worry-Free Business Security 10.0 SP1 on Microsoft Windows may allow an attacker to manipulate a particular product folder to disable the security temporarily, abuse a specific Windows function an"
+    },
+    {
+      "id": "CVE-2020-24558",
+      "severity": "High",
+      "score": 7.1,
+      "published": "2020-09-01",
+      "description": "A vulnerability in an Trend Micro Apex One, Worry-Free Business Security 10.0 SP1 and Worry-Free Business Security Services dll may allow an attacker to manipulate it to cause an out-of-bounds read that crashes multiple processes in the pro"
+    },
+    {
+      "id": "CVE-2020-24559",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2020-09-01",
+      "description": "A vulnerability in Trend Micro Apex One, Worry-Free Business Security 10.0 SP1 and Worry-Free Business Security Services on macOS may allow an attacker to manipulate a certain binary to load and run a script from a user-writable folder, whi"
+    },
+    {
+      "id": "CVE-2020-24563",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2020-09-29",
+      "description": "A vulnerability in Trend Micro Apex One may allow a local attacker to manipulate the process of the security agent unload option (if configured), which then could be manipulated to gain a privilege escalation and code execution. An attacker"
+    }
+  ],
+  "Trellix": [
+    {
+      "id": "CVE-2022-4326",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2022-12-16",
+      "description": "Improper preservation of permissions vulnerability in Trellix Endpoint Agent (xAgent) prior to V35.31.22 on Windows allows a local user with administrator privileges to bypass the product protection to uninstall the agent via incorrectly ap"
+    },
+    {
+      "id": "CVE-2023-4814",
+      "severity": "High",
+      "score": 7.1,
+      "published": "2023-09-14",
+      "description": "\nA Privilege escalation vulnerability exists in Trellix Windows DLP endpoint for windows which can be abused to delete any file/folder for which the user does not have permission to.\n\n"
+    }
+  ],
+  "BitDefender": [
+    {
+      "id": "CVE-2014-5350",
+      "severity": "Medium",
+      "score": 5.0,
+      "published": "2014-08-19",
+      "description": "Multiple directory traversal vulnerabilities in Bitdefender GravityZone before 5.1.11.432 allow remote attackers to read arbitrary files via a (1) .. (dot dot) in the id parameter to webservice/CORE/downloadFullKitEpc/a/1 in the Web Console"
+    },
+    {
+      "id": "CVE-2018-8955",
+      "severity": "Critical",
+      "score": 9.8,
+      "published": "2018-10-24",
+      "description": "The installer for BitDefender GravityZone relies on an encoded string in a filename to determine the URL for installation metadata, which allows remote attackers to execute arbitrary code by changing the filename while leaving the file's di"
+    },
+    {
+      "id": "CVE-2017-8931",
+      "severity": "Critical",
+      "score": 9.8,
+      "published": "2018-10-30",
+      "description": "Bitdefender GravityZone VMware appliance before 6.2.1-35 might allow attackers to gain access with root privileges via unspecified vectors."
+    },
+    {
+      "id": "CVE-2021-3423",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2021-05-18",
+      "description": "Uncontrolled Search Path Element vulnerability in the openssl component as used in Bitdefender GravityZone Business Security allows an attacker to load a third party DLL to elevate privileges. This issue affects Bitdefender GravityZone Busi"
+    },
+    {
+      "id": "CVE-2021-3823",
+      "severity": "High",
+      "score": 7.1,
+      "published": "2021-10-28",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in the UpdateServer component of Bitdefender GravityZone allows an attacker to execute arbitrary code on vulnerable instances. This issue affects: "
+    },
+    {
+      "id": "CVE-2021-3641",
+      "severity": "Medium",
+      "score": 6.1,
+      "published": "2021-11-09",
+      "description": "Improper Link Resolution Before File Access ('Link Following') vulnerability in the EPAG component of Bitdefender Endpoint Security Tools for Windows allows a local attacker to cause a denial of service. This issue affects: Bitdefender Grav"
+    },
+    {
+      "id": "CVE-2021-3552",
+      "severity": "Medium",
+      "score": 5.3,
+      "published": "2021-11-24",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability in the EPPUpdateService component of Bitdefender Endpoint Security Tools allows an attacker to proxy requests to the relay server. This issue affects: Bitdefender Endpoint Security Tools ve"
+    },
+    {
+      "id": "CVE-2021-3553",
+      "severity": "Medium",
+      "score": 5.3,
+      "published": "2021-11-24",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability in the EPPUpdateService of Bitdefender Endpoint Security Tools allows an attacker to use the Endpoint Protection relay as a proxy for any remote host. This issue affects: Bitdefender Endpoi"
+    },
+    {
+      "id": "CVE-2021-3554",
+      "severity": "Critical",
+      "score": 9.0,
+      "published": "2021-11-24",
+      "description": "Improper Access Control vulnerability in the patchesUpdate API as implemented in Bitdefender Endpoint Security Tools for Linux as a relay role allows an attacker to manipulate the remote address used for pulling patches. This issue affects:"
+    },
+    {
+      "id": "CVE-2021-3959",
+      "severity": "Medium",
+      "score": 6.8,
+      "published": "2021-12-16",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability in the EPPUpdateService component of Bitdefender Endpoint Security Tools allows an attacker to proxy requests to the relay server. This issue affects: Bitdefender Bitdefender GravityZone ve"
+    },
+    {
+      "id": "CVE-2021-3960",
+      "severity": "High",
+      "score": 7.1,
+      "published": "2021-12-16",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in the UpdateServer component of Bitdefender GravityZone allows an attacker to execute arbitrary code on vulnerable instances. This issue affects B"
+    },
+    {
+      "id": "CVE-2022-0677",
+      "severity": "High",
+      "score": 7.5,
+      "published": "2022-04-07",
+      "description": "Improper Handling of Length Parameter Inconsistency vulnerability in the Update Server component of Bitdefender Endpoint Security Tools (in relay role), GravityZone (in Update Server role) allows an attacker to cause a Denial-of-Service. Th"
+    },
+    {
+      "id": "CVE-2022-2830",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2022-09-05",
+      "description": "Deserialization of Untrusted Data vulnerability in the message processing component of Bitdefender GravityZone Console allows an attacker to pass unsafe commands to the environment. This issue affects: Bitdefender GravityZone Console On-Pre"
+    },
+    {
+      "id": "CVE-2024-2223",
+      "severity": "High",
+      "score": 8.1,
+      "published": "2024-04-09",
+      "description": "An Incorrect Regular Expression vulnerability in Bitdefender GravityZone Update Server allows an attacker to cause a Server Side Request Forgery and reconfigure the relay. This issue affects the following products that include the vulnerabl"
+    },
+    {
+      "id": "CVE-2024-2224",
+      "severity": "High",
+      "score": 8.1,
+      "published": "2024-04-09",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory (‘Path Traversal’) vulnerability in the UpdateServer component of Bitdefender GravityZone allows an attacker to execute arbitrary code on vulnerable instances. This issue affects t"
+    }
+  ],
+  "Carbon Black": [
+    {
+      "id": "CVE-2020-4008",
+      "severity": "Low",
+      "score": 3.6,
+      "published": "2020-12-16",
+      "description": "The installer of the macOS Sensor for VMware Carbon Black Cloud (prior to 3.5.1) handles certain files in an insecure way. A malicious actor who has local access to the endpoint on which a macOS sensor is going to be installed, may overwrit"
+    },
+    {
+      "id": "CVE-2021-21982",
+      "severity": "Critical",
+      "score": 9.1,
+      "published": "2021-04-01",
+      "description": "VMware Carbon Black Cloud Workload appliance 1.0.0 and 1.01 has an authentication bypass vulnerability that may allow a malicious actor with network access to the administrative interface of the VMware Carbon Black Cloud Workload appliance "
+    },
+    {
+      "id": "CVE-2021-21998",
+      "severity": "Critical",
+      "score": 9.8,
+      "published": "2021-06-23",
+      "description": "VMware Carbon Black App Control 8.0, 8.1, 8.5 prior to 8.5.8, and 8.6 prior to 8.6.2 has an authentication bypass. A malicious actor with network access to the VMware Carbon Black App Control management server might be able to obtain admini"
+    },
+    {
+      "id": "CVE-2022-22951",
+      "severity": "Critical",
+      "score": 9.1,
+      "published": "2022-03-23",
+      "description": "VMware Carbon Black App Control (8.5.x prior to 8.5.14, 8.6.x prior to 8.6.6, 8.7.x prior to 8.7.4 and 8.8.x prior to 8.8.2) contains an OS command injection vulnerability. An authenticated, high privileged malicious actor with network acce"
+    },
+    {
+      "id": "CVE-2022-22952",
+      "severity": "Critical",
+      "score": 9.1,
+      "published": "2022-03-23",
+      "description": "VMware Carbon Black App Control (8.5.x prior to 8.5.14, 8.6.x prior to 8.6.6, 8.7.x prior to 8.7.4 and 8.8.x prior to 8.8.2) contains a file upload vulnerability. A malicious actor with administrative access to the VMware App Control admini"
+    },
+    {
+      "id": "CVE-2023-20858",
+      "severity": "High",
+      "score": 7.2,
+      "published": "2023-02-22",
+      "description": "VMware Carbon Black App Control 8.7.x prior to 8.7.8, 8.8.x prior to 8.8.6, and 8.9.x.prior to 8.9.4 contain an injection vulnerability. A malicious actor with privileged access to the App Control administration console may be able to use s"
+    }
+  ],
+  "Cybereason": [
+    {
+      "id": "CVE-2020-25502",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-01-20",
+      "description": "Cybereason EDR version 19.1.282 and above, 19.2.182 and above, 20.1.343 and above, and 20.2.X and above has a DLL hijacking vulnerability, which could allow a local attacker to execute code with elevated privileges."
+    }
+  ],
+  "ESET Inspect": [
+    {
+      "id": "CVE-2025-13176",
+      "severity": "Unknown",
+      "score": null,
+      "published": "2026-01-30",
+      "description": "Planting a custom configuration file\n\nin \n\nESET Inspect Connector allow load a malicious DLL."
+    }
+  ],
+  "Elastic": [
+    {
+      "id": "CVE-2016-6651",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2016-09-30",
+      "description": "The UAA /oauth/token endpoint in Pivotal Cloud Foundry (PCF) before 243; UAA 2.x before 2.7.4.8, 3.x before 3.3.0.6, and 3.4.x before 3.4.5; UAA BOSH before 11.7 and 12.x before 12.6; Elastic Runtime before 1.6.40, 1.7.x before 1.7.21, and "
+    },
+    {
+      "id": "CVE-2016-2165",
+      "severity": "Medium",
+      "score": 6.5,
+      "published": "2017-05-25",
+      "description": "The Loggregator Traffic Controller endpoints in cf-release v231 and lower, Pivotal Elastic Runtime versions prior to 1.5.19 AND 1.6.x versions prior to 1.6.20 are not cleansing request URL paths when they are invalid and are returning them "
+    },
+    {
+      "id": "CVE-2019-7611",
+      "severity": "High",
+      "score": 8.1,
+      "published": "2019-03-25",
+      "description": "A permission issue was found in Elasticsearch versions before 5.6.15 and 6.6.1 when Field Level Security and Document Level Security are disabled and the _aliases, _shrink, or _split endpoints are used . If the elasticsearch.yml file has xp"
+    },
+    {
+      "id": "CVE-2022-23714",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2022-07-06",
+      "description": "A local privilege escalation (LPE) issue was discovered in the ransomware canaries features of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account."
+    },
+    {
+      "id": "CVE-2022-38299",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2022-09-12",
+      "description": "An issue in the Elasticsearch plugin of Appsmith v1.7.11 allows attackers to connect disallowed hosts to the AWS/GCP internal metadata endpoint."
+    },
+    {
+      "id": "CVE-2022-38774",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-01-26",
+      "description": "An issue was discovered in the quarantine feature of Elastic Endpoint Security and Elastic Endgame for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account."
+    },
+    {
+      "id": "CVE-2022-38775",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-01-26",
+      "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account."
+    },
+    {
+      "id": "CVE-2022-38777",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-02-08",
+      "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account."
+    },
+    {
+      "id": "CVE-2023-46668",
+      "severity": "Medium",
+      "score": 4.6,
+      "published": "2023-10-26",
+      "description": "If Elastic Endpoint (v7.9.0 - v8.10.3) is configured to use a non-default option in which the logging level is explicitly set to debug, and when Elastic Agent is simultaneously configured to collect and send those logs to Elasticsearch, the"
+    },
+    {
+      "id": "CVE-2024-23451",
+      "severity": "Medium",
+      "score": 4.4,
+      "published": "2024-03-27",
+      "description": "Incorrect Authorization issue exists in the API key based security model for Remote Cluster Security, which is currently in Beta, in Elasticsearch 8.10.0 and before 8.13.0. This allows a malicious user with a valid API key for a remote clus"
+    },
+    {
+      "id": "CVE-2024-52797",
+      "severity": "Medium",
+      "score": 6.5,
+      "published": "2024-11-21",
+      "description": "Opencast is free and open source software for automated video capture and distribution. First noticed in Opencast 13 and 14, Opencast's Elasticsearch integration may generate syntactically invalid Elasticsearch queries in relation to previo"
+    },
+    {
+      "id": "CVE-2023-46669",
+      "severity": "Medium",
+      "score": 6.2,
+      "published": "2025-05-01",
+      "description": "Exposure of sensitive information to local unauthorized actors in Elastic Agent and Elastic Security Endpoint can lead to loss of confidentiality and impersonation of Endpoint to the Elastic Stack. This issue was identified by Elastic engin"
+    }
+  ],
+  "FortiEDR": [
+    {
+      "id": "CVE-2022-23441",
+      "severity": "Critical",
+      "score": 9.1,
+      "published": "2022-04-06",
+      "description": "A use of hard-coded cryptographic key vulnerability [CWE-321] in FortiEDR versions 5.0.2, 5.0.1, 5.0.0, 4.0.0 may allow an unauthenticated attacker on the network to disguise as and forge messages from other collectors."
+    },
+    {
+      "id": "CVE-2022-23446",
+      "severity": "Medium",
+      "score": 4.4,
+      "published": "2022-04-06",
+      "description": "A improper control of a resource through its lifetime in Fortinet FortiEDR version 5.0.3 and earlier allows attacker to make the whole application unresponsive via changing its root directory access permission."
+    },
+    {
+      "id": "CVE-2022-23440",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2022-04-06",
+      "description": "A use of hard-coded cryptographic key vulnerability [CWE-321] in the registration mechanism of FortiEDR collectors versions 5.0.2, 5.0.1, 5.0.0, 4.0.0 may allow a local attacker to disable and uninstall the collectors from the end-points wi"
+    },
+    {
+      "id": "CVE-2022-29057",
+      "severity": "Medium",
+      "score": 5.4,
+      "published": "2022-07-19",
+      "description": "A improper neutralization of input during web page generation ('cross-site scripting') in Fortinet FortiEDR version 5.1.0, 5.0.0 through 5.0.3 Patch 6 and 4.0.0 allows a remote authenticated attacker to perform a reflected cross site script"
+    },
+    {
+      "id": "CVE-2022-39949",
+      "severity": "Medium",
+      "score": 4.4,
+      "published": "2022-11-02",
+      "description": "An improper control of a resource through its lifetime vulnerability [CWE-664] in FortiEDR CollectorWindows 4.0.0 through 4.1, 5.0.0 through 5.0.3.751, 5.1.0 may allow a privileged user to terminate the FortiEDR processes with special tools"
+    },
+    {
+      "id": "CVE-2023-33303",
+      "severity": "High",
+      "score": 8.1,
+      "published": "2023-10-13",
+      "description": "A insufficient session expiration in Fortinet FortiEDR version 5.0.0 through 5.0.1 allows attacker to execute unauthorized code or commands via api request"
+    },
+    {
+      "id": "CVE-2024-45323",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2024-09-10",
+      "description": "An improper access control vulnerability [CWE-284] in FortiEDR Manager API 6.2.0 through 6.2.2, 6.0 all versions may allow in a shared environment context an authenticated admin with REST API permissions in his profile and restricted to a s"
+    }
+  ],
+  "Harfanglab": [],
+  "LimaCharlie": [],
+  "Qualys": [
+    {
+      "id": "CVE-2022-29549",
+      "severity": "High",
+      "score": 7.3,
+      "published": "2022-08-18",
+      "description": "An issue was discovered in Qualys Cloud Agent 4.8.0-49. It executes programs at various full pathnames without first making ownership and permission checks (e.g., to help ensure that a program was installed by root) and without integrity ch"
+    },
+    {
+      "id": "CVE-2022-29550",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2022-08-18",
+      "description": "An issue was discovered in Qualys Cloud Agent 4.8.0-49. It writes \"ps auxwwe\" output to the /var/log/qualys/qualys-cloud-agent-scan.log file. This may, for example, unexpectedly write credentials (from environment variables) to disk in clea"
+    },
+    {
+      "id": "CVE-2023-28140",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2023-04-18",
+      "description": "\nAn Executable Hijacking condition exists in the\nQualys Cloud Agent for Windows platform in versions before 4.5.3.1. Attackers\nmay load a malicious copy of a Dependency Link Library (DLL) via a local\nattack vector instead of the DLL that th"
+    },
+    {
+      "id": "CVE-2023-28141",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2023-04-18",
+      "description": "\nAn NTFS Junction condition exists in the Qualys Cloud Agent\nfor Windows platform in versions before 4.8.0.31. Attackers may write files to\narbitrary locations via a local attack vector. This allows attackers to assume\nthe privileges of the"
+    },
+    {
+      "id": "CVE-2023-28142",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2023-04-18",
+      "description": "\nA Race Condition exists in the Qualys Cloud Agent for Windows\nplatform in versions from 3.1.3.34 and before 4.5.3.1. This allows attackers to\nescalate privileges limited on the local machine during uninstallation of the\nQualys Cloud Agent "
+    },
+    {
+      "id": "CVE-2023-28143",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2023-04-18",
+      "description": "\nQualys Cloud Agent for macOS (versions 2.5.1-75 before 3.7)\ninstaller allows a local escalation of privilege bounded only to the time of\ninstallation and only on older macOSX (macOS 10.15 and older) versions.\nAttackers may exploit incorrec"
+    },
+    {
+      "id": "CVE-2025-43079",
+      "severity": "Medium",
+      "score": 6.3,
+      "published": "2025-11-10",
+      "description": "The Qualys Cloud Agent included a bundled uninstall script (qagent_uninstall.sh), specific to Mac and Linux supported versions that invoked multiple system commands without using absolute paths and without sanitizing the $PATH environment. "
+    }
+  ],
+  "Symantec SES Complete": [
+    {
+      "id": "CVE-2009-1428",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2009-04-29",
+      "description": "Multiple cross-site scripting (XSS) vulnerabilities in ccLgView.exe in the Symantec Log Viewer, as used in Symantec AntiVirus (SAV) before 10.1 MR8, Symantec Endpoint Protection (SEP) 11.0 before 11.0 MR1, Norton 360 1.0, and Norton Interne"
+    },
+    {
+      "id": "CVE-2009-1429",
+      "severity": "High",
+      "score": 10.0,
+      "published": "2009-04-29",
+      "description": "The Intel LANDesk Common Base Agent (CBA) in Symantec Alert Management System 2 (AMS2), as used in Symantec System Center (SSS); Symantec AntiVirus Server; Symantec AntiVirus Central Quarantine Server; Symantec AntiVirus (SAV) Corporate Edi"
+    },
+    {
+      "id": "CVE-2009-1430",
+      "severity": "High",
+      "score": 9.3,
+      "published": "2009-04-29",
+      "description": "Multiple stack-based buffer overflows in IAO.EXE in the Intel Alert Originator Service in Symantec Alert Management System 2 (AMS2), as used in Symantec System Center (SSS); Symantec AntiVirus Server; Symantec AntiVirus Central Quarantine S"
+    },
+    {
+      "id": "CVE-2009-1431",
+      "severity": "High",
+      "score": 9.3,
+      "published": "2009-04-29",
+      "description": "XFR.EXE in the Intel File Transfer service in the console in Symantec Alert Management System 2 (AMS2), as used in Symantec System Center (SSS); Symantec AntiVirus Server; Symantec AntiVirus Central Quarantine Server; Symantec AntiVirus (SA"
+    },
+    {
+      "id": "CVE-2009-1432",
+      "severity": "Medium",
+      "score": 5.0,
+      "published": "2009-04-30",
+      "description": "Symantec Reporting Server, as used in Symantec AntiVirus (SAV) Corporate Edition 10.1 before 10.1 MR8 and 10.2 before 10.2 MR2, Symantec Client Security (SCS) before 3.1 MR8, and the Symantec Endpoint Protection Manager (SEPM) component in "
+    },
+    {
+      "id": "CVE-2010-0114",
+      "severity": "High",
+      "score": 7.5,
+      "published": "2010-12-22",
+      "description": "fw_charts.php in the reporting module in the Manager (aka SEPM) component in Symantec Endpoint Protection (SEP) 11.x before 11 RU6 MP2 allows remote attackers to bypass intended restrictions on report generation, overwrite arbitrary PHP scr"
+    },
+    {
+      "id": "CVE-2010-3268",
+      "severity": "Medium",
+      "score": 5.0,
+      "published": "2010-12-22",
+      "description": "The GetStringAMSHandler function in prgxhndl.dll in hndlrsvc.exe in the Intel Alert Handler service (aka Symantec Intel Handler service) in Intel Alert Management System (AMS), as used in Symantec Antivirus Corporate Edition 10.1.4.4010 on "
+    },
+    {
+      "id": "CVE-2011-0550",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2011-08-15",
+      "description": "Multiple cross-site scripting (XSS) vulnerabilities in the Web Interface in the Endpoint Protection Manager in Symantec Endpoint Protection (SEP) 11.0.600x through 11.0.6300 allow remote attackers to inject arbitrary web script or HTML via "
+    },
+    {
+      "id": "CVE-2011-0551",
+      "severity": "Medium",
+      "score": 6.8,
+      "published": "2011-08-15",
+      "description": "Cross-site request forgery (CSRF) vulnerability in the Web Interface in the Endpoint Protection Manager in Symantec Endpoint Protection (SEP) 11.0.600x through 11.0.6300 allows remote attackers to hijack the authentication of administrators"
+    },
+    {
+      "id": "CVE-2012-1421",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2012-03-21",
+      "description": "The TAR file parser in Quick Heal (aka Cat QuickHeal) 11.00, Norman Antivirus 6.06.12, Rising Antivirus 22.83.00.03, and AVEngine 20101.3.0.103 in Symantec Endpoint Protection 11 allows remote attackers to bypass malware detection via a POS"
+    },
+    {
+      "id": "CVE-2012-1425",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2012-03-21",
+      "description": "The TAR file parser in Avira AntiVir 7.11.1.163, Antiy Labs AVL SDK 2.0.3.7, Quick Heal (aka Cat QuickHeal) 11.00, Emsisoft Anti-Malware 5.1.0.1, Fortinet Antivirus 4.2.254.0, Ikarus Virus Utilities T3 Command Line Scanner 1.1.97.0, Jiangmi"
+    },
+    {
+      "id": "CVE-2012-1443",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2012-03-21",
+      "description": "The RAR file parser in ClamAV 0.96.4, Rising Antivirus 22.83.00.03, Quick Heal (aka Cat QuickHeal) 11.00, G Data AntiVirus 21, AVEngine 20101.3.0.103 in Symantec Endpoint Protection 11, Command Antivirus 5.2.11.5, Ikarus Virus Utilities T3 "
+    },
+    {
+      "id": "CVE-2012-1446",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2012-03-21",
+      "description": "The ELF file parser in Quick Heal (aka Cat QuickHeal) 11.00, McAfee Anti-Virus Scanning Engine 5.400.0.1158, AVEngine 20101.3.0.103 in Symantec Endpoint Protection 11, Norman Antivirus 6.06.12, eSafe 7.0.17.0, Kaspersky Anti-Virus 7.0.0.125"
+    },
+    {
+      "id": "CVE-2012-1456",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2012-03-21",
+      "description": "The TAR file parser in AVG Anti-Virus 10.0.0.1190, Quick Heal (aka Cat QuickHeal) 11.00, Comodo Antivirus 7424, Emsisoft Anti-Malware 5.1.0.1, eSafe 7.0.17.0, F-Prot Antivirus 4.6.2.117, Fortinet Antivirus 4.2.254.0, Ikarus Virus Utilities "
+    },
+    {
+      "id": "CVE-2012-1457",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2012-03-21",
+      "description": "The TAR file parser in Avira AntiVir 7.11.1.163, Antiy Labs AVL SDK 2.0.3.7, avast! Antivirus 4.8.1351.0 and 5.0.677.0, AVG Anti-Virus 10.0.0.1190, Bitdefender 7.2, Quick Heal (aka Cat QuickHeal) 11.00, ClamAV 0.96.4, Command Antivirus 5.2."
+    }
+  ],
+  "Sysmon": [
+    {
+      "id": "CVE-2014-8835",
+      "severity": "High",
+      "score": 9.3,
+      "published": "2015-01-30",
+      "description": "The xpc_data_get_bytes function in libxpc in Apple OS X before 10.10.2 does not verify that a dictionary's Attributes key has the xpc_data data type, which allows attackers to execute arbitrary code by providing a crafted dictionary to sysm"
+    },
+    {
+      "id": "CVE-2022-28214",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2022-05-11",
+      "description": "During an update of SAP BusinessObjects Enterprise, Central Management Server (CMS) - versions 420, 430, authentication credentials are being exposed in Sysmon event logs. This Information Disclosure could cause a high impact on systems’ Co"
+    },
+    {
+      "id": "CVE-2023-29343",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-05-09",
+      "description": "SysInternals Sysmon for Windows Elevation of Privilege Vulnerability"
+    },
+    {
+      "id": "CVE-2025-52574",
+      "severity": "High",
+      "score": 7.5,
+      "published": "2025-06-24",
+      "description": "SysmonElixir is a system monitor HTTP service in Elixir. Prior to version 1.0.1, the /read endpoint reads any file from the server's /etc/passwd by default. In v1.0.1, a whitelist was added that limits reading to only files under priv/data."
+    },
+    {
+      "id": "CVE-2022-50836",
+      "severity": "Unknown",
+      "score": null,
+      "published": "2025-12-30",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nremoteproc: sysmon: fix memory leak in qcom_add_sysmon_subdev()\n\nThe kfree() should be called when of_irq_get_byname() fails or\ndevm_request_threaded_irq() fails in qcom_a"
+    }
+  ],
+  "Cylance": [
+    {
+      "id": "CVE-2018-10722",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2018-05-04",
+      "description": "In Cylance CylancePROTECT before 1470, an unprivileged local user can obtain SYSTEM privileges because users have Modify access to the %PROGRAMFILES%\\Cylance\\Desktop\\log folder, the CyUpdate process grants users Modify access to new files c"
+    },
+    {
+      "id": "CVE-2021-32021",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2021-11-10",
+      "description": "A denial of service vulnerability in the message broker of BlackBerry Protect for Windows version(s) versions 1574 and earlier could allow an attacker to potentially execute code in the context of a BlackBerry Cylance service that has admin"
+    },
+    {
+      "id": "CVE-2021-32022",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2021-11-10",
+      "description": "A low privileged delete vulnerability using CEF RPC server of BlackBerry Protect for Windows version(s) versions 1574 and earlier could allow an attacker to potentially execute code in the context of a BlackBerry Cylance service that has ad"
+    },
+    {
+      "id": "CVE-2021-32023",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2021-11-10",
+      "description": "An elevation of privilege vulnerability in the message broker of BlackBerry Protect for Windows version(s) versions 1574 and earlier could allow an attacker to potentially execute code in the context of a BlackBerry Cylance service that has"
+    },
+    {
+      "id": "CVE-2024-35214",
+      "severity": "Unknown",
+      "score": null,
+      "published": "2024-08-20",
+      "description": "A tampering vulnerability in the CylanceOPTICS Windows Installer Package of CylanceOPTICS for Windows version 3.2 and 3.3 could allow an attacker to potentially uninstall CylanceOPTICS from a system thereby leaving it with only the protecti"
+    }
+  ],
+  "WatchGuard": [
+    {
+      "id": "CVE-2023-26236",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2023-10-05",
+      "description": "An issue was discovered in WatchGuard EPDR 8.0.21.0002. Due to a weak implementation of message handling between WatchGuard EPDR processes, it is possible to perform a Local Privilege Escalation on Windows by sending a crafted message to a "
+    },
+    {
+      "id": "CVE-2023-26237",
+      "severity": "Medium",
+      "score": 6.7,
+      "published": "2023-10-05",
+      "description": "An issue was discovered in WatchGuard EPDR 8.0.21.0002. It is possible to bypass the defensive capabilities by adding a registry key as SYSTEM."
+    },
+    {
+      "id": "CVE-2023-26238",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2023-10-05",
+      "description": "An issue was discovered in WatchGuard EPDR 8.0.21.0002. It is possible to enable or disable defensive capabilities by sending a crafted message to a named pipe."
+    },
+    {
+      "id": "CVE-2023-26239",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2023-10-05",
+      "description": "An issue was discovered in WatchGuard EPDR 8.0.21.0002. Due to a weak implementation of a password check, it is possible to obtain credentials to access the management console as a non-privileged user."
+    },
+    {
+      "id": "CVE-2024-8424",
+      "severity": "High",
+      "score": 7.8,
+      "published": "2024-11-08",
+      "description": "Improper Privilege Management vulnerability in WatchGuard EPDR, Panda AD360 and Panda Dome on Windows (PSANHost.exe module) allows arbitrary file delete with SYSTEM permissions.\nThis issue affects EPDR: before 8.00.23.0000; Panda AD360: bef"
+    }
+  ],
+  "OpenEDR": [],
+  "Uptycs": [],
+  "Auditd": [
+    {
+      "id": "CVE-2022-49802",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2025-05-01",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nftrace: Fix null pointer dereference in ftrace_add_mod()\n\nThe @ftrace_mod is allocated by kzalloc(), so both the members {prev,next}\nof @ftrace_mode->list are NULL, it's n"
+    }
+  ]
+}
