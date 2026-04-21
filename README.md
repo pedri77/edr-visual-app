@@ -1,5 +1,7 @@
 # EDR/XDR Decision Studio
 
+> **Live**: https://pedri77.github.io/edr-visual-app/
+
 Aplicacion estatica para evaluar visualmente 26 EDR/XDR del mercado en Windows, Linux y macOS.
 
 Sigue el mismo patron que `sase-visual-app`: HTML + CSS + `data.js` + `app.js`, sin build ni dependencias. Publica en GitHub Pages desde la raiz.
