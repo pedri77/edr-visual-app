@@ -70,6 +70,11 @@ gh repo create edr-visual-app --public --source=. --remote=origin --push
 # En GitHub -> Settings -> Pages -> Source: main, folder: /(root)
 ```
 
+## Auditoria y roadmap
+
+Auditoria completa (Fullstack + UX + Perf + SEO + Seguridad OWASP) en [docs/AUDIT-2026-04-21.md](docs/AUDIT-2026-04-21.md).
+Incluye matriz de priorizacion P0-P3, roadmap en 3 horizontes y decisiones estrategicas pendientes.
+
 ## Limitaciones y TODO
 
 - La metadata de Gartner/Forrester es posicion resumida; el informe original es la referencia.
