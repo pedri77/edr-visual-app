@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Genera data.js consumiendo los JSON oficiales de tsale/EDR-Telemetry + metadata curada."""
-import json, os, sys
+import json, os, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -63,6 +63,73 @@ def load_mitre():
         return json.load(open(RAW / "mitre_att&ck_mappings.json", encoding="utf-8"))
     except Exception:
         return []
+
+
+# MITRE ATT&CK Data Sources (stable IDs, nombre oficial + tactics principales cubiertas)
+# Fuente: https://attack.mitre.org/datasources/
+ATTACK_DATA_SOURCES = {
+    "DS0002": {"name": "User Account", "description": "Eventos sobre cuentas de usuario: alta, modificacion, autenticacion", "tactics": ["Initial Access", "Persistence", "Privilege Escalation", "Credential Access"]},
+    "DS0003": {"name": "Scheduled Job", "description": "Tareas programadas creadas, modificadas, ejecutadas", "tactics": ["Execution", "Persistence", "Privilege Escalation"]},
+    "DS0005": {"name": "WMI", "description": "Consultas y suscripciones WMI (Windows)", "tactics": ["Execution", "Persistence", "Lateral Movement"]},
+    "DS0009": {"name": "Process", "description": "Creacion, terminacion, acceso, modificacion y tampering de procesos", "tactics": ["Execution", "Defense Evasion", "Privilege Escalation", "Discovery"]},
+    "DS0011": {"name": "Module", "description": "Carga de modulos / DLLs / librerias", "tactics": ["Execution", "Persistence", "Defense Evasion"]},
+    "DS0012": {"name": "Script", "description": "Ejecucion de scripts (PowerShell, bash, etc.)", "tactics": ["Execution"]},
+    "DS0013": {"name": "Sensor Health", "description": "Estado y telemetria del propio agente EDR", "tactics": ["Defense Evasion"]},
+    "DS0016": {"name": "Drive", "description": "Montaje/desmontaje de unidades, virtual disks", "tactics": ["Initial Access", "Lateral Movement"]},
+    "DS0017": {"name": "Command", "description": "Lineas de comando ejecutadas", "tactics": ["Execution"]},
+    "DS0019": {"name": "Service", "description": "Creacion, modificacion, inicio, parada de servicios", "tactics": ["Execution", "Persistence", "Privilege Escalation"]},
+    "DS0022": {"name": "File", "description": "Creacion, apertura, borrado, modificacion, renombrado de archivos", "tactics": ["Execution", "Defense Evasion", "Exfiltration", "Impact"]},
+    "DS0023": {"name": "Named Pipe", "description": "Creacion y conexion a named pipes", "tactics": ["Lateral Movement", "Command and Control"]},
+    "DS0024": {"name": "Windows Registry", "description": "Modificacion de claves/valores del registro de Windows", "tactics": ["Persistence", "Privilege Escalation", "Defense Evasion"]},
+    "DS0026": {"name": "Active Directory", "description": "Eventos de AD: cambios, consultas, credentials", "tactics": ["Credential Access", "Discovery", "Lateral Movement"]},
+    "DS0027": {"name": "Driver", "description": "Carga, descarga, modificacion de drivers del kernel", "tactics": ["Persistence", "Privilege Escalation", "Defense Evasion"]},
+    "DS0028": {"name": "Logon Session", "description": "Inicios y cierres de sesion", "tactics": ["Initial Access", "Lateral Movement", "Persistence"]},
+    "DS0029": {"name": "Network Traffic", "description": "Conexiones TCP/UDP, DNS, URL, descargas", "tactics": ["Command and Control", "Exfiltration", "Lateral Movement"]},
+    "DS0007": {"name": "Image", "description": "Imagenes de contenedores/VM", "tactics": ["Execution", "Persistence"]},
+}
+
+
+def compute_attack_coverage(features, vendors, mitre_mappings):
+    """Para cada vendor, calcula cobertura por Data Source ATT&CK.
+    sub_to_ds mapea (category, sub) -> lista de data source IDs.
+    Cobertura = media ponderada de status (Yes=1, Partial=0.5, etc.) de las features
+    que tocan ese data source.
+    """
+    sub_to_ds = {}
+    last_cat = ""
+    for row in mitre_mappings:
+        cat = row.get("Telemetry Feature Category") or last_cat
+        last_cat = cat or last_cat
+        sub = row.get("Sub-Category", "")
+        mitre = row.get("MITRE ATT&CK Mappings", "") or ""
+        ds_ids = set()
+        for m in re.finditer(r"DS\d{4}", mitre):
+            ds_ids.add(m.group(0))
+        if sub and ds_ids:
+            sub_to_ds[sub] = sorted(ds_ids)
+
+    # Por vendor: sumar por data source
+    coverage = {}
+    for v in vendors:
+        per_ds = {}
+        for f in features:
+            ds_list = sub_to_ds.get(f["sub"], [])
+            if not ds_list:
+                continue
+            status = f["values"].get(v, "na")
+            s = SCORE.get(status)
+            if s is None:
+                continue
+            for ds in ds_list:
+                per_ds.setdefault(ds, []).append(s)
+        coverage[v] = {
+            ds: {
+                "score": round(sum(vals) / len(vals) * 100, 1),
+                "features": len(vals),
+            }
+            for ds, vals in per_ds.items()
+        }
+    return coverage, sub_to_ds
 
 
 def load_partials(os_name):
@@ -148,16 +215,20 @@ def main():
     nvd_cache = load_optional("nvd_cache.json")
     incidents = load_optional("incidents.json")
 
+    mitre_mappings = load_mitre()
     by_os = {}
     all_vendors = set()
     for os_name in OS_FILES:
         feats, vendors = load_os(os_name)
         scores = compute_scores(feats, vendors)
+        attack_cov, sub_to_ds = compute_attack_coverage(feats, vendors, mitre_mappings)
         by_os[os_name] = {
             "features": feats,
             "vendors": vendors,
             "scores": scores,
             "partials": load_partials(os_name),
+            "attackCoverage": attack_cov,
+            "subToDs": sub_to_ds,
         }
         all_vendors.update(vendors)
 
@@ -191,14 +262,14 @@ def main():
             }
         })
 
-    mitre = load_mitre()
-
+    from datetime import datetime, timezone
     payload = {
         "source": "https://github.com/tsale/EDR-Telemetry",
-        "lastImport": "2025-09-20",
+        "lastImport": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "vendors": vendors_full,
         "os": by_os,
-        "mitre": mitre,
+        "mitre": mitre_mappings,
+        "attackDataSources": ATTACK_DATA_SOURCES,
         "statusLegend": {
             "yes": {"label": "Implementado", "icon": "OK", "color": "#1f9d55"},
             "no": {"label": "No implementado", "icon": "X", "color": "#b33a3a"},

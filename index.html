@@ -39,6 +39,7 @@
       <button class="rail-item" data-view="vendors" type="button">Vendors</button>
       <button class="rail-item" data-view="compare" type="button">Comparar</button>
       <button class="rail-item" data-view="risks" type="button">Riesgos</button>
+      <button class="rail-item" data-view="attack" type="button">ATT&amp;CK</button>
       <button class="rail-item" data-view="scoring" type="button">Scoring</button>
       <button class="rail-item" data-view="executive" type="button">Ejecutivo</button>
       <button class="rail-item" data-view="about" type="button">Metodologia</button>
@@ -125,6 +126,32 @@
           <aside class="scoring-controls" id="scoringControls"></aside>
           <div class="scoring-results" id="scoringResults"></div>
         </div>
+      </article>
+
+      <!-- ATT&CK -->
+      <article class="view hidden" id="view-attack">
+        <header class="view-head">
+          <h2>Cobertura MITRE ATT&amp;CK por Data Source</h2>
+          <p>Mapeo oficial tsale/EDR-Telemetry de cada sub-feature a su ATT&amp;CK Data Source (DS0xxx). La celda es la cobertura media ponderada del vendor sobre esa fuente de datos.</p>
+        </header>
+        <div class="controls-row">
+          <div class="os-tabs" id="attackOsTabs">
+            <button class="os-tab active" data-os="windows">Windows</button>
+            <button class="os-tab" data-os="linux">Linux</button>
+            <button class="os-tab" data-os="macos">macOS</button>
+          </div>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-dot" style="background:#1f9d55"></span>90-100 pleno</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#8bbf4d"></span>70-89</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#e0a106"></span>40-69</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#b33a3a"></span>0-39 hueco</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#c7c7c7"></span>n/a</span>
+          </div>
+        </div>
+        <div class="matrix-wrap">
+          <table class="matrix" id="attackMatrix"></table>
+        </div>
+        <div class="attack-legend" id="attackLegend"></div>
       </article>
 
       <!-- EXECUTIVE -->

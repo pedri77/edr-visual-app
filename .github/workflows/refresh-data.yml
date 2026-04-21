@@ -1,0 +1,53 @@
+name: Refresh EDR data
+
+on:
+  schedule:
+    # Lunes a las 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Refresh raw/ from tsale/EDR-Telemetry
+        run: |
+          set -euo pipefail
+          cd raw
+          BASE="https://raw.githubusercontent.com/tsale/EDR-Telemetry/main"
+          curl -sSLf "$BASE/EDR_telem_windows.json" -o EDR_telem_windows.json
+          curl -sSLf "$BASE/EDR_telem_linux.json" -o EDR_telem_linux.json
+          curl -sSLf "$BASE/EDR_telem_macOS.json" -o EDR_telem_macOS.json
+          curl -sSLf "$BASE/mitre_att%26ck_mappings.json" -o "mitre_att&ck_mappings.json"
+          curl -sSLf "$BASE/partially_value_explanations_windows.json" -o partially_value_explanations_windows.json
+          curl -sSLf "$BASE/partially_value_explanations_linux.json" -o partially_value_explanations_linux.json
+          curl -sSLf "$BASE/partially_value_explanations_macOS.json" -o partially_value_explanations_macOS.json
+
+      - name: Refresh NVD cache (all vendors, respects rate limit)
+        run: python3 scripts/fetch_cves.py --refresh
+
+      - name: Rebuild data.js
+        run: python3 scripts/build_data.py
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No data changes."
+            exit 0
+          fi
+          git add raw/ data/nvd_cache.json data.js
+          git commit -m "chore: weekly data refresh ($(date -u +%Y-%m-%d))"
+          git push

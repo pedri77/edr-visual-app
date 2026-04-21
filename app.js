@@ -6,6 +6,7 @@
   const STATE = {
     view: "matrix",
     os: "windows",
+    attackOs: "windows",
     compareSel: [],
     scoring: {
       preset: "balanced",
@@ -112,11 +113,18 @@
     table.append(tbody);
   }
 
-  qsa(".os-tab").forEach(t => t.addEventListener("click", () => {
+  qsa("#view-matrix .os-tab").forEach(t => t.addEventListener("click", () => {
     STATE.os = t.dataset.os;
-    qsa(".os-tab").forEach(x => x.classList.toggle("active", x === t));
+    qsa("#view-matrix .os-tab").forEach(x => x.classList.toggle("active", x === t));
     renderMatrix();
     renderRanking();
+  }));
+
+  // Separate listeners for ATT&CK OS tabs
+  qsa("#attackOsTabs .os-tab").forEach(t => t.addEventListener("click", () => {
+    STATE.attackOs = t.dataset.os;
+    qsa("#attackOsTabs .os-tab").forEach(x => x.classList.toggle("active", x === t));
+    renderAttack();
   }));
 
   // ---------- RANKING ----------
@@ -469,6 +477,80 @@
       grid.append(card);
     });
     box.append(grid);
+  }
+
+  // ---------- ATT&CK ----------
+  function coverageClass(score) {
+    if (score >= 90) return "cov-100";
+    if (score >= 70) return "cov-70";
+    if (score >= 40) return "cov-40";
+    return "cov-0";
+  }
+
+  function renderAttack() {
+    const osName = STATE.attackOs;
+    const osData = DATA.os[osName];
+    const vendors = osData.vendors;
+    const coverage = osData.attackCoverage || {};
+    // data sources present in this OS, sorted by ID
+    const dsSet = new Set();
+    Object.values(coverage).forEach(perVendor => Object.keys(perVendor).forEach(ds => dsSet.add(ds)));
+    const dsIds = Array.from(dsSet).sort();
+
+    const table = qs("#attackMatrix");
+    table.innerHTML = "";
+    const thead = el("thead");
+    const trh = el("tr");
+    trh.append(el("th", { class: "corner", style: "min-width:180px" }, "ATT&CK Data Source"));
+    trh.append(el("th", { class: "sub-col", style: "min-width:90px" }, "Avg"));
+    vendors.forEach(v => trh.append(el("th", { title: v }, v)));
+    thead.append(trh);
+    table.append(thead);
+
+    const tbody = el("tbody");
+    dsIds.forEach(ds => {
+      const meta = DATA.attackDataSources[ds] || { name: ds };
+      const tr = el("tr");
+      tr.append(el("td", { class: "cat", style: "min-width:180px" }, [
+        el("div", { style: "font-family:var(--mono);font-size:11px;color:var(--accent)" }, ds),
+        el("div", {}, meta.name || ds),
+      ]));
+      // avg across vendors
+      const scores = vendors.map(v => coverage[v]?.[ds]?.score).filter(s => typeof s === "number");
+      const avg = scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
+      tr.append(el("td", { class: `cell ${coverageClass(avg)}`, style: "font-family:var(--mono);padding:6px 10px" }, avg.toFixed(0) + "%"));
+      vendors.forEach(v => {
+        const cell = coverage[v]?.[ds];
+        if (!cell) {
+          tr.append(el("td", { class: "cell na", title: `${v}: ${ds} - sin features mapeadas` }, "-"));
+        } else {
+          const s = cell.score;
+          tr.append(el("td", {
+            class: `cell ${coverageClass(s)}`,
+            title: `${v}\n${ds} ${meta.name}\n${s.toFixed(1)}% sobre ${cell.features} features`,
+          }, s.toFixed(0)));
+        }
+      });
+      tbody.append(tr);
+    });
+    table.append(tbody);
+
+    // Legend / info cards per DS
+    const legend = qs("#attackLegend");
+    legend.innerHTML = "";
+    dsIds.forEach(ds => {
+      const meta = DATA.attackDataSources[ds] || { name: ds };
+      const card = el("div", { class: "attack-ds" });
+      card.append(el("div", { class: "id" }, ds));
+      card.append(el("div", { class: "name" }, meta.name || ds));
+      if (meta.description) card.append(el("div", { class: "desc" }, meta.description));
+      if (meta.tactics) {
+        const tac = el("div", { class: "tactics" });
+        meta.tactics.forEach(t => tac.append(el("span", {}, t)));
+        card.append(tac);
+      }
+      legend.append(card);
+    });
   }
 
   // ---------- EXECUTIVE ----------
@@ -838,6 +920,7 @@
     renderCompare();
     renderRisks();
     renderScoring();
+    renderAttack();
     renderExecutive();
   }
 

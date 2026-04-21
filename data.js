@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2025-09-20",
+  "lastImport": "2026-04-21",
   "vendors": [
     {
       "id": "Auditd",
@@ -5774,7 +5774,1619 @@ window.EDR_DATA = {
           "Uptycs": "",
           "WatchGuard": ""
         }
-      ]
+      ],
+      "attackCoverage": {
+        "BitDefender": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 75.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 70.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 30.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 36.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 100.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 66.7,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 0.0,
+            "features": 1
+          }
+        },
+        "Carbon Black": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 70.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 15.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 60.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 16.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 16.7,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 25.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Cortex XDR": {
+          "DS0009": {
+            "score": 90.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 80.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 70.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 50.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 70.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "CrowdStrike": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 85.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 87.5,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 50.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 100.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Cybereason": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 55.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 25.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 70.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 50.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 0.0,
+            "features": 1
+          }
+        },
+        "Cylance": {
+          "DS0009": {
+            "score": 54.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 64.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 60.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "ESET Inspect": {
+          "DS0009": {
+            "score": 70.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 65.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 100.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 70.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 50.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 66.7,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Elastic": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 80.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 70.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 70.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 60.0,
+            "features": 1
+          }
+        },
+        "FortiEDR": {
+          "DS0009": {
+            "score": 34.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 70.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 58.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 60.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 54.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 70.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 70.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 66.7,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 60.0,
+            "features": 1
+          }
+        },
+        "Harfanglab": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 90.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 100.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 92.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 100.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "LimaCharlie": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 75.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 57.5,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 50.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 70.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 100.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 60.0,
+            "features": 1
+          }
+        },
+        "MDE": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 70.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 100.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 100.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 63.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "OpenEDR": {
+          "DS0009": {
+            "score": 20.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 30.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 0.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 40.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 0.0,
+            "features": 1
+          }
+        },
+        "Padvish XDR": {
+          "DS0009": {
+            "score": 70.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 55.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 60.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 73.3,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 70.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Qualys": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 70.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 60.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "SentinelOne": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 60.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 80.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 54.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 56.7,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 46.7,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 70.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Symantec SES Complete": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 70.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 25.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 38.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 46.7,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 70.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 50.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Sysmon": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 50.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 0.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 60.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 100.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 50.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 0.0,
+            "features": 1
+          }
+        },
+        "Trellix": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 70.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 100.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 50.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 33.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Trend Micro": {
+          "DS0009": {
+            "score": 94.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 74.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 62.5,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 70.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 70.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 0.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 60.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "Uptycs": {
+          "DS0009": {
+            "score": 60.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 85.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 70.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 90.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 73.3,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 60.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 50.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 83.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
+            "features": 1
+          }
+        },
+        "WatchGuard": {
+          "DS0009": {
+            "score": 40.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 35.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 25.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 90.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 0.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 33.3,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 0.0,
+            "features": 1
+          }
+        }
+      },
+      "subToDs": {
+        "Process Creation": [
+          "DS0009"
+        ],
+        "Process Termination": [
+          "DS0009"
+        ],
+        "Process Access": [
+          "DS0009"
+        ],
+        "Image/Library Loaded": [
+          "DS0011"
+        ],
+        "Remote Thread Creation": [
+          "DS0009"
+        ],
+        "Process Tampering Activity": [
+          "DS0009"
+        ],
+        "File Creation": [
+          "DS0022"
+        ],
+        "File Opened": [
+          "DS0022"
+        ],
+        "File Deletion": [
+          "DS0022"
+        ],
+        "File Modification": [
+          "DS0022"
+        ],
+        "File Renaming": [
+          "DS0022"
+        ],
+        "Local Account Creation": [
+          "DS0002"
+        ],
+        "Local Account Modification": [
+          "DS0002"
+        ],
+        "Local Account Deletion": [
+          "DS0002"
+        ],
+        "Account Login": [
+          "DS0002",
+          "DS0028"
+        ],
+        "TCP Connection": [
+          "DS0029"
+        ],
+        "UDP Connection": [
+          "DS0029"
+        ],
+        "URL": [
+          "DS0029"
+        ],
+        "DNS Query": [
+          "DS0029"
+        ],
+        "File Downloaded": [
+          "DS0022",
+          "DS0029"
+        ],
+        "MD5": [
+          "DS0022"
+        ],
+        "SHA": [
+          "DS0022"
+        ],
+        "IMPHASH": [
+          "DS0022"
+        ],
+        "Key/Value Creation": [
+          "DS0024"
+        ],
+        "Key/Value Modification": [
+          "DS0024"
+        ],
+        "Key/Value Deletion": [
+          "DS0024"
+        ],
+        "Scheduled Task Creation": [
+          "DS0003"
+        ],
+        "Scheduled Task Modification": [
+          "DS0003"
+        ],
+        "Scheduled Task Deletion": [
+          "DS0003"
+        ],
+        "Service Creation": [
+          "DS0019"
+        ],
+        "Service Modification": [
+          "DS0019"
+        ],
+        "Service Deletion": [
+          "DS0019"
+        ],
+        "Driver Loaded": [
+          "DS0027"
+        ],
+        "Driver Modification": [
+          "DS0022"
+        ],
+        "Virtual Disk Mount": [
+          "DS0016"
+        ],
+        "USB Device Unmount": [
+          "DS0016"
+        ],
+        "USB Device Mount": [
+          "DS0016"
+        ],
+        "Group Policy Modification": [
+          "DS0026"
+        ],
+        "Pipe Creation": [
+          "DS0023"
+        ],
+        "Pipe Connection": [
+          "DS0023"
+        ],
+        "Agent Start": [
+          "DS0013"
+        ],
+        "Agent Stop": [
+          "DS0013"
+        ],
+        "Agent Install": [
+          "DS0013"
+        ],
+        "Agent Uninstall": [
+          "DS0013"
+        ],
+        "Agent Keep-Alive": [
+          "DS0013"
+        ],
+        "Agent Errors": [
+          "DS0013"
+        ],
+        "WmiEventConsumerToFilter": [
+          "DS0005"
+        ],
+        "WmiEventConsumer": [
+          "DS0005"
+        ],
+        "WmiEventFilter": [
+          "DS0005"
+        ],
+        "BIT JOBS Activity": [
+          "DS0012",
+          "DS0017"
+        ],
+        "Script-Block Activity": [
+          "DS0012"
+        ]
+      }
     },
     "linux": {
       "features": [
@@ -6917,7 +8529,475 @@ window.EDR_DATA = {
           "Auditd": "",
           "Carbon Black Cloud": ""
         }
-      ]
+      ],
+      "attackCoverage": {
+        "Auditd": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 60.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 0.0,
+            "features": 2
+          }
+        },
+        "BitDefender": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "Carbon Black Cloud": {
+          "DS0009": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "C-Prot": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "CrowdStrike": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "ESET Inspect": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 50.0,
+            "features": 2
+          }
+        },
+        "Elastic": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "Harfanglab": {
+          "DS0009": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 50.0,
+            "features": 2
+          }
+        },
+        "LimaCharlie": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "MDE": {
+          "DS0009": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 90.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 16.7,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "Qualys": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 70.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "SentinelOne": {
+          "DS0009": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "Sysmon": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 0.0,
+            "features": 2
+          }
+        },
+        "Uptycs": {
+          "DS0009": {
+            "score": 90.0,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        }
+      },
+      "subToDs": {
+        "Process Creation": [
+          "DS0009"
+        ],
+        "Process Termination": [
+          "DS0009"
+        ],
+        "Process Access": [
+          "DS0009"
+        ],
+        "Image/Library Loaded": [
+          "DS0011"
+        ],
+        "Remote Thread Creation": [
+          "DS0009"
+        ],
+        "Process Tampering Activity": [
+          "DS0009"
+        ],
+        "File Creation": [
+          "DS0022"
+        ],
+        "File Opened": [
+          "DS0022"
+        ],
+        "File Deletion": [
+          "DS0022"
+        ],
+        "File Modification": [
+          "DS0022"
+        ],
+        "File Renaming": [
+          "DS0022"
+        ],
+        "Local Account Creation": [
+          "DS0002"
+        ],
+        "Local Account Modification": [
+          "DS0002"
+        ],
+        "Local Account Deletion": [
+          "DS0002"
+        ],
+        "Account Login": [
+          "DS0002",
+          "DS0028"
+        ],
+        "TCP Connection": [
+          "DS0029"
+        ],
+        "UDP Connection": [
+          "DS0029"
+        ],
+        "URL": [
+          "DS0029"
+        ],
+        "DNS Query": [
+          "DS0029"
+        ],
+        "File Downloaded": [
+          "DS0022",
+          "DS0029"
+        ],
+        "MD5": [
+          "DS0022"
+        ],
+        "SHA": [
+          "DS0022"
+        ],
+        "IMPHASH": [
+          "DS0022"
+        ],
+        "Key/Value Creation": [
+          "DS0024"
+        ],
+        "Key/Value Modification": [
+          "DS0024"
+        ],
+        "Key/Value Deletion": [
+          "DS0024"
+        ],
+        "Scheduled Task Creation": [
+          "DS0003"
+        ],
+        "Scheduled Task Modification": [
+          "DS0003"
+        ],
+        "Scheduled Task Deletion": [
+          "DS0003"
+        ],
+        "Service Creation": [
+          "DS0019"
+        ],
+        "Service Modification": [
+          "DS0019"
+        ],
+        "Service Deletion": [
+          "DS0019"
+        ],
+        "Driver Loaded": [
+          "DS0027"
+        ],
+        "Driver Modification": [
+          "DS0022"
+        ],
+        "Virtual Disk Mount": [
+          "DS0016"
+        ],
+        "USB Device Unmount": [
+          "DS0016"
+        ],
+        "USB Device Mount": [
+          "DS0016"
+        ],
+        "Group Policy Modification": [
+          "DS0026"
+        ],
+        "Pipe Creation": [
+          "DS0023"
+        ],
+        "Pipe Connection": [
+          "DS0023"
+        ],
+        "Agent Start": [
+          "DS0013"
+        ],
+        "Agent Stop": [
+          "DS0013"
+        ],
+        "Agent Install": [
+          "DS0013"
+        ],
+        "Agent Uninstall": [
+          "DS0013"
+        ],
+        "Agent Keep-Alive": [
+          "DS0013"
+        ],
+        "Agent Errors": [
+          "DS0013"
+        ],
+        "WmiEventConsumerToFilter": [
+          "DS0005"
+        ],
+        "WmiEventConsumer": [
+          "DS0005"
+        ],
+        "WmiEventFilter": [
+          "DS0005"
+        ],
+        "BIT JOBS Activity": [
+          "DS0012",
+          "DS0017"
+        ],
+        "Script-Block Activity": [
+          "DS0012"
+        ]
+      }
     },
     "macos": {
       "features": [
@@ -8418,7 +10498,311 @@ window.EDR_DATA = {
           "CrowdStrike": "",
           "MDE": ""
         }
-      ]
+      ],
+      "attackCoverage": {
+        "Phorion": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 0.0,
+            "features": 2
+          }
+        },
+        "BitDefender": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "CrowdStrike": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "ESET Inspect": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 83.3,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "Elastic": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "LimaCharlie": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "MDE": {
+          "DS0009": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 50.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        },
+        "Qualys": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 2
+          }
+        }
+      },
+      "subToDs": {
+        "Process Creation": [
+          "DS0009"
+        ],
+        "Process Termination": [
+          "DS0009"
+        ],
+        "Process Access": [
+          "DS0009"
+        ],
+        "Image/Library Loaded": [
+          "DS0011"
+        ],
+        "Remote Thread Creation": [
+          "DS0009"
+        ],
+        "Process Tampering Activity": [
+          "DS0009"
+        ],
+        "File Creation": [
+          "DS0022"
+        ],
+        "File Opened": [
+          "DS0022"
+        ],
+        "File Deletion": [
+          "DS0022"
+        ],
+        "File Modification": [
+          "DS0022"
+        ],
+        "File Renaming": [
+          "DS0022"
+        ],
+        "Local Account Creation": [
+          "DS0002"
+        ],
+        "Local Account Modification": [
+          "DS0002"
+        ],
+        "Local Account Deletion": [
+          "DS0002"
+        ],
+        "Account Login": [
+          "DS0002",
+          "DS0028"
+        ],
+        "TCP Connection": [
+          "DS0029"
+        ],
+        "UDP Connection": [
+          "DS0029"
+        ],
+        "URL": [
+          "DS0029"
+        ],
+        "DNS Query": [
+          "DS0029"
+        ],
+        "File Downloaded": [
+          "DS0022",
+          "DS0029"
+        ],
+        "MD5": [
+          "DS0022"
+        ],
+        "SHA": [
+          "DS0022"
+        ],
+        "IMPHASH": [
+          "DS0022"
+        ],
+        "Key/Value Creation": [
+          "DS0024"
+        ],
+        "Key/Value Modification": [
+          "DS0024"
+        ],
+        "Key/Value Deletion": [
+          "DS0024"
+        ],
+        "Scheduled Task Creation": [
+          "DS0003"
+        ],
+        "Scheduled Task Modification": [
+          "DS0003"
+        ],
+        "Scheduled Task Deletion": [
+          "DS0003"
+        ],
+        "Service Creation": [
+          "DS0019"
+        ],
+        "Service Modification": [
+          "DS0019"
+        ],
+        "Service Deletion": [
+          "DS0019"
+        ],
+        "Driver Loaded": [
+          "DS0027"
+        ],
+        "Driver Modification": [
+          "DS0022"
+        ],
+        "Virtual Disk Mount": [
+          "DS0016"
+        ],
+        "USB Device Unmount": [
+          "DS0016"
+        ],
+        "USB Device Mount": [
+          "DS0016"
+        ],
+        "Group Policy Modification": [
+          "DS0026"
+        ],
+        "Pipe Creation": [
+          "DS0023"
+        ],
+        "Pipe Connection": [
+          "DS0023"
+        ],
+        "Agent Start": [
+          "DS0013"
+        ],
+        "Agent Stop": [
+          "DS0013"
+        ],
+        "Agent Install": [
+          "DS0013"
+        ],
+        "Agent Uninstall": [
+          "DS0013"
+        ],
+        "Agent Keep-Alive": [
+          "DS0013"
+        ],
+        "Agent Errors": [
+          "DS0013"
+        ],
+        "WmiEventConsumerToFilter": [
+          "DS0005"
+        ],
+        "WmiEventConsumer": [
+          "DS0005"
+        ],
+        "WmiEventFilter": [
+          "DS0005"
+        ],
+        "BIT JOBS Activity": [
+          "DS0012",
+          "DS0017"
+        ],
+        "Script-Block Activity": [
+          "DS0012"
+        ]
+      }
     }
   },
   "mitre": [
@@ -8741,6 +11125,164 @@ window.EDR_DATA = {
       "Telemetry Feature Category": "PowerShell Activity"
     }
   ],
+  "attackDataSources": {
+    "DS0002": {
+      "name": "User Account",
+      "description": "Eventos sobre cuentas de usuario: alta, modificacion, autenticacion",
+      "tactics": [
+        "Initial Access",
+        "Persistence",
+        "Privilege Escalation",
+        "Credential Access"
+      ]
+    },
+    "DS0003": {
+      "name": "Scheduled Job",
+      "description": "Tareas programadas creadas, modificadas, ejecutadas",
+      "tactics": [
+        "Execution",
+        "Persistence",
+        "Privilege Escalation"
+      ]
+    },
+    "DS0005": {
+      "name": "WMI",
+      "description": "Consultas y suscripciones WMI (Windows)",
+      "tactics": [
+        "Execution",
+        "Persistence",
+        "Lateral Movement"
+      ]
+    },
+    "DS0009": {
+      "name": "Process",
+      "description": "Creacion, terminacion, acceso, modificacion y tampering de procesos",
+      "tactics": [
+        "Execution",
+        "Defense Evasion",
+        "Privilege Escalation",
+        "Discovery"
+      ]
+    },
+    "DS0011": {
+      "name": "Module",
+      "description": "Carga de modulos / DLLs / librerias",
+      "tactics": [
+        "Execution",
+        "Persistence",
+        "Defense Evasion"
+      ]
+    },
+    "DS0012": {
+      "name": "Script",
+      "description": "Ejecucion de scripts (PowerShell, bash, etc.)",
+      "tactics": [
+        "Execution"
+      ]
+    },
+    "DS0013": {
+      "name": "Sensor Health",
+      "description": "Estado y telemetria del propio agente EDR",
+      "tactics": [
+        "Defense Evasion"
+      ]
+    },
+    "DS0016": {
+      "name": "Drive",
+      "description": "Montaje/desmontaje de unidades, virtual disks",
+      "tactics": [
+        "Initial Access",
+        "Lateral Movement"
+      ]
+    },
+    "DS0017": {
+      "name": "Command",
+      "description": "Lineas de comando ejecutadas",
+      "tactics": [
+        "Execution"
+      ]
+    },
+    "DS0019": {
+      "name": "Service",
+      "description": "Creacion, modificacion, inicio, parada de servicios",
+      "tactics": [
+        "Execution",
+        "Persistence",
+        "Privilege Escalation"
+      ]
+    },
+    "DS0022": {
+      "name": "File",
+      "description": "Creacion, apertura, borrado, modificacion, renombrado de archivos",
+      "tactics": [
+        "Execution",
+        "Defense Evasion",
+        "Exfiltration",
+        "Impact"
+      ]
+    },
+    "DS0023": {
+      "name": "Named Pipe",
+      "description": "Creacion y conexion a named pipes",
+      "tactics": [
+        "Lateral Movement",
+        "Command and Control"
+      ]
+    },
+    "DS0024": {
+      "name": "Windows Registry",
+      "description": "Modificacion de claves/valores del registro de Windows",
+      "tactics": [
+        "Persistence",
+        "Privilege Escalation",
+        "Defense Evasion"
+      ]
+    },
+    "DS0026": {
+      "name": "Active Directory",
+      "description": "Eventos de AD: cambios, consultas, credentials",
+      "tactics": [
+        "Credential Access",
+        "Discovery",
+        "Lateral Movement"
+      ]
+    },
+    "DS0027": {
+      "name": "Driver",
+      "description": "Carga, descarga, modificacion de drivers del kernel",
+      "tactics": [
+        "Persistence",
+        "Privilege Escalation",
+        "Defense Evasion"
+      ]
+    },
+    "DS0028": {
+      "name": "Logon Session",
+      "description": "Inicios y cierres de sesion",
+      "tactics": [
+        "Initial Access",
+        "Lateral Movement",
+        "Persistence"
+      ]
+    },
+    "DS0029": {
+      "name": "Network Traffic",
+      "description": "Conexiones TCP/UDP, DNS, URL, descargas",
+      "tactics": [
+        "Command and Control",
+        "Exfiltration",
+        "Lateral Movement"
+      ]
+    },
+    "DS0007": {
+      "name": "Image",
+      "description": "Imagenes de contenedores/VM",
+      "tactics": [
+        "Execution",
+        "Persistence"
+      ]
+    }
+  },
   "statusLegend": {
     "yes": {
       "label": "Implementado",
