@@ -13,7 +13,7 @@ window.EDR_DATA = {
       "product": "Linux auditd",
       "productUrl": "https://man7.org/linux/man-pages/man8/auditd.8.html",
       "docsUrl": "https://github.com/linux-audit/audit-documentation",
-      "logo": "",
+      "logo": "assets/logos/auditd.png",
       "gartner": "Herramienta OS nativa",
       "forrester": "N/A",
       "ens": "Nativo Linux",
@@ -62,7 +62,7 @@ window.EDR_DATA = {
       "product": "GravityZone XDR",
       "productUrl": "https://www.bitdefender.com/business/products/xdr.html",
       "docsUrl": "https://www.bitdefender.com/business/support/en/",
-      "logo": "https://www.bitdefender.com/favicon.ico",
+      "logo": "assets/logos/bitdefender.ico",
       "gartner": "Challenger EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "ENS Alta certificado producto",
@@ -249,14 +249,21 @@ window.EDR_DATA = {
       "product": "C-Prot EDR",
       "productUrl": "https://c-prot.com/en/products/edr/",
       "docsUrl": "https://c-prot.com/",
-      "logo": "https://c-prot.com/favicon.ico",
+      "logo": "assets/logos/c-prot.ico",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "No evidenciado",
       "strengths": "EDR turco, presencia regional.",
       "cautions": "Poca visibilidad publica en UE.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2022",
+          "title": "EDR turco con enfoque regional MENA/CIS",
+          "impact": "Presencia limitada fuera de Turquia y paises de la region.",
+          "url": "https://c-prot.com/"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": false,
@@ -281,7 +288,7 @@ window.EDR_DATA = {
       "product": "VMware Carbon Black Cloud EDR",
       "productUrl": "https://www.broadcom.com/products/carbon-black",
       "docsUrl": "https://docs.vmware.com/en/VMware-Carbon-Black-Cloud/",
-      "logo": "https://www.broadcom.com/favicon.ico",
+      "logo": "assets/logos/carbonblack.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado publicamente",
@@ -387,7 +394,7 @@ window.EDR_DATA = {
       "product": "VMware Carbon Black Cloud EDR",
       "productUrl": "https://www.broadcom.com/products/carbon-black",
       "docsUrl": "https://docs.vmware.com/en/VMware-Carbon-Black-Cloud/",
-      "logo": "https://www.broadcom.com/favicon.ico",
+      "logo": "assets/logos/carbonblack.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado publicamente",
@@ -493,7 +500,7 @@ window.EDR_DATA = {
       "product": "Palo Alto Cortex XDR / XSIAM",
       "productUrl": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
       "docsUrl": "https://docs-cortex.paloaltonetworks.com/",
-      "logo": "https://www.paloaltonetworks.com/favicon.ico",
+      "logo": "assets/logos/paloalto.ico",
       "gartner": "Leader EPP 2024",
       "forrester": "Leader XDR Q2 2024",
       "ens": "No evidenciado publicamente para Cortex",
@@ -680,7 +687,7 @@ window.EDR_DATA = {
       "product": "Falcon Insight XDR",
       "productUrl": "https://www.crowdstrike.com/platform/endpoint-security/edr-xdr/",
       "docsUrl": "https://falcon.crowdstrike.com/documentation/",
-      "logo": "https://www.crowdstrike.com/favicon.ico",
+      "logo": "assets/logos/crowdstrike.png",
       "gartner": "Leader EPP 2024",
       "forrester": "Leader XDR Q2 2024",
       "ens": "No evidenciado publicamente",
@@ -779,7 +786,7 @@ window.EDR_DATA = {
       "product": "Cybereason Defense Platform",
       "productUrl": "https://www.cybereason.com/platform/endpoint-detection-response-edr",
       "docsUrl": "https://nest.cybereason.com/",
-      "logo": "https://www.cybereason.com/favicon.ico",
+      "logo": "assets/logos/cybereason.png",
       "gartner": "Visionary EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "No evidenciado publicamente",
@@ -839,7 +846,7 @@ window.EDR_DATA = {
       "product": "BlackBerry CylanceENDPOINT",
       "productUrl": "https://www.blackberry.com/us/en/products/cylance-endpoint-security",
       "docsUrl": "https://docs.blackberry.com/en/unified-endpoint-security/",
-      "logo": "https://www.blackberry.com/favicon.ico",
+      "logo": "assets/logos/cylance.png",
       "gartner": "Niche EPP 2024",
       "forrester": "N/A",
       "ens": "No evidenciado",
@@ -935,7 +942,7 @@ window.EDR_DATA = {
       "product": "ESET Inspect",
       "productUrl": "https://www.eset.com/int/business/solutions/detection-and-response/",
       "docsUrl": "https://help.eset.com/inspect/",
-      "logo": "https://www.eset.com/favicon.ico",
+      "logo": "assets/logos/eset.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "ENS Alta producto",
@@ -990,7 +997,7 @@ window.EDR_DATA = {
       "product": "Elastic Security",
       "productUrl": "https://www.elastic.co/security",
       "docsUrl": "https://www.elastic.co/guide/en/security/current/index.html",
-      "logo": "https://www.elastic.co/favicon.ico",
+      "logo": "assets/logos/elastic.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado para SaaS; self-hosted depende del cliente",
@@ -1150,7 +1157,7 @@ window.EDR_DATA = {
       "product": "FortiEDR",
       "productUrl": "https://www.fortinet.com/products/endpoint-security/fortiedr",
       "docsUrl": "https://docs.fortinet.com/product/fortiedr",
-      "logo": "https://www.fortinet.com/favicon.ico",
+      "logo": "assets/logos/fortiedr.png",
       "gartner": "Visionary EPP 2024",
       "forrester": "Contender XDR",
       "ens": "Servicio gestionado Telefonica Tech Alta",
@@ -1265,14 +1272,33 @@ window.EDR_DATA = {
       "product": "Harfanglab EDR",
       "productUrl": "https://harfanglab.io/en/our-solutions/",
       "docsUrl": "https://docs.harfanglab.io/",
-      "logo": "https://harfanglab.io/favicon.ico",
+      "logo": "assets/logos/harfanglab.png",
       "gartner": "No participa en MQ 2024",
       "forrester": "No listado",
       "ens": "SecNumCloud (FR); homologable ENS via integrador",
       "strengths": "EDR frances soberano, ANSSI qualified, fuerte en entornos regulados UE.",
       "cautions": "Base instalada y ecosistema mas pequeño que Leaders.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2024-12",
+          "title": "Integracion directa con Sekoia.io XDR platform",
+          "impact": "Refuerza ecosistema UE soberano.",
+          "url": "https://www.sekoia.io/en/partners/"
+        },
+        {
+          "date": "2024-06",
+          "title": "Renovacion ANSSI qualification standard",
+          "impact": "Unico EDR con qualification Standard ANSSI en Francia, clave para sector publico UE.",
+          "url": "https://cyber.gouv.fr/produits-certifies/harfanglab-edr"
+        },
+        {
+          "date": "2023-10",
+          "title": "Levantamiento de 25M EUR Serie B liderado por Crescendo Ventures",
+          "impact": "Expansion internacional y reforzar desarrollo. Valoracion Unicornio candidato soberano UE.",
+          "url": "https://harfanglab.io/en/about-us/news/"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": true,
@@ -1297,14 +1323,33 @@ window.EDR_DATA = {
       "product": "LimaCharlie SecOps Platform",
       "productUrl": "https://www.limacharlie.io/",
       "docsUrl": "https://docs.limacharlie.io/",
-      "logo": "https://www.limacharlie.io/favicon.ico",
+      "logo": "assets/logos/limacharlie.png",
       "gartner": "No participa",
       "forrester": "No listado",
       "ens": "No evidenciado",
       "strengths": "Usage-based pricing, API-first, ideal MSSPs y constructores.",
       "cautions": "No es turnkey, exige SOC que sepa construir detecciones.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2025-03",
+          "title": "Soporte nativo macOS Endpoint Security framework ampliado",
+          "impact": "Mejora paridad entre Windows y macOS.",
+          "url": "https://docs.limacharlie.io/"
+        },
+        {
+          "date": "2024-05",
+          "title": "Lanzamiento del modulo Service Providers",
+          "impact": "Plataforma consolidada para MSSPs y fabricantes de MDR.",
+          "url": "https://www.limacharlie.io/blog"
+        },
+        {
+          "date": "2023-09",
+          "title": "Serie A de 10.2M USD liderada por Mayfield",
+          "impact": "Capital para escalar SecOps Cloud Platform usage-based.",
+          "url": "https://www.limacharlie.io/news"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": true,
@@ -1329,7 +1374,7 @@ window.EDR_DATA = {
       "product": "Microsoft Defender for Endpoint",
       "productUrl": "https://learn.microsoft.com/en-us/defender-endpoint/",
       "docsUrl": "https://learn.microsoft.com/en-us/defender-endpoint/",
-      "logo": "https://www.microsoft.com/favicon.ico",
+      "logo": "assets/logos/defender.jpg",
       "gartner": "Leader EPP 2024",
       "forrester": "Leader XDR Q2 2024",
       "ens": "Microsoft 365 con ENS Alta vinculado",
@@ -1515,14 +1560,27 @@ window.EDR_DATA = {
       "product": "Comodo OpenEDR",
       "productUrl": "https://www.openedr.com/",
       "docsUrl": "https://github.com/ComodoSecurity/openedr",
-      "logo": "https://www.openedr.com/favicon.ico",
+      "logo": "assets/logos/openedr.ico",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "N/A - open source",
       "strengths": "Open source, gratuito, auditable.",
       "cautions": "Comunidad pequeña, soporte limitado, respuesta manual.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2024",
+          "title": "Mantenimiento irregular, forks activos de la comunidad",
+          "impact": "Atencion a estado del upstream antes de despliegue productivo.",
+          "url": "https://github.com/ComodoSecurity/openedr/pulse"
+        },
+        {
+          "date": "2021-11",
+          "title": "Comodo libera codigo bajo licencia GPL en GitHub",
+          "impact": "Proyecto comunitario open source, auditable.",
+          "url": "https://github.com/ComodoSecurity/openedr"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": true,
@@ -1547,14 +1605,27 @@ window.EDR_DATA = {
       "product": "Padvish XDR",
       "productUrl": "https://padvish.com/en/products/padvish-xdr/",
       "docsUrl": "https://padvish.com/en/documents/",
-      "logo": "https://padvish.com/favicon.ico",
+      "logo": "assets/logos/padvish.png",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "No aplica (producto irani)",
       "strengths": "EDR irani soberano.",
       "cautions": "Fuera del alcance habitual en UE; sanciones y vendor risk.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2023",
+          "title": "Producto disponible para uso gubernamental en Iran",
+          "impact": "Presencia regional limitada, vendor risk UE/USA elevado.",
+          "url": "https://padvish.com/"
+        },
+        {
+          "date": "2019",
+          "title": "Amnpardaz (Padvish) en lista de sanciones OFAC/US Treasury",
+          "impact": "Vendor iraniano sujeto a sanciones USA. No desplegable en organizaciones sometidas a OFAC.",
+          "url": "https://ofac.treasury.gov/"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": true,
@@ -1579,14 +1650,21 @@ window.EDR_DATA = {
       "product": "Phorion EDR for macOS",
       "productUrl": "https://phorion.com/",
       "docsUrl": "https://phorion.com/",
-      "logo": "https://phorion.com/favicon.ico",
+      "logo": "assets/logos/phorion.svg",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "No evidenciado",
       "strengths": "Especializado macOS, uso extension Endpoint Security API.",
       "cautions": "Nicho, documentacion limitada.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2024",
+          "title": "Focus exclusivo macOS con Apple Endpoint Security API",
+          "impact": "Nicho de mercado, ideal empresas mac-only, cobertura limitada en Windows/Linux.",
+          "url": "https://phorion.com/"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": false,
@@ -1611,7 +1689,7 @@ window.EDR_DATA = {
       "product": "Qualys EDR",
       "productUrl": "https://www.qualys.com/apps/endpoint-detection-response/",
       "docsUrl": "https://docs.qualys.com/",
-      "logo": "https://www.qualys.com/favicon.ico",
+      "logo": "assets/logos/qualys.ico",
       "gartner": "Niche EPP 2024",
       "forrester": "No listado XDR",
       "ens": "No evidenciado",
@@ -1714,7 +1792,7 @@ window.EDR_DATA = {
       "product": "Singularity XDR",
       "productUrl": "https://www.sentinelone.com/platform/",
       "docsUrl": "https://community.sentinelone.com/s/documentation",
-      "logo": "https://www.sentinelone.com/favicon.ico",
+      "logo": "assets/logos/sentinelone.png",
       "gartner": "Leader EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "No evidenciado publicamente",
@@ -1760,7 +1838,7 @@ window.EDR_DATA = {
       "product": "Symantec Endpoint Security Complete",
       "productUrl": "https://www.broadcom.com/products/cybersecurity/endpoint/end-user/complete",
       "docsUrl": "https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security.html",
-      "logo": "https://www.broadcom.com/favicon.ico",
+      "logo": "assets/logos/symantec.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "ENS Alta via integradores",
@@ -1941,7 +2019,7 @@ window.EDR_DATA = {
       "product": "Sysinternals Sysmon",
       "productUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
       "docsUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
-      "logo": "https://learn.microsoft.com/favicon.ico",
+      "logo": "assets/logos/sysmon.png",
       "gartner": "Herramienta complementaria",
       "forrester": "N/A",
       "ens": "No es EDR; componente de logging",
@@ -2026,7 +2104,7 @@ window.EDR_DATA = {
       "product": "Trellix Endpoint Security",
       "productUrl": "https://www.trellix.com/en-us/products/endpoint-security.html",
       "docsUrl": "https://docs.trellix.com/",
-      "logo": "https://www.trellix.com/favicon.ico",
+      "logo": "assets/logos/trellix.ico",
       "gartner": "Leader EPP 2024",
       "forrester": "Contender XDR",
       "ens": "ENS Alta via servicio gestionado",
@@ -2096,7 +2174,7 @@ window.EDR_DATA = {
       "product": "Vision One / Apex One",
       "productUrl": "https://www.trendmicro.com/en_us/business/products/endpoint-security.html",
       "docsUrl": "https://docs.trendmicro.com/",
-      "logo": "https://www.trendmicro.com/favicon.ico",
+      "logo": "assets/logos/trend-micro.ico",
       "gartner": "Leader EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "ENS Alta via integradores",
@@ -2283,14 +2361,33 @@ window.EDR_DATA = {
       "product": "Uptycs XDR",
       "productUrl": "https://www.uptycs.com/product",
       "docsUrl": "https://docs.uptycs.com/",
-      "logo": "https://www.uptycs.com/favicon.ico",
+      "logo": "assets/logos/uptycs.png",
       "gartner": "No participa EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado",
       "strengths": "Fuerte en Linux y cloud workloads (osquery-based), CNAPP + EDR.",
       "cautions": "Menos footprint en Windows enterprise; mercado aun en formacion.",
       "notableCves": [],
-      "incidents": [],
+      "incidents": [
+        {
+          "date": "2024-09",
+          "title": "Integracion CNAPP + XDR unificada en consola",
+          "impact": "Diferenciador clave vs competidores puros EDR.",
+          "url": "https://www.uptycs.com/blog"
+        },
+        {
+          "date": "2023-06",
+          "title": "Layoffs reportados ~15% de la plantilla",
+          "impact": "Ajuste financiero en contexto de slowdown del mercado cyber security. Validar continuidad soporte.",
+          "url": "https://layoffs.fyi/"
+        },
+        {
+          "date": "2022-01",
+          "title": "Serie C de 50M USD liderada por Sapphire Ventures",
+          "impact": "Valoracion unicorn pre-market. Expansion CNAPP + XDR.",
+          "url": "https://www.uptycs.com/press-news-release"
+        }
+      ],
       "perOs": {
         "windows": {
           "present": true,
@@ -2315,7 +2412,7 @@ window.EDR_DATA = {
       "product": "WatchGuard EPDR / Panda AD360",
       "productUrl": "https://www.watchguard.com/wgrd-products/advanced-endpoint-protection",
       "docsUrl": "https://www.watchguard.com/help/docs/",
-      "logo": "https://www.watchguard.com/favicon.ico",
+      "logo": "assets/logos/watchguard.png",
       "gartner": "Niche EPP 2024",
       "forrester": "N/A",
       "ens": "ENS Alta Panda (producto heredado)",

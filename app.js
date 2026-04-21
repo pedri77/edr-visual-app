@@ -471,6 +471,201 @@
     box.append(grid);
   }
 
+  // ---------- EXECUTIVE ----------
+  function renderExecutive() {
+    const box = qs("#executiveContent");
+    if (!box) return;
+    box.innerHTML = "";
+    const vendors = DATA.vendors.filter(v => v.id === v.canonical);
+
+    // KPIs
+    const totalCves = vendors.reduce((a, v) => a + (v.notableCves?.length || 0), 0);
+    const critCves = vendors.reduce((a, v) => a + (v.notableCves || []).filter(c => c.severity === "Critical").length, 0);
+    const totalInc = vendors.reduce((a, v) => a + (v.incidents?.length || 0), 0);
+    const leaders = vendors.filter(v => (v.gartner || "").startsWith("Leader")).length;
+    const avgWin = avg(vendors.filter(v => v.perOs.windows.present).map(v => v.perOs.windows.score));
+    const avgLin = avg(vendors.filter(v => v.perOs.linux.present).map(v => v.perOs.linux.score));
+    const avgMac = avg(vendors.filter(v => v.perOs.macos.present).map(v => v.perOs.macos.score));
+
+    const kpis = el("div", { style: "display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:22px" });
+    kpi(kpis, "Vendors cubiertos", vendors.length, "de un universo EDR/XDR activo");
+    kpi(kpis, "Gartner Leaders", leaders, "MQ EPP 2024");
+    kpi(kpis, "CVEs del propio agente", totalCves, `${critCves} criticos`);
+    kpi(kpis, "Incidentes publicos", totalInc, "noticias / fugas / bugs");
+    kpi(kpis, "Cobertura media Win", avgWin.toFixed(1) + "%", "sobre 50 features");
+    kpi(kpis, "Cobertura media Linux", avgLin.toFixed(1) + "%", "sobre 28 features");
+    kpi(kpis, "Cobertura media macOS", avgMac.toFixed(1) + "%", "sobre 56 features");
+    box.append(kpis);
+
+    // Top 5 por preset
+    const presetList = Object.entries(PRESETS);
+    const topGrid = el("div", { style: "display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-bottom:22px" });
+    presetList.forEach(([key, p]) => {
+      const w = p.weights;
+      const tot = Object.values(w).reduce((a, b) => a + b, 0) || 1;
+      const os = key === "cloud" ? "linux" : (key === "european" ? "linux" : "windows");
+      const ranked = vendors.map(v => {
+        const telem = v.perOs[os]?.score || 0;
+        const score = (telem * w.telemetry + gartnerScore(v.gartner) * w.gartner + forresterScore(v.forrester) * w.forrester + incidentsScore(v) * w.incidents + ensScore(v) * w.ens) / tot;
+        return { v, score };
+      }).sort((a, b) => b.score - a.score).slice(0, 5);
+      const card = el("div", { style: "background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px" });
+      card.append(el("div", { style: "font-size:12px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px" }, `Preset: ${p.name} · ${OS_LABELS[os]}`));
+      card.append(el("div", { style: "font-size:14px;font-weight:700;margin-bottom:10px" }, "Top 5 recomendados"));
+      ranked.forEach((r, i) => {
+        card.append(el("div", { style: "display:flex;justify-content:space-between;padding:4px 0;border-top:1px solid var(--border);font-size:13px" }, [
+          el("span", {}, `${i + 1}. ${r.v.name}`),
+          el("span", { style: "font-family:var(--mono);color:var(--accent)" }, r.score.toFixed(1)),
+        ]));
+      });
+      topGrid.append(card);
+    });
+    box.append(topGrid);
+
+    // Alertas de riesgo material
+    const alerts = el("div", { style: "background:rgba(179,58,58,0.08);border:1px solid rgba(179,58,58,0.3);border-radius:14px;padding:16px" });
+    alerts.append(el("h3", { style: "margin:0 0 10px;font-size:14px;color:#e29090" }, "Alertas de riesgo material"));
+    const alertList = el("ul", { style: "margin:0;padding-left:20px;font-size:13px;line-height:1.7" });
+    vendors.forEach(v => {
+      const crits = (v.notableCves || []).filter(c => c.severity === "Critical");
+      const recentInc = (v.incidents || []).filter(i => (i.date || "").startsWith("2024") || (i.date || "").startsWith("2025"));
+      if (crits.length >= 2 || recentInc.length >= 2) {
+        alertList.append(el("li", {}, `${v.name}: ${crits.length} CVE critico(s), ${recentInc.length} incidente(s) reciente(s). Revisar antes de renovar contrato.`));
+      }
+    });
+    if (!alertList.children.length) alertList.append(el("li", {}, "Sin alertas materiales activas."));
+    alerts.append(alertList);
+    box.append(alerts);
+  }
+
+  function avg(arr) { return arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0; }
+  function kpi(parent, label, value, sub) {
+    parent.append(el("div", { style: "background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px" }, [
+      el("div", { style: "font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.08em" }, label),
+      el("div", { style: "font-size:24px;font-weight:700;margin:4px 0" }, String(value)),
+      el("div", { style: "font-size:11px;color:var(--text-dim)" }, sub),
+    ]));
+  }
+
+  // ---------- EXCEL ----------
+  qs("#exportXlsx").addEventListener("click", exportXlsx);
+  function exportXlsx() {
+    if (!window.XLSX) { alert("SheetJS no cargado. Comprueba conexion a CDN."); return; }
+    const XLSX = window.XLSX;
+    const wb = XLSX.utils.book_new();
+    const vendors = DATA.vendors.filter(v => v.id === v.canonical);
+
+    // Sheet 1: Resumen ejecutivo
+    const exec = [
+      ["EDR/XDR DECISION STUDIO - RESUMEN EJECUTIVO"],
+      [""],
+      ["Generado", new Date().toISOString().slice(0, 16).replace("T", " ")],
+      ["Fuente telemetria", "https://github.com/tsale/EDR-Telemetry"],
+      ["Ultimo import", DATA.lastImport],
+      ["Vendors cubiertos", vendors.length],
+      ["Gartner Leaders EPP 2024", vendors.filter(v => (v.gartner || "").startsWith("Leader")).length],
+      ["CVEs totales del agente", vendors.reduce((a, v) => a + (v.notableCves?.length || 0), 0)],
+      ["Incidentes publicos", vendors.reduce((a, v) => a + (v.incidents?.length || 0), 0)],
+      [""],
+      ["SCORING ACTUAL - PRESET " + PRESETS[STATE.scoring.preset].name.toUpperCase() + " - SO " + OS_LABELS[STATE.scoring.osFocus]],
+      ["Pesos (%)", "Telemetria", "Gartner", "Forrester", "Historial", "ENS"],
+      ["", STATE.scoring.weights.telemetry, STATE.scoring.weights.gartner, STATE.scoring.weights.forrester, STATE.scoring.weights.incidents, STATE.scoring.weights.ens],
+    ];
+    const ws1 = XLSX.utils.aoa_to_sheet(exec);
+    ws1["!cols"] = [{ wch: 32 }, { wch: 16 }, { wch: 14 }, { wch: 14 }, { wch: 14 }, { wch: 14 }];
+    XLSX.utils.book_append_sheet(wb, ws1, "Resumen ejecutivo");
+
+    // Sheet 2: Ranking global
+    const rank = [["Vendor", "Producto", "Gartner MQ", "Forrester", "ENS", "Win %", "Linux %", "macOS %", "CVEs", "Criticos", "Incidentes", "Web"]];
+    vendors.forEach(v => {
+      const crit = (v.notableCves || []).filter(c => c.severity === "Critical").length;
+      rank.push([
+        v.name, v.product, v.gartner, v.forrester, v.ens,
+        v.perOs.windows.present ? +v.perOs.windows.score.toFixed(1) : null,
+        v.perOs.linux.present ? +v.perOs.linux.score.toFixed(1) : null,
+        v.perOs.macos.present ? +v.perOs.macos.score.toFixed(1) : null,
+        (v.notableCves || []).length, crit, (v.incidents || []).length,
+        v.website,
+      ]);
+    });
+    const ws2 = XLSX.utils.aoa_to_sheet(rank);
+    ws2["!cols"] = [{ wch: 22 }, { wch: 32 }, { wch: 22 }, { wch: 24 }, { wch: 30 }, { wch: 8 }, { wch: 9 }, { wch: 9 }, { wch: 7 }, { wch: 9 }, { wch: 11 }, { wch: 40 }];
+    XLSX.utils.book_append_sheet(wb, ws2, "Ranking");
+
+    // Sheets 3-5: telemetry matrix per OS
+    ["windows", "linux", "macos"].forEach(osName => {
+      const osData = DATA.os[osName];
+      const header = ["Categoria", "Sub-feature", ...osData.vendors];
+      const rows = [header];
+      let lastCat = null;
+      osData.features.forEach(f => {
+        const catCell = f.category === lastCat ? "" : f.category;
+        lastCat = f.category;
+        const row = [catCell, f.sub];
+        osData.vendors.forEach(v => {
+          const s = f.values[v] || "na";
+          row.push(DATA.statusLegend[s].label);
+        });
+        rows.push(row);
+      });
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+      ws["!cols"] = [{ wch: 24 }, { wch: 32 }, ...osData.vendors.map(() => ({ wch: 16 }))];
+      XLSX.utils.book_append_sheet(wb, ws, `Matriz ${OS_LABELS[osName]}`);
+    });
+
+    // Sheet 6: CVEs
+    const cves = [["Vendor", "CVE", "Severidad", "CVSS", "Publicado", "Descripcion", "Nota curada", "Fuente"]];
+    vendors.forEach(v => (v.notableCves || []).forEach(c => {
+      cves.push([v.name, c.id, c.severity || "-", c.score || "", c.published || "", c.description || "", c.note || "", c.source || ""]);
+    }));
+    const sevRank = { Critical: 0, High: 1, Medium: 2, Low: 3, Unknown: 4 };
+    cves.sort((a, b) => a[0] === "Vendor" ? -1 : (sevRank[a[2]] ?? 9) - (sevRank[b[2]] ?? 9));
+    const ws6 = XLSX.utils.aoa_to_sheet(cves);
+    ws6["!cols"] = [{ wch: 22 }, { wch: 18 }, { wch: 11 }, { wch: 7 }, { wch: 12 }, { wch: 60 }, { wch: 30 }, { wch: 10 }];
+    ws6["!autofilter"] = { ref: "A1:H1" };
+    XLSX.utils.book_append_sheet(wb, ws6, "CVEs");
+
+    // Sheet 7: Incidentes
+    const inc = [["Vendor", "Fecha", "Titulo", "Impacto", "Fuente"]];
+    vendors.forEach(v => (v.incidents || []).forEach(i => {
+      inc.push([v.name, i.date || "", i.title || "", i.impact || "", i.url || ""]);
+    }));
+    inc.sort((a, b) => a[0] === "Vendor" ? -1 : (b[1] || "").localeCompare(a[1] || ""));
+    const ws7 = XLSX.utils.aoa_to_sheet(inc);
+    ws7["!cols"] = [{ wch: 22 }, { wch: 12 }, { wch: 60 }, { wch: 80 }, { wch: 50 }];
+    ws7["!autofilter"] = { ref: "A1:E1" };
+    XLSX.utils.book_append_sheet(wb, ws7, "Incidentes");
+
+    // Sheet 8: Scoring segun pesos actuales
+    const w = STATE.scoring.weights;
+    const tot = Object.values(w).reduce((a, b) => a + b, 0) || 1;
+    const scored = vendors.map(v => {
+      const telem = v.perOs[STATE.scoring.osFocus]?.score || 0;
+      const g = gartnerScore(v.gartner), fr = forresterScore(v.forrester), inc = incidentsScore(v), ens = ensScore(v);
+      const score = (telem * w.telemetry + g * w.gartner + fr * w.forrester + inc * w.incidents + ens * w.ens) / tot;
+      return [v.name, +score.toFixed(1), +telem.toFixed(1), g, fr, inc, ens];
+    }).sort((a, b) => b[1] - a[1]);
+    const scoringRows = [
+      ["Preset", PRESETS[STATE.scoring.preset].name, "SO focal", OS_LABELS[STATE.scoring.osFocus]],
+      ["Peso Telemetria", w.telemetry, "Peso Gartner", w.gartner, "Peso Forrester", w.forrester, "Peso Historial", w.incidents, "Peso ENS", w.ens],
+      [],
+      ["#", "Vendor", "Score final", "Telemetria", "Gartner raw", "Forrester raw", "Historial raw", "ENS raw"],
+      ...scored.map((r, i) => [i + 1, ...r]),
+    ];
+    const ws8 = XLSX.utils.aoa_to_sheet(scoringRows);
+    ws8["!cols"] = [{ wch: 4 }, { wch: 26 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 14 }, { wch: 14 }, { wch: 10 }];
+    XLSX.utils.book_append_sheet(wb, ws8, "Scoring");
+
+    // Sheet 9: Metadata por vendor
+    const metaSheet = [["Vendor", "Producto", "Fortalezas", "Cautelas", "Web", "Docs"]];
+    vendors.forEach(v => metaSheet.push([v.name, v.product, v.strengths || "", v.cautions || "", v.website || "", v.docsUrl || ""]));
+    const ws9 = XLSX.utils.aoa_to_sheet(metaSheet);
+    ws9["!cols"] = [{ wch: 22 }, { wch: 30 }, { wch: 70 }, { wch: 70 }, { wch: 50 }, { wch: 50 }];
+    XLSX.utils.book_append_sheet(wb, ws9, "Vendors");
+
+    XLSX.writeFile(wb, `edr-decision-studio-${new Date().toISOString().slice(0, 10)}.xlsx`);
+  }
+
   // ---------- PDF ----------
   qs("#exportPdf").addEventListener("click", exportPdf);
 
@@ -643,6 +838,7 @@
     renderCompare();
     renderRisks();
     renderScoring();
+    renderExecutive();
   }
 
   qs("#lastImport").textContent = DATA.lastImport || "-";

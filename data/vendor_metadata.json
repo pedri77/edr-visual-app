@@ -7,15 +7,23 @@
       "product": "Falcon Insight XDR",
       "productUrl": "https://www.crowdstrike.com/platform/endpoint-security/edr-xdr/",
       "docsUrl": "https://falcon.crowdstrike.com/documentation/",
-      "logo": "https://www.crowdstrike.com/favicon.ico",
+      "logo": "assets/logos/crowdstrike.png",
       "gartner": "Leader EPP 2024",
       "forrester": "Leader XDR Q2 2024",
       "ens": "No evidenciado publicamente",
       "notableCves": [
-        {"id": "CVE-2024-56514", "severity": "Medium", "note": "Falcon sensor channel file parsing"}
+        {
+          "id": "CVE-2024-56514",
+          "severity": "Medium",
+          "note": "Falcon sensor channel file parsing"
+        }
       ],
       "incidents": [
-        {"date": "2024-07-19", "title": "Falcon sensor channel file update causo BSOD global", "impact": "8.5M hosts Windows caidos, aerolineas, hospitales, bancos"}
+        {
+          "date": "2024-07-19",
+          "title": "Falcon sensor channel file update causo BSOD global",
+          "impact": "8.5M hosts Windows caidos, aerolineas, hospitales, bancos"
+        }
       ],
       "strengths": "Leader sostenido, telemetria completa en Windows/Linux/macOS, threat intel propia.",
       "cautions": "Validar blast radius de updates del sensor, coste, resiliencia ante fallos de canal."
@@ -26,16 +34,28 @@
       "product": "Microsoft Defender for Endpoint",
       "productUrl": "https://learn.microsoft.com/en-us/defender-endpoint/",
       "docsUrl": "https://learn.microsoft.com/en-us/defender-endpoint/",
-      "logo": "https://www.microsoft.com/favicon.ico",
+      "logo": "assets/logos/defender.jpg",
       "gartner": "Leader EPP 2024",
       "forrester": "Leader XDR Q2 2024",
       "ens": "Microsoft 365 con ENS Alta vinculado",
       "notableCves": [
-        {"id": "CVE-2024-29053", "severity": "High", "note": "Defender for IoT RCE"},
-        {"id": "CVE-2023-24934", "severity": "Medium", "note": "Defender SmartScreen bypass"}
+        {
+          "id": "CVE-2024-29053",
+          "severity": "High",
+          "note": "Defender for IoT RCE"
+        },
+        {
+          "id": "CVE-2023-24934",
+          "severity": "Medium",
+          "note": "Defender SmartScreen bypass"
+        }
       ],
       "incidents": [
-        {"date": "2023-03-07", "title": "Bug en update de firmas marco Office como malware", "impact": "Falsos positivos masivos Office/OneDrive"}
+        {
+          "date": "2023-03-07",
+          "title": "Bug en update de firmas marco Office como malware",
+          "impact": "Falsos positivos masivos Office/OneDrive"
+        }
       ],
       "strengths": "Integracion nativa Windows + Entra ID, telemetria profunda sin agente extra, licencia Microsoft 365 E5.",
       "cautions": "Mejor en Windows que en Linux/macOS, dependencia de Microsoft cloud."
@@ -46,12 +66,16 @@
       "product": "Singularity XDR",
       "productUrl": "https://www.sentinelone.com/platform/",
       "docsUrl": "https://community.sentinelone.com/s/documentation",
-      "logo": "https://www.sentinelone.com/favicon.ico",
+      "logo": "assets/logos/sentinelone.png",
       "gartner": "Leader EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "No evidenciado publicamente",
       "notableCves": [
-        {"id": "CVE-2023-47274", "severity": "High", "note": "Escalada de privilegios agente Windows"}
+        {
+          "id": "CVE-2023-47274",
+          "severity": "High",
+          "note": "Escalada de privilegios agente Windows"
+        }
       ],
       "incidents": [],
       "strengths": "Autonomia IA en endpoint, rollback de ransomware, buen soporte Linux y Kubernetes.",
@@ -63,12 +87,16 @@
       "product": "Palo Alto Cortex XDR / XSIAM",
       "productUrl": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
       "docsUrl": "https://docs-cortex.paloaltonetworks.com/",
-      "logo": "https://www.paloaltonetworks.com/favicon.ico",
+      "logo": "assets/logos/paloalto.ico",
       "gartner": "Leader EPP 2024",
       "forrester": "Leader XDR Q2 2024",
       "ens": "No evidenciado publicamente para Cortex",
       "notableCves": [
-        {"id": "CVE-2024-5921", "severity": "High", "note": "Cortex XDR agent LPE"}
+        {
+          "id": "CVE-2024-5921",
+          "severity": "High",
+          "note": "Cortex XDR agent LPE"
+        }
       ],
       "incidents": [],
       "strengths": "Plataforma XSIAM con SOC AI, correlacion cross-stack Palo Alto.",
@@ -80,12 +108,16 @@
       "product": "Vision One / Apex One",
       "productUrl": "https://www.trendmicro.com/en_us/business/products/endpoint-security.html",
       "docsUrl": "https://docs.trendmicro.com/",
-      "logo": "https://www.trendmicro.com/favicon.ico",
+      "logo": "assets/logos/trend-micro.ico",
       "gartner": "Leader EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "ENS Alta via integradores",
       "notableCves": [
-        {"id": "CVE-2023-41179", "severity": "Critical", "note": "Apex One arbitrary code execution"}
+        {
+          "id": "CVE-2023-41179",
+          "severity": "Critical",
+          "note": "Apex One arbitrary code execution"
+        }
       ],
       "incidents": [],
       "strengths": "XDR cross-layer (endpoint + email + cloud + network), fuerte en Japon/LATAM.",
@@ -97,12 +129,16 @@
       "product": "Trellix Endpoint Security",
       "productUrl": "https://www.trellix.com/en-us/products/endpoint-security.html",
       "docsUrl": "https://docs.trellix.com/",
-      "logo": "https://www.trellix.com/favicon.ico",
+      "logo": "assets/logos/trellix.ico",
       "gartner": "Leader EPP 2024",
       "forrester": "Contender XDR",
       "ens": "ENS Alta via servicio gestionado",
       "notableCves": [
-        {"id": "CVE-2022-2443", "severity": "High", "note": "Trellix Agent LPE"}
+        {
+          "id": "CVE-2022-2443",
+          "severity": "High",
+          "note": "Trellix Agent LPE"
+        }
       ],
       "incidents": [],
       "strengths": "Legacy McAfee + FireEye, base instalada enorme, bueno en government.",
@@ -114,12 +150,16 @@
       "product": "GravityZone XDR",
       "productUrl": "https://www.bitdefender.com/business/products/xdr.html",
       "docsUrl": "https://www.bitdefender.com/business/support/en/",
-      "logo": "https://www.bitdefender.com/favicon.ico",
+      "logo": "assets/logos/bitdefender.ico",
       "gartner": "Challenger EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "ENS Alta certificado producto",
       "notableCves": [
-        {"id": "CVE-2024-0253", "severity": "Medium", "note": "GravityZone console XSS"}
+        {
+          "id": "CVE-2024-0253",
+          "severity": "Medium",
+          "note": "GravityZone console XSS"
+        }
       ],
       "incidents": [],
       "strengths": "Motor de deteccion top en AV-Comparatives, OEM del kernel en varios competidores, coste bajo.",
@@ -131,12 +171,16 @@
       "product": "VMware Carbon Black Cloud EDR",
       "productUrl": "https://www.broadcom.com/products/carbon-black",
       "docsUrl": "https://docs.vmware.com/en/VMware-Carbon-Black-Cloud/",
-      "logo": "https://www.broadcom.com/favicon.ico",
+      "logo": "assets/logos/carbonblack.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado publicamente",
       "notableCves": [
-        {"id": "CVE-2023-20857", "severity": "High", "note": "App Control injection"}
+        {
+          "id": "CVE-2023-20857",
+          "severity": "High",
+          "note": "App Control injection"
+        }
       ],
       "incidents": [],
       "strengths": "Recoleccion de eventos exhaustiva (CB Response legacy), buen threat hunting.",
@@ -144,7 +188,8 @@
     },
     "Carbon Black Cloud": {
       "color": "#4a90e2",
-      "aliasOf": "Carbon Black"
+      "aliasOf": "Carbon Black",
+      "logo": "assets/logos/carbonblack.png"
     },
     "Cybereason": {
       "color": "#1a2e5b",
@@ -152,13 +197,17 @@
       "product": "Cybereason Defense Platform",
       "productUrl": "https://www.cybereason.com/platform/endpoint-detection-response-edr",
       "docsUrl": "https://nest.cybereason.com/",
-      "logo": "https://www.cybereason.com/favicon.ico",
+      "logo": "assets/logos/cybereason.png",
       "gartner": "Visionary EPP 2024",
       "forrester": "Strong Performer XDR Q2 2024",
       "ens": "No evidenciado publicamente",
       "notableCves": [],
       "incidents": [
-        {"date": "2024-11", "title": "Layoffs y cambio CEO", "impact": "Reestructuracion; validar roadmap"}
+        {
+          "date": "2024-11",
+          "title": "Layoffs y cambio CEO",
+          "impact": "Reestructuracion; validar roadmap"
+        }
       ],
       "strengths": "MalOp story, visualizacion de ataques, fuerte en Japon.",
       "cautions": "Estabilidad financiera, churn ejecutivo."
@@ -169,12 +218,16 @@
       "product": "ESET Inspect",
       "productUrl": "https://www.eset.com/int/business/solutions/detection-and-response/",
       "docsUrl": "https://help.eset.com/inspect/",
-      "logo": "https://www.eset.com/favicon.ico",
+      "logo": "assets/logos/eset.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "ENS Alta producto",
       "notableCves": [
-        {"id": "CVE-2024-0353", "severity": "High", "note": "ESET Server security LPE"}
+        {
+          "id": "CVE-2024-0353",
+          "severity": "High",
+          "note": "ESET Server security LPE"
+        }
       ],
       "incidents": [],
       "strengths": "Eslovaco/UE, fuerte en gobierno europeo, footprint ligero.",
@@ -186,12 +239,16 @@
       "product": "Elastic Security",
       "productUrl": "https://www.elastic.co/security",
       "docsUrl": "https://www.elastic.co/guide/en/security/current/index.html",
-      "logo": "https://www.elastic.co/favicon.ico",
+      "logo": "assets/logos/elastic.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado para SaaS; self-hosted depende del cliente",
       "notableCves": [
-        {"id": "CVE-2023-46673", "severity": "Medium", "note": "Elastic Agent info leak"}
+        {
+          "id": "CVE-2023-46673",
+          "severity": "Medium",
+          "note": "Elastic Agent info leak"
+        }
       ],
       "incidents": [],
       "strengths": "Open source core, SIEM + EDR unificado, data retention barata.",
@@ -203,12 +260,16 @@
       "product": "FortiEDR",
       "productUrl": "https://www.fortinet.com/products/endpoint-security/fortiedr",
       "docsUrl": "https://docs.fortinet.com/product/fortiedr",
-      "logo": "https://www.fortinet.com/favicon.ico",
+      "logo": "assets/logos/fortiedr.png",
       "gartner": "Visionary EPP 2024",
       "forrester": "Contender XDR",
       "ens": "Servicio gestionado Telefonica Tech Alta",
       "notableCves": [
-        {"id": "CVE-2024-23109", "severity": "Critical", "note": "FortiEDR web console auth bypass"}
+        {
+          "id": "CVE-2024-23109",
+          "severity": "Critical",
+          "note": "FortiEDR web console auth bypass"
+        }
       ],
       "incidents": [],
       "strengths": "Integracion con FortiGate/Security Fabric, buen precio bundle.",
@@ -220,7 +281,7 @@
       "product": "Harfanglab EDR",
       "productUrl": "https://harfanglab.io/en/our-solutions/",
       "docsUrl": "https://docs.harfanglab.io/",
-      "logo": "https://harfanglab.io/favicon.ico",
+      "logo": "assets/logos/harfanglab.png",
       "gartner": "No participa en MQ 2024",
       "forrester": "No listado",
       "ens": "SecNumCloud (FR); homologable ENS via integrador",
@@ -235,7 +296,7 @@
       "product": "LimaCharlie SecOps Platform",
       "productUrl": "https://www.limacharlie.io/",
       "docsUrl": "https://docs.limacharlie.io/",
-      "logo": "https://www.limacharlie.io/favicon.ico",
+      "logo": "assets/logos/limacharlie.png",
       "gartner": "No participa",
       "forrester": "No listado",
       "ens": "No evidenciado",
@@ -250,7 +311,7 @@
       "product": "Qualys EDR",
       "productUrl": "https://www.qualys.com/apps/endpoint-detection-response/",
       "docsUrl": "https://docs.qualys.com/",
-      "logo": "https://www.qualys.com/favicon.ico",
+      "logo": "assets/logos/qualys.ico",
       "gartner": "Niche EPP 2024",
       "forrester": "No listado XDR",
       "ens": "No evidenciado",
@@ -265,12 +326,16 @@
       "product": "Symantec Endpoint Security Complete",
       "productUrl": "https://www.broadcom.com/products/cybersecurity/endpoint/end-user/complete",
       "docsUrl": "https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security.html",
-      "logo": "https://www.broadcom.com/favicon.ico",
+      "logo": "assets/logos/symantec.png",
       "gartner": "Niche EPP 2024",
       "forrester": "Contender XDR",
       "ens": "ENS Alta via integradores",
       "notableCves": [
-        {"id": "CVE-2023-38693", "severity": "High", "note": "SEP client LPE"}
+        {
+          "id": "CVE-2023-38693",
+          "severity": "High",
+          "note": "SEP client LPE"
+        }
       ],
       "incidents": [],
       "strengths": "Base instalada grande, integracion con stack Broadcom.",
@@ -282,7 +347,7 @@
       "product": "Sysinternals Sysmon",
       "productUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
       "docsUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
-      "logo": "https://learn.microsoft.com/favicon.ico",
+      "logo": "assets/logos/sysmon.png",
       "gartner": "Herramienta complementaria",
       "forrester": "N/A",
       "ens": "No es EDR; componente de logging",
@@ -297,13 +362,17 @@
       "product": "BlackBerry CylanceENDPOINT",
       "productUrl": "https://www.blackberry.com/us/en/products/cylance-endpoint-security",
       "docsUrl": "https://docs.blackberry.com/en/unified-endpoint-security/",
-      "logo": "https://www.blackberry.com/favicon.ico",
+      "logo": "assets/logos/cylance.png",
       "gartner": "Niche EPP 2024",
       "forrester": "N/A",
       "ens": "No evidenciado",
       "notableCves": [],
       "incidents": [
-        {"date": "2023", "title": "Arctic Wolf adquirio Cylance de BlackBerry (2024)", "impact": "Futuro bajo Arctic Wolf"}
+        {
+          "date": "2023",
+          "title": "Arctic Wolf adquirio Cylance de BlackBerry (2024)",
+          "impact": "Futuro bajo Arctic Wolf"
+        }
       ],
       "strengths": "Modelo ML pionero, bajo ruido.",
       "cautions": "Transicion a Arctic Wolf, EDR limitado."
@@ -314,7 +383,7 @@
       "product": "WatchGuard EPDR / Panda AD360",
       "productUrl": "https://www.watchguard.com/wgrd-products/advanced-endpoint-protection",
       "docsUrl": "https://www.watchguard.com/help/docs/",
-      "logo": "https://www.watchguard.com/favicon.ico",
+      "logo": "assets/logos/watchguard.png",
       "gartner": "Niche EPP 2024",
       "forrester": "N/A",
       "ens": "ENS Alta Panda (producto heredado)",
@@ -329,7 +398,7 @@
       "product": "Comodo OpenEDR",
       "productUrl": "https://www.openedr.com/",
       "docsUrl": "https://github.com/ComodoSecurity/openedr",
-      "logo": "https://www.openedr.com/favicon.ico",
+      "logo": "assets/logos/openedr.ico",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "N/A - open source",
@@ -344,7 +413,7 @@
       "product": "Padvish XDR",
       "productUrl": "https://padvish.com/en/products/padvish-xdr/",
       "docsUrl": "https://padvish.com/en/documents/",
-      "logo": "https://padvish.com/favicon.ico",
+      "logo": "assets/logos/padvish.png",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "No aplica (producto irani)",
@@ -359,7 +428,7 @@
       "product": "Uptycs XDR",
       "productUrl": "https://www.uptycs.com/product",
       "docsUrl": "https://docs.uptycs.com/",
-      "logo": "https://www.uptycs.com/favicon.ico",
+      "logo": "assets/logos/uptycs.png",
       "gartner": "No participa EPP 2024",
       "forrester": "Contender XDR",
       "ens": "No evidenciado",
@@ -374,7 +443,7 @@
       "product": "Linux auditd",
       "productUrl": "https://man7.org/linux/man-pages/man8/auditd.8.html",
       "docsUrl": "https://github.com/linux-audit/audit-documentation",
-      "logo": "",
+      "logo": "assets/logos/auditd.png",
       "gartner": "Herramienta OS nativa",
       "forrester": "N/A",
       "ens": "Nativo Linux",
@@ -389,7 +458,7 @@
       "product": "C-Prot EDR",
       "productUrl": "https://c-prot.com/en/products/edr/",
       "docsUrl": "https://c-prot.com/",
-      "logo": "https://c-prot.com/favicon.ico",
+      "logo": "assets/logos/c-prot.ico",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "No evidenciado",
@@ -404,7 +473,7 @@
       "product": "Phorion EDR for macOS",
       "productUrl": "https://phorion.com/",
       "docsUrl": "https://phorion.com/",
-      "logo": "https://phorion.com/favicon.ico",
+      "logo": "assets/logos/phorion.svg",
       "gartner": "No participa",
       "forrester": "N/A",
       "ens": "No evidenciado",

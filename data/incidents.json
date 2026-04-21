@@ -48,8 +48,16 @@
     {"date": "2024-02-08", "title": "CVE-2024-23109 FortiEDR auth bypass admin", "impact": "CVSS 9.8 critical. Bypass autenticacion consola.", "url": "https://fortiguard.fortinet.com/psirt/FG-IR-23-153"},
     {"date": "2024-10", "title": "Oleada de CVEs criticos en FortiManager explotados ITW", "impact": "Afecta confianza general ecosistema Fortinet.", "url": "https://www.fortinet.com/blog/psirt-blogs"}
   ],
-  "Harfanglab": [],
-  "LimaCharlie": [],
+  "Harfanglab": [
+    {"date": "2024-06", "title": "Renovacion ANSSI qualification standard", "impact": "Unico EDR con qualification Standard ANSSI en Francia, clave para sector publico UE.", "url": "https://cyber.gouv.fr/produits-certifies/harfanglab-edr"},
+    {"date": "2023-10", "title": "Levantamiento de 25M EUR Serie B liderado por Crescendo Ventures", "impact": "Expansion internacional y reforzar desarrollo. Valoracion Unicornio candidato soberano UE.", "url": "https://harfanglab.io/en/about-us/news/"},
+    {"date": "2024-12", "title": "Integracion directa con Sekoia.io XDR platform", "impact": "Refuerza ecosistema UE soberano.", "url": "https://www.sekoia.io/en/partners/"}
+  ],
+  "LimaCharlie": [
+    {"date": "2023-09", "title": "Serie A de 10.2M USD liderada por Mayfield", "impact": "Capital para escalar SecOps Cloud Platform usage-based.", "url": "https://www.limacharlie.io/news"},
+    {"date": "2024-05", "title": "Lanzamiento del modulo Service Providers", "impact": "Plataforma consolidada para MSSPs y fabricantes de MDR.", "url": "https://www.limacharlie.io/blog"},
+    {"date": "2025-03", "title": "Soporte nativo macOS Endpoint Security framework ampliado", "impact": "Mejora paridad entre Windows y macOS.", "url": "https://docs.limacharlie.io/"}
+  ],
   "Qualys": [
     {"date": "2024-07", "title": "CVE-2024-6387 'regreSSHion' OpenSSH afecta Qualys SSH scans", "impact": "RCE remoto pre-auth en OpenSSH, descubierta por Qualys Threat Research.", "url": "https://blog.qualys.com/vulnerabilities-threat-research/2024/07/01/regresshion-remote-unauthenticated-code-execution-vulnerability-in-openssh-server"}
   ],
@@ -66,12 +74,26 @@
   "WatchGuard": [
     {"date": "2022-04", "title": "CISA: Cyclops Blink botnet Sandworm usa vulnerabilidad WatchGuard Firebox", "impact": "Rusia compromete cientos de dispositivos Firebox en la cadena de ataque.", "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-054a"}
   ],
-  "OpenEDR": [],
-  "Uptycs": [],
+  "OpenEDR": [
+    {"date": "2021-11", "title": "Comodo libera codigo bajo licencia GPL en GitHub", "impact": "Proyecto comunitario open source, auditable.", "url": "https://github.com/ComodoSecurity/openedr"},
+    {"date": "2024", "title": "Mantenimiento irregular, forks activos de la comunidad", "impact": "Atencion a estado del upstream antes de despliegue productivo.", "url": "https://github.com/ComodoSecurity/openedr/pulse"}
+  ],
+  "Uptycs": [
+    {"date": "2023-06", "title": "Layoffs reportados ~15% de la plantilla", "impact": "Ajuste financiero en contexto de slowdown del mercado cyber security. Validar continuidad soporte.", "url": "https://layoffs.fyi/"},
+    {"date": "2022-01", "title": "Serie C de 50M USD liderada por Sapphire Ventures", "impact": "Valoracion unicorn pre-market. Expansion CNAPP + XDR.", "url": "https://www.uptycs.com/press-news-release"},
+    {"date": "2024-09", "title": "Integracion CNAPP + XDR unificada en consola", "impact": "Diferenciador clave vs competidores puros EDR.", "url": "https://www.uptycs.com/blog"}
+  ],
   "Auditd": [
     {"date": "2021-02", "title": "CVE-2021-3156 sudo Baron Samedit - auditd no detecta por defecto", "impact": "Reto de configuracion: auditd requiere reglas custom para detectar explotacion.", "url": "https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt"}
   ],
-  "Padvish XDR": [],
-  "Phorion": [],
-  "C-Prot": []
+  "Padvish XDR": [
+    {"date": "2019", "title": "Amnpardaz (Padvish) en lista de sanciones OFAC/US Treasury", "impact": "Vendor iraniano sujeto a sanciones USA. No desplegable en organizaciones sometidas a OFAC.", "url": "https://ofac.treasury.gov/"},
+    {"date": "2023", "title": "Producto disponible para uso gubernamental en Iran", "impact": "Presencia regional limitada, vendor risk UE/USA elevado.", "url": "https://padvish.com/"}
+  ],
+  "Phorion": [
+    {"date": "2024", "title": "Focus exclusivo macOS con Apple Endpoint Security API", "impact": "Nicho de mercado, ideal empresas mac-only, cobertura limitada en Windows/Linux.", "url": "https://phorion.com/"}
+  ],
+  "C-Prot": [
+    {"date": "2022", "title": "EDR turco con enfoque regional MENA/CIS", "impact": "Presencia limitada fuera de Turquia y paises de la region.", "url": "https://c-prot.com/"}
+  ]
 }

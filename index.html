@@ -26,7 +26,8 @@
       </div>
     </div>
     <div class="topbar-actions">
-      <button class="icon-button" id="exportPdf" type="button" title="Descargar PDF">PDF</button>
+      <button class="icon-button" id="exportPdf" type="button" title="Descargar PDF ejecutivo">PDF</button>
+      <button class="icon-button" id="exportXlsx" type="button" title="Descargar Excel multi-hoja">Excel</button>
       <button class="icon-button" id="resetApp" type="button" title="Restablecer">Reset</button>
     </div>
   </header>
@@ -39,6 +40,7 @@
       <button class="rail-item" data-view="compare" type="button">Comparar</button>
       <button class="rail-item" data-view="risks" type="button">Riesgos</button>
       <button class="rail-item" data-view="scoring" type="button">Scoring</button>
+      <button class="rail-item" data-view="executive" type="button">Ejecutivo</button>
       <button class="rail-item" data-view="about" type="button">Metodologia</button>
     </aside>
 
@@ -125,6 +127,15 @@
         </div>
       </article>
 
+      <!-- EXECUTIVE -->
+      <article class="view hidden" id="view-executive">
+        <header class="view-head">
+          <h2>Resumen ejecutivo</h2>
+          <p>Vision de alta direccion: top 5 recomendados por perfil, KPIs del mercado EDR/XDR, alertas de riesgo material.</p>
+        </header>
+        <div id="executiveContent"></div>
+      </article>
+
       <!-- ABOUT -->
       <article class="view hidden" id="view-about">
         <header class="view-head">
@@ -162,7 +173,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.3/dist/jspdf.plugin.autotable.min.js"></script>
-  <script src="./data.js?v=2"></script>
-  <script src="./app.js?v=2"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <script src="./data.js?v=3"></script>
+  <script src="./app.js?v=3"></script>
 </body>
 </html>
