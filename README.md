@@ -83,6 +83,10 @@ Incluye matriz de priorizacion P0-P3, roadmap en 3 horizontes y decisiones estra
 - Algunos vendors (Phorion, Padvish, C-Prot) tienen informacion publica limitada.
 - Pendiente: feed NVD automatizado por vendor, ingesta de Forrester Wave actualizado, export a CSV/Excel.
 
+## Disclaimer
+
+This project references third-party vendor names, analyst reports and public vulnerability data for independent comparative analysis and educational purposes only. It is not affiliated with, endorsed by, or sponsored by any vendor mentioned. See [DISCLAIMER.md](DISCLAIMER.md) for full trademark, data sources, accuracy and fair use notices.
+
 ## Licencia
 
 Datos de telemetria bajo licencia del repo tsale/EDR-Telemetry. Codigo propio: MIT.
