@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-04-27",
+  "lastImport": "2026-05-04",
   "vendors": [
     {
       "id": "Auditd",
@@ -266,16 +266,16 @@ window.EDR_DATA = {
       ],
       "perOs": {
         "windows": {
-          "present": false,
-          "score": 0
+          "present": true,
+          "score": 82.5
         },
         "linux": {
           "present": true,
           "score": 98.3
         },
         "macos": {
-          "present": false,
-          "score": 0
+          "present": true,
+          "score": 69.0
         }
       }
     },
@@ -1144,7 +1144,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 35.3
+          "score": 39.8
         }
       }
     },
@@ -2497,6 +2497,7 @@ window.EDR_DATA = {
           "sub": "Process Creation",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2525,6 +2526,7 @@ window.EDR_DATA = {
           "sub": "Process Termination",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "partial",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2553,6 +2555,7 @@ window.EDR_DATA = {
           "sub": "Process Access",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2581,6 +2584,7 @@ window.EDR_DATA = {
           "sub": "Image/Library Loaded",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2609,6 +2613,7 @@ window.EDR_DATA = {
           "sub": "Remote Thread Creation",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2637,6 +2642,7 @@ window.EDR_DATA = {
           "sub": "Win32 API Telemetry",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "no",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "pending",
@@ -2665,6 +2671,7 @@ window.EDR_DATA = {
           "sub": "Process Tampering Activity",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "no",
             "Carbon Black": "partial",
             "Cortex XDR": "partial",
             "CrowdStrike": "yes",
@@ -2693,6 +2700,7 @@ window.EDR_DATA = {
           "sub": "Process Call Stacks",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "no",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2721,6 +2729,7 @@ window.EDR_DATA = {
           "sub": "File Creation",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2749,6 +2758,7 @@ window.EDR_DATA = {
           "sub": "File Opened",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "partial",
@@ -2777,6 +2787,7 @@ window.EDR_DATA = {
           "sub": "File Deletion",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2805,6 +2816,7 @@ window.EDR_DATA = {
           "sub": "File Modification",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2833,6 +2845,7 @@ window.EDR_DATA = {
           "sub": "File Renaming",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2861,6 +2874,7 @@ window.EDR_DATA = {
           "sub": "Local Account Creation",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "eventlog",
             "CrowdStrike": "yes",
@@ -2889,6 +2903,7 @@ window.EDR_DATA = {
           "sub": "Local Account Modification",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "eventlog",
             "CrowdStrike": "partial",
@@ -2917,6 +2932,7 @@ window.EDR_DATA = {
           "sub": "Local Account Deletion",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "eventlog",
             "CrowdStrike": "yes",
@@ -2945,6 +2961,7 @@ window.EDR_DATA = {
           "sub": "Account Login",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "eventlog",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -2973,6 +2990,7 @@ window.EDR_DATA = {
           "sub": "Account Logoff",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "eventlog",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3001,6 +3019,7 @@ window.EDR_DATA = {
           "sub": "TCP Connection",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3029,6 +3048,7 @@ window.EDR_DATA = {
           "sub": "UDP Connection",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3057,6 +3077,7 @@ window.EDR_DATA = {
           "sub": "URL",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "no",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "no",
@@ -3085,6 +3106,7 @@ window.EDR_DATA = {
           "sub": "DNS Query",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3113,6 +3135,7 @@ window.EDR_DATA = {
           "sub": "File Downloaded",
           "values": {
             "BitDefender": "partial",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3141,6 +3164,7 @@ window.EDR_DATA = {
           "sub": "MD5",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3169,6 +3193,7 @@ window.EDR_DATA = {
           "sub": "SHA",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3197,6 +3222,7 @@ window.EDR_DATA = {
           "sub": "IMPHASH",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "no",
             "CrowdStrike": "no",
@@ -3225,6 +3251,7 @@ window.EDR_DATA = {
           "sub": "JA3/JA3s",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "no",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "no",
@@ -3253,6 +3280,7 @@ window.EDR_DATA = {
           "sub": "Key/Value Creation",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "partial",
@@ -3281,6 +3309,7 @@ window.EDR_DATA = {
           "sub": "Key/Value Modification",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "partial",
@@ -3309,6 +3338,7 @@ window.EDR_DATA = {
           "sub": "Key/Value Deletion",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "no",
@@ -3337,6 +3367,7 @@ window.EDR_DATA = {
           "sub": "Scheduled Task Creation",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3365,6 +3396,7 @@ window.EDR_DATA = {
           "sub": "Scheduled Task Modification",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3393,6 +3425,7 @@ window.EDR_DATA = {
           "sub": "Scheduled Task Deletion",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3421,6 +3454,7 @@ window.EDR_DATA = {
           "sub": "Service Creation",
           "values": {
             "BitDefender": "partial",
+            "C-Prot": "yes",
             "Carbon Black": "partial",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3449,6 +3483,7 @@ window.EDR_DATA = {
           "sub": "Service Modification",
           "values": {
             "BitDefender": "eventlog",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "partial",
@@ -3477,6 +3512,7 @@ window.EDR_DATA = {
           "sub": "Service Deletion",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "no",
@@ -3505,6 +3541,7 @@ window.EDR_DATA = {
           "sub": "Driver Loaded",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3533,6 +3570,7 @@ window.EDR_DATA = {
           "sub": "Driver Modification",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "no",
             "CrowdStrike": "yes",
@@ -3561,6 +3599,7 @@ window.EDR_DATA = {
           "sub": "Driver Unloaded",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "no",
             "CrowdStrike": "no",
@@ -3589,6 +3628,7 @@ window.EDR_DATA = {
           "sub": "Virtual Disk Mount",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "partial",
             "CrowdStrike": "yes",
@@ -3617,6 +3657,7 @@ window.EDR_DATA = {
           "sub": "USB Device Unmount",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "no",
             "Carbon Black": "no",
             "Cortex XDR": "partial",
             "CrowdStrike": "yes",
@@ -3645,6 +3686,7 @@ window.EDR_DATA = {
           "sub": "USB Device Mount",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "no",
             "Carbon Black": "partial",
             "Cortex XDR": "partial",
             "CrowdStrike": "yes",
@@ -3673,6 +3715,7 @@ window.EDR_DATA = {
           "sub": "Group Policy Modification",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "no",
             "Carbon Black": "no",
             "Cortex XDR": "eventlog",
             "CrowdStrike": "no",
@@ -3701,6 +3744,7 @@ window.EDR_DATA = {
           "sub": "Volume Shadow Copy Deletion",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "no",
             "Carbon Black": "no",
             "Cortex XDR": "no",
             "CrowdStrike": "yes",
@@ -3729,6 +3773,7 @@ window.EDR_DATA = {
           "sub": "Pipe Creation",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "partial",
             "Cortex XDR": "no",
             "CrowdStrike": "yes",
@@ -3757,6 +3802,7 @@ window.EDR_DATA = {
           "sub": "Pipe Connection",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "no",
             "Carbon Black": "no",
             "Cortex XDR": "no",
             "CrowdStrike": "yes",
@@ -3785,6 +3831,7 @@ window.EDR_DATA = {
           "sub": "Agent Start",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3813,6 +3860,7 @@ window.EDR_DATA = {
           "sub": "Agent Stop",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3841,6 +3889,7 @@ window.EDR_DATA = {
           "sub": "Agent Install",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "no",
@@ -3869,6 +3918,7 @@ window.EDR_DATA = {
           "sub": "Agent Uninstall",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3897,6 +3947,7 @@ window.EDR_DATA = {
           "sub": "Agent Keep-Alive",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3925,6 +3976,7 @@ window.EDR_DATA = {
           "sub": "Agent Errors",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -3953,6 +4005,7 @@ window.EDR_DATA = {
           "sub": "WmiEventConsumerToFilter",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "enabling",
             "CrowdStrike": "yes",
@@ -3981,6 +4034,7 @@ window.EDR_DATA = {
           "sub": "WmiEventConsumer",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "enabling",
             "CrowdStrike": "yes",
@@ -4009,6 +4063,7 @@ window.EDR_DATA = {
           "sub": "WmiEventFilter",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "enabling",
             "CrowdStrike": "yes",
@@ -4037,6 +4092,7 @@ window.EDR_DATA = {
           "sub": "BITS Jobs Activity",
           "values": {
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "enabling",
             "CrowdStrike": "yes",
@@ -4065,6 +4121,7 @@ window.EDR_DATA = {
           "sub": "Script-Block Activity",
           "values": {
             "BitDefender": "no",
+            "C-Prot": "yes",
             "Carbon Black": "yes",
             "Cortex XDR": "yes",
             "CrowdStrike": "yes",
@@ -4091,6 +4148,7 @@ window.EDR_DATA = {
       ],
       "vendors": [
         "BitDefender",
+        "C-Prot",
         "Carbon Black",
         "Cortex XDR",
         "CrowdStrike",
@@ -4116,6 +4174,10 @@ window.EDR_DATA = {
       "scores": {
         "BitDefender": {
           "score": 58.2,
+          "counted": 57
+        },
+        "C-Prot": {
+          "score": 82.5,
           "counted": 57
         },
         "Carbon Black": {
@@ -5839,6 +5901,72 @@ window.EDR_DATA = {
           },
           "DS0012": {
             "score": 0.0,
+            "features": 1
+          }
+        },
+        "C-Prot": {
+          "DS0009": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0011": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 10
+          },
+          "DS0002": {
+            "score": 100.0,
+            "features": 4
+          },
+          "DS0028": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0029": {
+            "score": 80.0,
+            "features": 5
+          },
+          "DS0024": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0003": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0019": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0027": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0016": {
+            "score": 33.3,
+            "features": 3
+          },
+          "DS0026": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0023": {
+            "score": 50.0,
+            "features": 2
+          },
+          "DS0013": {
+            "score": 100.0,
+            "features": 6
+          },
+          "DS0005": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0012": {
+            "score": 100.0,
             "features": 1
           }
         },
@@ -9005,13 +9133,14 @@ window.EDR_DATA = {
           "category": "Process Activity",
           "sub": "Process Creation",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9019,13 +9148,14 @@ window.EDR_DATA = {
           "category": "Process Activity",
           "sub": "Process Termination",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9033,13 +9163,14 @@ window.EDR_DATA = {
           "category": "File Activity",
           "sub": "File Creation",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "partial",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9047,13 +9178,14 @@ window.EDR_DATA = {
           "category": "File Activity",
           "sub": "File Modification",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9061,13 +9193,14 @@ window.EDR_DATA = {
           "category": "File Activity",
           "sub": "File Deletion",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9075,13 +9208,14 @@ window.EDR_DATA = {
           "category": "File Activity",
           "sub": "File Attribute Change",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9089,13 +9223,14 @@ window.EDR_DATA = {
           "category": "File Activity",
           "sub": "File Open/Access",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "no",
             "CrowdStrike": "partial",
             "ESET Inspect": "no",
-            "Elastic": "partial",
+            "Elastic": "enabling",
             "LimaCharlie": "partial",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9103,13 +9238,14 @@ window.EDR_DATA = {
           "category": "User & Session Activity",
           "sub": "User Logon",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9117,13 +9253,14 @@ window.EDR_DATA = {
           "category": "User & Session Activity",
           "sub": "User Logoff",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9131,13 +9268,14 @@ window.EDR_DATA = {
           "category": "User & Session Activity",
           "sub": "Logon Failed",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
             "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9145,13 +9283,14 @@ window.EDR_DATA = {
           "category": "User & Session Activity",
           "sub": "Screen Lock",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9159,13 +9298,14 @@ window.EDR_DATA = {
           "category": "User & Session Activity",
           "sub": "Screen Unlock",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9173,13 +9313,14 @@ window.EDR_DATA = {
           "category": "User & Session Activity",
           "sub": "Privilege Escalation (sudo etc.)",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9187,13 +9328,14 @@ window.EDR_DATA = {
           "category": "Script Activity",
           "sub": "Script Content",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
-            "Elastic": "partial",
+            "Elastic": "enabling",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9201,13 +9343,14 @@ window.EDR_DATA = {
           "category": "Network Activity",
           "sub": "Network Connection",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9215,13 +9358,14 @@ window.EDR_DATA = {
           "category": "Network Activity",
           "sub": "Network Socket Listen",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9229,13 +9373,14 @@ window.EDR_DATA = {
           "category": "Network Activity",
           "sub": "DNS Query",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9243,13 +9388,14 @@ window.EDR_DATA = {
           "category": "Scheduled Task & Persistence Activity",
           "sub": "Scheduled Task Change (cron/at)",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "partial",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9257,13 +9403,14 @@ window.EDR_DATA = {
           "category": "Scheduled Task & Persistence Activity",
           "sub": "Launchd Item Created",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "partial",
             "ESET Inspect": "partial",
             "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9271,13 +9418,14 @@ window.EDR_DATA = {
           "category": "Scheduled Task & Persistence Activity",
           "sub": "Launchd Item Modified",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "partial",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9285,13 +9433,14 @@ window.EDR_DATA = {
           "category": "Scheduled Task & Persistence Activity",
           "sub": "Launchd Item Deleted",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9299,13 +9448,14 @@ window.EDR_DATA = {
           "category": "Scheduled Task & Persistence Activity",
           "sub": "LoginItem Created",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "partial",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9313,13 +9463,14 @@ window.EDR_DATA = {
           "category": "Scheduled Task & Persistence Activity",
           "sub": "LoginItem Deleted",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9327,13 +9478,14 @@ window.EDR_DATA = {
           "category": "User Account Activity",
           "sub": "User Account Created",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "yes",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9341,13 +9493,14 @@ window.EDR_DATA = {
           "category": "User Account Activity",
           "sub": "User Account Modified",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "yes",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9355,13 +9508,14 @@ window.EDR_DATA = {
           "category": "User Account Activity",
           "sub": "User Account Deleted",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "yes",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9369,13 +9523,14 @@ window.EDR_DATA = {
           "category": "User Account Activity",
           "sub": "Group Membership Modified",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9383,13 +9538,14 @@ window.EDR_DATA = {
           "category": "System Extension & Driver Activity",
           "sub": "System Extension Installed",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9397,13 +9553,14 @@ window.EDR_DATA = {
           "category": "System Extension & Driver Activity",
           "sub": "System Extension Loaded",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9411,13 +9568,14 @@ window.EDR_DATA = {
           "category": "System Extension & Driver Activity",
           "sub": "System Extension Uninstalled",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9425,13 +9583,14 @@ window.EDR_DATA = {
           "category": "System Extension & Driver Activity",
           "sub": "DriverKit Extension Loaded",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9439,13 +9598,14 @@ window.EDR_DATA = {
           "category": "System Extension & Driver Activity",
           "sub": "Kernel Extension Loaded (legacy)",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9453,13 +9613,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "Binary Signature Info Recorded",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "partial",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "yes"
           }
         },
@@ -9467,13 +9628,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "Notarization Status Recorded",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9481,13 +9643,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "Quarantine Flag Set",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9495,13 +9658,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "Quarantine Flag Cleared",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9509,13 +9673,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "Gatekeeper Decision Logged",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9523,13 +9688,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "XProtect Detection Logged",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9537,13 +9703,14 @@ window.EDR_DATA = {
           "category": "Code Signing & Trust Activity",
           "sub": "XProtect Remediation Logged",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9551,13 +9718,14 @@ window.EDR_DATA = {
           "category": "Privacy & TCC Activity",
           "sub": "TCC Prompt Shown",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9565,13 +9733,14 @@ window.EDR_DATA = {
           "category": "Privacy & TCC Activity",
           "sub": "TCC Decision (Allow)",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9579,13 +9748,14 @@ window.EDR_DATA = {
           "category": "Privacy & TCC Activity",
           "sub": "TCC Decision (Deny)",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9593,13 +9763,14 @@ window.EDR_DATA = {
           "category": "Privacy & TCC Activity",
           "sub": "TCC Policy Change",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9607,13 +9778,14 @@ window.EDR_DATA = {
           "category": "Privacy & TCC Activity",
           "sub": "TCC Access Check",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9621,13 +9793,14 @@ window.EDR_DATA = {
           "category": "Access Activity",
           "sub": "Raw Device Access",
           "values": {
-            "Phorion": "no",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "no",
             "Qualys": "no"
           }
         },
@@ -9635,13 +9808,14 @@ window.EDR_DATA = {
           "category": "Access Activity",
           "sub": "Process Access",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9649,13 +9823,14 @@ window.EDR_DATA = {
           "category": "Process Tampering Activity",
           "sub": "Process Injection Or Tampering",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "no",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9663,13 +9838,14 @@ window.EDR_DATA = {
           "category": "Device Activity",
           "sub": "External Media Mounted",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9677,13 +9853,14 @@ window.EDR_DATA = {
           "category": "Device Activity",
           "sub": "External Media Unmounted",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "yes",
             "MDE": "partial",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9691,13 +9868,14 @@ window.EDR_DATA = {
           "category": "EDR SysOps",
           "sub": "Agent Start",
           "values": {
-            "Phorion": "no",
             "BitDefender": "yes",
+            "C-Prot": "no",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "no",
             "Qualys": "yes"
           }
         },
@@ -9705,13 +9883,14 @@ window.EDR_DATA = {
           "category": "EDR SysOps",
           "sub": "Agent Stop",
           "values": {
-            "Phorion": "no",
             "BitDefender": "yes",
+            "C-Prot": "no",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "no",
             "Qualys": "yes"
           }
         },
@@ -9719,13 +9898,14 @@ window.EDR_DATA = {
           "category": "EDR SysOps",
           "sub": "Agent Protection Disabled Or Tamper Event",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "yes",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9733,13 +9913,14 @@ window.EDR_DATA = {
           "category": "File Metadata",
           "sub": "MD5 Available",
           "values": {
-            "Phorion": "no",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
-            "Elastic": "partial",
+            "Elastic": "enabling",
             "LimaCharlie": "no",
             "MDE": "yes",
+            "Phorion": "no",
             "Qualys": "yes"
           }
         },
@@ -9747,13 +9928,14 @@ window.EDR_DATA = {
           "category": "File Metadata",
           "sub": "SHA-256 Available",
           "values": {
-            "Phorion": "partial",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
+            "Phorion": "partial",
             "Qualys": "yes"
           }
         },
@@ -9761,13 +9943,14 @@ window.EDR_DATA = {
           "category": "File Metadata",
           "sub": "Fuzzy Hash Available",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9775,13 +9958,14 @@ window.EDR_DATA = {
           "category": "Service Activity",
           "sub": "Service Created",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "yes",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "partial",
             "Elastic": "no",
             "LimaCharlie": "yes",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9789,13 +9973,14 @@ window.EDR_DATA = {
           "category": "Service Activity",
           "sub": "Service Modified",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "yes",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         },
@@ -9803,34 +9988,36 @@ window.EDR_DATA = {
           "category": "Service Activity",
           "sub": "Service Deleted",
           "values": {
-            "Phorion": "yes",
             "BitDefender": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
+            "Phorion": "yes",
             "Qualys": "no"
           }
         }
       ],
       "vendors": [
-        "Phorion",
         "BitDefender",
+        "C-Prot",
         "CrowdStrike",
         "ESET Inspect",
         "Elastic",
         "LimaCharlie",
         "MDE",
+        "Phorion",
         "Qualys"
       ],
       "scores": {
-        "Phorion": {
-          "score": 80.2,
-          "counted": 58
-        },
         "BitDefender": {
           "score": 27.6,
+          "counted": 58
+        },
+        "C-Prot": {
+          "score": 69.0,
           "counted": 58
         },
         "CrowdStrike": {
@@ -9842,7 +10029,7 @@ window.EDR_DATA = {
           "counted": 58
         },
         "Elastic": {
-          "score": 35.3,
+          "score": 39.8,
           "counted": 58
         },
         "LimaCharlie": {
@@ -9851,6 +10038,10 @@ window.EDR_DATA = {
         },
         "MDE": {
           "score": 29.3,
+          "counted": 58
+        },
+        "Phorion": {
+          "score": 80.2,
           "counted": 58
         },
         "Qualys": {
@@ -9928,9 +10119,7 @@ window.EDR_DATA = {
           "LimaCharlie": {
             "Partially": "File read monitoring is available via the FILE_TYPE_ACCESSED event, but coverage is limited to specific file extensions rather than generic open/read operations on arbitrary paths."
           },
-          "Elastic": {
-            "Partially": "File read access monitoring is supported via the mac.advanced.events.event_on_access.file_paths advanced setting (added 8.15), but it requires explicit path configuration and is disabled by default. No generic file open/read telemetry out of the box."
-          },
+          "Elastic": "",
           "BitDefender": "",
           "Qualys": "",
           "CrowdStrike": {
@@ -10014,9 +10203,7 @@ window.EDR_DATA = {
           "Telemetry Feature Category": null,
           "Sub-Category": "Script Content",
           "LimaCharlie": "",
-          "Elastic": {
-            "Partially": "Script content capture is available via mac.advanced.events.script_capture (added in 9.3), but it is disabled by default and limited to a maximum of 1024 bytes per script (configurable via mac.advanced.events.script_max_size)."
-          },
+          "Elastic": "",
           "BitDefender": "",
           "Qualys": "",
           "CrowdStrike": "",
@@ -10437,9 +10624,7 @@ window.EDR_DATA = {
           "Telemetry Feature Category": "File Metadata",
           "Sub-Category": "MD5 Available",
           "LimaCharlie": "",
-          "Elastic": {
-            "Partially": "MD5 hashes can be included in events via the mac.advanced.events.hash.md5 advanced setting, but this is disabled by default since Elastic Defend 8.18. Enabling it increases CPU and storage overhead."
-          },
+          "Elastic": "",
           "BitDefender": "",
           "Qualys": "",
           "CrowdStrike": "",
@@ -10500,24 +10685,6 @@ window.EDR_DATA = {
         }
       ],
       "attackCoverage": {
-        "Phorion": {
-          "DS0009": {
-            "score": 100.0,
-            "features": 3
-          },
-          "DS0022": {
-            "score": 100.0,
-            "features": 3
-          },
-          "DS0029": {
-            "score": 100.0,
-            "features": 1
-          },
-          "DS0013": {
-            "score": 0.0,
-            "features": 2
-          }
-        },
         "BitDefender": {
           "DS0009": {
             "score": 66.7,
@@ -10533,6 +10700,24 @@ window.EDR_DATA = {
           },
           "DS0013": {
             "score": 100.0,
+            "features": 2
+          }
+        },
+        "C-Prot": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 0.0,
             "features": 2
           }
         },
@@ -10623,6 +10808,24 @@ window.EDR_DATA = {
           },
           "DS0013": {
             "score": 100.0,
+            "features": 2
+          }
+        },
+        "Phorion": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 0.0,
             "features": 2
           }
         },
