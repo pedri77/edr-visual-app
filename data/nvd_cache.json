@@ -606,6 +606,20 @@
       "score": 6.2,
       "published": "2025-05-01",
       "description": "Exposure of sensitive information to local unauthorized actors in Elastic Agent and Elastic Security Endpoint can lead to loss of confidentiality and impersonation of Endpoint to the Elastic Stack. This issue was identified by Elastic engin"
+    },
+    {
+      "id": "CVE-2026-31215",
+      "severity": "Critical",
+      "score": 9.1,
+      "published": "2026-05-12",
+      "description": "The nexent v1.7.5.2 backend service contains an unauthorized arbitrary file deletion vulnerability in its ElasticSearch service interface. The DELETE /{index_name}/documents endpoint lacks proper authentication and authorization controls an"
+    },
+    {
+      "id": "CVE-2026-45009",
+      "severity": "Medium",
+      "score": 4.3,
+      "published": "2026-05-15",
+      "description": "phpMyFAQ before 4.1.2 contains an insufficient authorization vulnerability in admin-api routes that allows authenticated ordinary users to access administrative endpoints by only checking login status instead of verifying backend privileges"
     }
   ],
   "FortiEDR": [

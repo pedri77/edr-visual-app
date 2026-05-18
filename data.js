@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-05-11",
+  "lastImport": "2026-05-18",
   "vendors": [
     {
       "id": "Auditd",
@@ -275,7 +275,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 69.0
+          "score": 81.0
         }
       }
     },
@@ -669,8 +669,8 @@ window.EDR_DATA = {
           "score": 81.1
         },
         "linux": {
-          "present": false,
-          "score": 0
+          "present": true,
+          "score": 43.3
         },
         "macos": {
           "present": false,
@@ -1005,6 +1005,15 @@ window.EDR_DATA = {
       "cautions": "Requiere ingenieria, no es plug-and-play.",
       "notableCves": [
         {
+          "id": "CVE-2026-31215",
+          "severity": "Critical",
+          "score": 9.1,
+          "published": "2026-05-12",
+          "description": "The nexent v1.7.5.2 backend service contains an unauthorized arbitrary file deletion vulnerability in its ElasticSearch service interface. The DELETE /{index_name}/documents endpoint lacks proper authentication and authorization controls an",
+          "note": "",
+          "source": "nvd"
+        },
+        {
           "id": "CVE-2016-6651",
           "severity": "High",
           "score": 8.8,
@@ -1115,6 +1124,15 @@ window.EDR_DATA = {
           "score": 6.5,
           "published": "2024-11-21",
           "description": "Opencast is free and open source software for automated video capture and distribution. First noticed in Opencast 13 and 14, Opencast's Elasticsearch integration may generate syntactically invalid Elasticsearch queries in relation to previo",
+          "note": "",
+          "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-45009",
+          "severity": "Medium",
+          "score": 4.3,
+          "published": "2026-05-15",
+          "description": "phpMyFAQ before 4.1.2 contains an insufficient authorization vulnerability in admin-api routes that allows authenticated ordinary users to access administrative endpoints by only checking login status instead of verifying backend privileges",
           "note": "",
           "source": "nvd"
         }
@@ -2398,8 +2416,8 @@ window.EDR_DATA = {
           "score": 82.7
         },
         "macos": {
-          "present": false,
-          "score": 0
+          "present": true,
+          "score": 23.6
         }
       }
     },
@@ -7524,6 +7542,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7544,6 +7563,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7564,6 +7584,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7584,6 +7605,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7604,6 +7626,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7624,6 +7647,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7644,6 +7668,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7664,6 +7689,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7684,6 +7710,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7704,6 +7731,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7724,6 +7752,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7744,6 +7773,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7764,6 +7794,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7784,6 +7815,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7804,6 +7836,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7824,6 +7857,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7844,6 +7878,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7864,6 +7899,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7884,6 +7920,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -7904,6 +7941,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7924,6 +7962,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7944,6 +7983,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "yes",
             "BitDefender": "yes",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -7964,6 +8004,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "partial",
@@ -7984,6 +8025,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "partial",
@@ -8004,6 +8046,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "yes",
             "CrowdStrike": "no",
@@ -8024,6 +8067,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -8044,6 +8088,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -8064,6 +8109,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -8084,6 +8130,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "yes",
+            "Cortex XDR": "yes",
             "Carbon Black Cloud": "yes",
             "C-Prot": "yes",
             "CrowdStrike": "yes",
@@ -8104,6 +8151,7 @@ window.EDR_DATA = {
           "values": {
             "Auditd": "no",
             "BitDefender": "no",
+            "Cortex XDR": "no",
             "Carbon Black Cloud": "no",
             "C-Prot": "partial",
             "CrowdStrike": "no",
@@ -8122,6 +8170,7 @@ window.EDR_DATA = {
       "vendors": [
         "Auditd",
         "BitDefender",
+        "Cortex XDR",
         "Carbon Black Cloud",
         "C-Prot",
         "CrowdStrike",
@@ -8142,6 +8191,10 @@ window.EDR_DATA = {
         },
         "BitDefender": {
           "score": 56.7,
+          "counted": 30
+        },
+        "Cortex XDR": {
+          "score": 43.3,
           "counted": 30
         },
         "Carbon Black Cloud": {
@@ -8703,6 +8756,28 @@ window.EDR_DATA = {
             "features": 2
           }
         },
+        "Cortex XDR": {
+          "DS0009": {
+            "score": 66.7,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 5
+          },
+          "DS0029": {
+            "score": 0.0,
+            "features": 1
+          },
+          "DS0019": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0013": {
+            "score": 50.0,
+            "features": 2
+          }
+        },
         "Carbon Black Cloud": {
           "DS0009": {
             "score": 33.3,
@@ -9141,7 +9216,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9156,7 +9232,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9171,7 +9248,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9186,7 +9264,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9201,7 +9280,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9216,7 +9296,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9224,14 +9305,15 @@ window.EDR_DATA = {
           "sub": "File Open/Access",
           "values": {
             "BitDefender": "yes",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "partial",
             "ESET Inspect": "no",
             "Elastic": "enabling",
             "LimaCharlie": "partial",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9246,7 +9328,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9261,7 +9344,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9269,14 +9353,15 @@ window.EDR_DATA = {
           "sub": "Logon Failed",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
             "Elastic": "yes",
             "LimaCharlie": "no",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9284,14 +9369,15 @@ window.EDR_DATA = {
           "sub": "Screen Lock",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9299,14 +9385,15 @@ window.EDR_DATA = {
           "sub": "Screen Unlock",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9321,7 +9408,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9336,7 +9424,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9351,7 +9440,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9366,7 +9456,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "enabling"
           }
         },
         {
@@ -9381,7 +9472,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9396,7 +9488,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9411,7 +9504,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9426,7 +9520,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9441,7 +9536,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9456,7 +9552,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9471,7 +9568,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9486,7 +9584,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9501,7 +9600,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9516,7 +9616,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9531,7 +9632,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9546,7 +9648,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9561,7 +9664,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9576,7 +9680,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9591,7 +9696,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9606,7 +9712,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9621,7 +9728,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9636,7 +9744,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9651,7 +9760,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9666,7 +9776,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9681,7 +9792,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9696,7 +9808,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9711,7 +9824,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "pending"
           }
         },
         {
@@ -9726,7 +9840,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9741,7 +9856,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9756,7 +9872,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9771,7 +9888,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9786,7 +9904,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9794,14 +9913,15 @@ window.EDR_DATA = {
           "sub": "Raw Device Access",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "no",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9816,7 +9936,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9831,7 +9952,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9846,7 +9968,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9861,7 +9984,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "partial",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9869,14 +9993,15 @@ window.EDR_DATA = {
           "sub": "Agent Start",
           "values": {
             "BitDefender": "yes",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "no",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "no"
           }
         },
         {
@@ -9884,14 +10009,15 @@ window.EDR_DATA = {
           "sub": "Agent Stop",
           "values": {
             "BitDefender": "yes",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
             "Elastic": "yes",
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "no",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "no"
           }
         },
         {
@@ -9906,7 +10032,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "yes",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9921,7 +10048,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "yes",
             "Phorion": "no",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9936,7 +10064,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "yes",
             "Phorion": "partial",
-            "Qualys": "yes"
+            "Qualys": "yes",
+            "Uptycs": "yes"
           }
         },
         {
@@ -9951,7 +10080,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9966,7 +10096,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9981,7 +10112,8 @@ window.EDR_DATA = {
             "LimaCharlie": "yes",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         },
         {
@@ -9996,7 +10128,8 @@ window.EDR_DATA = {
             "LimaCharlie": "no",
             "MDE": "no",
             "Phorion": "yes",
-            "Qualys": "no"
+            "Qualys": "no",
+            "Uptycs": "no"
           }
         }
       ],
@@ -10009,7 +10142,8 @@ window.EDR_DATA = {
         "LimaCharlie",
         "MDE",
         "Phorion",
-        "Qualys"
+        "Qualys",
+        "Uptycs"
       ],
       "scores": {
         "BitDefender": {
@@ -10017,7 +10151,7 @@ window.EDR_DATA = {
           "counted": 58
         },
         "C-Prot": {
-          "score": 69.0,
+          "score": 81.0,
           "counted": 58
         },
         "CrowdStrike": {
@@ -10046,6 +10180,10 @@ window.EDR_DATA = {
         },
         "Qualys": {
           "score": 19.0,
+          "counted": 58
+        },
+        "Uptycs": {
+          "score": 23.6,
           "counted": 58
         }
       },
@@ -10717,7 +10855,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0013": {
-            "score": 0.0,
+            "score": 100.0,
             "features": 2
           }
         },
@@ -10844,6 +10982,24 @@ window.EDR_DATA = {
           },
           "DS0013": {
             "score": 100.0,
+            "features": 2
+          }
+        },
+        "Uptycs": {
+          "DS0009": {
+            "score": 0.0,
+            "features": 3
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0013": {
+            "score": 0.0,
             "features": 2
           }
         }
