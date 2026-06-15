@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-06-08",
+  "lastImport": "2026-06-15",
   "vendors": [
     {
       "id": "Auditd",
@@ -45,7 +45,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 40.0
+          "score": 35.3
         },
         "macos": {
           "present": false,
@@ -232,7 +232,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 56.7
+          "score": 50.0
         },
         "macos": {
           "present": true,
@@ -271,7 +271,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 98.3
+          "score": 86.8
         },
         "macos": {
           "present": true,
@@ -483,7 +483,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 30.0
+          "score": 26.5
         },
         "macos": {
           "present": false,
@@ -670,7 +670,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 43.3
+          "score": 38.2
         },
         "macos": {
           "present": false,
@@ -769,7 +769,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 66.7
+          "score": 58.8
         },
         "macos": {
           "present": true,
@@ -980,7 +980,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 33.3
+          "score": 29.4
         },
         "macos": {
           "present": true,
@@ -1158,7 +1158,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 36.7
+          "score": 54.1
         },
         "macos": {
           "present": true,
@@ -1324,7 +1324,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 40.0
+          "score": 35.3
         },
         "macos": {
           "present": false,
@@ -1375,7 +1375,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 48.3
+          "score": 42.6
         },
         "macos": {
           "present": true,
@@ -1527,6 +1527,15 @@ window.EDR_DATA = {
           "description": "External control of file name or path in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
           "note": "",
           "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-45647",
+          "severity": "Medium",
+          "score": 5.5,
+          "published": "2026-06-09",
+          "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
+          "note": "",
+          "source": "nvd"
         }
       ],
       "incidents": [
@@ -1561,7 +1570,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 48.0
+          "score": 42.4
         },
         "macos": {
           "present": true,
@@ -1793,7 +1802,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 37.3
+          "score": 32.9
         },
         "macos": {
           "present": true,
@@ -1835,11 +1844,11 @@ window.EDR_DATA = {
       "perOs": {
         "windows": {
           "present": true,
-          "score": 74.6
+          "score": 77.4
         },
         "linux": {
           "present": true,
-          "score": 60.0
+          "score": 52.9
         },
         "macos": {
           "present": false,
@@ -2105,7 +2114,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 33.3
+          "score": 29.4
         },
         "macos": {
           "present": false,
@@ -2409,15 +2418,15 @@ window.EDR_DATA = {
       "perOs": {
         "windows": {
           "present": true,
-          "score": 80.0
+          "score": 84.2
         },
         "linux": {
           "present": true,
-          "score": 82.7
+          "score": 75.0
         },
         "macos": {
           "present": true,
-          "score": 23.6
+          "score": 27.1
         }
       }
     },
@@ -3168,7 +3177,7 @@ window.EDR_DATA = {
             "OpenEDR": "no",
             "Padvish XDR": "no",
             "Qualys": "no",
-            "SentinelOne": "no",
+            "SentinelOne": "yes",
             "Symantec SES Complete": "no",
             "Sysmon": "no",
             "Trellix": "no",
@@ -3260,7 +3269,7 @@ window.EDR_DATA = {
             "Sysmon": "yes",
             "Trellix": "no",
             "Trend Micro": "no",
-            "Uptycs": "no",
+            "Uptycs": "yes",
             "WatchGuard": "no"
           }
         },
@@ -3690,7 +3699,7 @@ window.EDR_DATA = {
             "OpenEDR": "no",
             "Padvish XDR": "yes",
             "Qualys": "no",
-            "SentinelOne": "enabling",
+            "SentinelOne": "yes",
             "Symantec SES Complete": "enabling",
             "Sysmon": "no",
             "Trellix": "no",
@@ -3719,7 +3728,7 @@ window.EDR_DATA = {
             "OpenEDR": "no",
             "Padvish XDR": "yes",
             "Qualys": "no",
-            "SentinelOne": "enabling",
+            "SentinelOne": "yes",
             "Symantec SES Complete": "enabling",
             "Sysmon": "no",
             "Trellix": "no",
@@ -3782,7 +3791,7 @@ window.EDR_DATA = {
             "Sysmon": "no",
             "Trellix": "pending",
             "Trend Micro": "pending",
-            "Uptycs": "no",
+            "Uptycs": "yes",
             "WatchGuard": "no"
           }
         },
@@ -4130,7 +4139,7 @@ window.EDR_DATA = {
             "Sysmon": "no",
             "Trellix": "yes",
             "Trend Micro": "eventlog",
-            "Uptycs": "eventlog",
+            "Uptycs": "yes",
             "WatchGuard": "no"
           }
         },
@@ -4255,7 +4264,7 @@ window.EDR_DATA = {
           "counted": 57
         },
         "SentinelOne": {
-          "score": 74.6,
+          "score": 77.4,
           "counted": 57
         },
         "Symantec SES Complete": {
@@ -4275,7 +4284,7 @@ window.EDR_DATA = {
           "counted": 57
         },
         "Uptycs": {
-          "score": 80.0,
+          "score": 84.2,
           "counted": 57
         },
         "WatchGuard": {
@@ -6922,7 +6931,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0022": {
-            "score": 60.0,
+            "score": 70.0,
             "features": 10
           },
           "DS0002": {
@@ -6934,7 +6943,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0029": {
-            "score": 54.0,
+            "score": 74.0,
             "features": 5
           },
           "DS0024": {
@@ -6954,7 +6963,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0016": {
-            "score": 46.7,
+            "score": 66.7,
             "features": 3
           },
           "DS0026": {
@@ -7252,7 +7261,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0022": {
-            "score": 85.0,
+            "score": 95.0,
             "features": 10
           },
           "DS0002": {
@@ -7722,7 +7731,7 @@ window.EDR_DATA = {
             "Qualys": "no",
             "SentinelOne": "no",
             "Sysmon": "no",
-            "Uptycs": "no"
+            "Uptycs": "enabling"
           }
         },
         {
@@ -7778,7 +7787,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "yes",
             "Harfanglab": "yes",
             "LimaCharlie": "yes",
             "MDE": "no",
@@ -7883,7 +7892,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "yes",
-            "Elastic": "no",
+            "Elastic": "yes",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "enabling",
@@ -7967,7 +7976,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "yes",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "no",
@@ -7988,7 +7997,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "yes",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "no",
@@ -7996,6 +8005,27 @@ window.EDR_DATA = {
             "SentinelOne": "yes",
             "Sysmon": "no",
             "Uptycs": "enabling"
+          }
+        },
+        {
+          "category": "Anonymous File Activity",
+          "sub": "Memory-Backed File Creation",
+          "values": {
+            "Auditd": "pending",
+            "BitDefender": "pending",
+            "Cortex XDR": "pending",
+            "Carbon Black Cloud": "pending",
+            "C-Prot": "pending",
+            "CrowdStrike": "pending",
+            "ESET Inspect": "pending",
+            "Elastic": "yes",
+            "Harfanglab": "pending",
+            "LimaCharlie": "pending",
+            "MDE": "pending",
+            "Qualys": "pending",
+            "SentinelOne": "pending",
+            "Sysmon": "pending",
+            "Uptycs": "pending"
           }
         },
         {
@@ -8165,6 +8195,69 @@ window.EDR_DATA = {
             "Sysmon": "yes",
             "Uptycs": "yes"
           }
+        },
+        {
+          "category": "File Metadata",
+          "sub": "File Entropy",
+          "values": {
+            "Auditd": "pending",
+            "BitDefender": "pending",
+            "Cortex XDR": "pending",
+            "Carbon Black Cloud": "pending",
+            "C-Prot": "pending",
+            "CrowdStrike": "pending",
+            "ESET Inspect": "pending",
+            "Elastic": "enabling",
+            "Harfanglab": "pending",
+            "LimaCharlie": "pending",
+            "MDE": "pending",
+            "Qualys": "pending",
+            "SentinelOne": "pending",
+            "Sysmon": "pending",
+            "Uptycs": "pending"
+          }
+        },
+        {
+          "category": "File Metadata",
+          "sub": "File Header Bytes",
+          "values": {
+            "Auditd": "pending",
+            "BitDefender": "pending",
+            "Cortex XDR": "pending",
+            "Carbon Black Cloud": "pending",
+            "C-Prot": "pending",
+            "CrowdStrike": "pending",
+            "ESET Inspect": "pending",
+            "Elastic": "enabling",
+            "Harfanglab": "pending",
+            "LimaCharlie": "pending",
+            "MDE": "pending",
+            "Qualys": "pending",
+            "SentinelOne": "pending",
+            "Sysmon": "pending",
+            "Uptycs": "pending"
+          }
+        },
+        {
+          "category": "File Metadata",
+          "sub": "File Size",
+          "values": {
+            "Auditd": "pending",
+            "BitDefender": "pending",
+            "Cortex XDR": "pending",
+            "Carbon Black Cloud": "pending",
+            "C-Prot": "pending",
+            "CrowdStrike": "pending",
+            "ESET Inspect": "pending",
+            "Elastic": "yes",
+            "Harfanglab": "pending",
+            "LimaCharlie": "pending",
+            "MDE": "pending",
+            "Qualys": "pending",
+            "SentinelOne": "pending",
+            "Sysmon": "pending",
+            "Uptycs": "pending"
+          }
         }
       ],
       "vendors": [
@@ -8186,64 +8279,64 @@ window.EDR_DATA = {
       ],
       "scores": {
         "Auditd": {
-          "score": 40.0,
-          "counted": 30
+          "score": 35.3,
+          "counted": 34
         },
         "BitDefender": {
-          "score": 56.7,
-          "counted": 30
+          "score": 50.0,
+          "counted": 34
         },
         "Cortex XDR": {
-          "score": 43.3,
-          "counted": 30
+          "score": 38.2,
+          "counted": 34
         },
         "Carbon Black Cloud": {
-          "score": 30.0,
-          "counted": 30
+          "score": 26.5,
+          "counted": 34
         },
         "C-Prot": {
-          "score": 98.3,
-          "counted": 30
+          "score": 86.8,
+          "counted": 34
         },
         "CrowdStrike": {
-          "score": 66.7,
-          "counted": 30
+          "score": 58.8,
+          "counted": 34
         },
         "ESET Inspect": {
-          "score": 33.3,
-          "counted": 30
+          "score": 29.4,
+          "counted": 34
         },
         "Elastic": {
-          "score": 36.7,
-          "counted": 30
+          "score": 54.1,
+          "counted": 34
         },
         "Harfanglab": {
-          "score": 40.0,
-          "counted": 30
+          "score": 35.3,
+          "counted": 34
         },
         "LimaCharlie": {
-          "score": 48.3,
-          "counted": 30
+          "score": 42.6,
+          "counted": 34
         },
         "MDE": {
-          "score": 48.0,
-          "counted": 30
+          "score": 42.4,
+          "counted": 34
         },
         "Qualys": {
-          "score": 37.3,
-          "counted": 30
+          "score": 32.9,
+          "counted": 34
         },
         "SentinelOne": {
-          "score": 60.0,
-          "counted": 30
+          "score": 52.9,
+          "counted": 34
         },
         "Sysmon": {
-          "score": 33.3,
-          "counted": 30
+          "score": 29.4,
+          "counted": 34
         },
         "Uptycs": {
-          "score": 82.7,
-          "counted": 30
+          "score": 75.0,
+          "counted": 34
         }
       },
       "partials": [
@@ -8584,6 +8677,21 @@ window.EDR_DATA = {
           "Carbon Black Cloud": ""
         },
         {
+          "Telemetry Feature Category": "Anonymous File Activity",
+          "Sub-Category": "Memory-Backed File Creation",
+          "SentinelOne (Complete)": "",
+          "Qualys": "",
+          "Uptycs": "",
+          "CrowdStrike": "",
+          "C-Prot": "",
+          "Sysmon": "",
+          "LimaCharlie": "",
+          "MDE": "",
+          "Elastic": "",
+          "Auditd": "",
+          "Carbon Black Cloud": ""
+        },
+        {
           "Telemetry Feature Category": "Service Activity",
           "Sub-Category": "Service Creation",
           "SentinelOne (Complete)": "",
@@ -8703,6 +8811,51 @@ window.EDR_DATA = {
           "C-Prot": {
             "Partially": "Available only for file manipulation events."
           },
+          "Sysmon": "",
+          "LimaCharlie": "",
+          "MDE": "",
+          "Elastic": "",
+          "Auditd": "",
+          "Carbon Black Cloud": ""
+        },
+        {
+          "Telemetry Feature Category": "File Metadata",
+          "Sub-Category": "File Entropy",
+          "SentinelOne (Complete)": "",
+          "Qualys": "",
+          "Uptycs": "",
+          "CrowdStrike": "",
+          "C-Prot": "",
+          "Sysmon": "",
+          "LimaCharlie": "",
+          "MDE": "",
+          "Elastic": "",
+          "Auditd": "",
+          "Carbon Black Cloud": ""
+        },
+        {
+          "Telemetry Feature Category": "",
+          "Sub-Category": "File Header Bytes",
+          "SentinelOne (Complete)": "",
+          "Qualys": "",
+          "Uptycs": "",
+          "CrowdStrike": "",
+          "C-Prot": "",
+          "Sysmon": "",
+          "LimaCharlie": "",
+          "MDE": "",
+          "Elastic": "",
+          "Auditd": "",
+          "Carbon Black Cloud": ""
+        },
+        {
+          "Telemetry Feature Category": "",
+          "Sub-Category": "File Size",
+          "SentinelOne (Complete)": "",
+          "Qualys": "",
+          "Uptycs": "",
+          "CrowdStrike": "",
+          "C-Prot": "",
           "Sysmon": "",
           "LimaCharlie": "",
           "MDE": "",
@@ -8868,7 +9021,7 @@ window.EDR_DATA = {
         },
         "Elastic": {
           "DS0009": {
-            "score": 66.7,
+            "score": 100.0,
             "features": 3
           },
           "DS0022": {
@@ -8876,7 +9029,7 @@ window.EDR_DATA = {
             "features": 5
           },
           "DS0029": {
-            "score": 0.0,
+            "score": 100.0,
             "features": 1
           },
           "DS0019": {
@@ -9969,7 +10122,7 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "yes"
           }
         },
         {
@@ -9985,7 +10138,7 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "yes"
           }
         },
         {
@@ -10183,7 +10336,7 @@ window.EDR_DATA = {
           "counted": 58
         },
         "Uptycs": {
-          "score": 23.6,
+          "score": 27.1,
           "counted": 58
         }
       },
