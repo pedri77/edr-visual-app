@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-06-15",
+  "lastImport": "2026-06-22",
   "vendors": [
     {
       "id": "Auditd",
@@ -1158,7 +1158,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 54.1
+          "score": 64.7
         },
         "macos": {
           "present": true,
@@ -7661,7 +7661,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "no",
             "MDE": "yes",
@@ -7682,7 +7682,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "eventlog",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "no",
@@ -7703,7 +7703,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "no",
             "MDE": "yes",
@@ -7829,7 +7829,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "eventlog",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "no",
@@ -7850,7 +7850,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "eventlog",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "no",
@@ -7871,7 +7871,7 @@ window.EDR_DATA = {
             "C-Prot": "yes",
             "CrowdStrike": "yes",
             "ESET Inspect": "no",
-            "Elastic": "no",
+            "Elastic": "eventlog",
             "Harfanglab": "no",
             "LimaCharlie": "no",
             "MDE": "no",
@@ -8307,7 +8307,7 @@ window.EDR_DATA = {
           "counted": 34
         },
         "Elastic": {
-          "score": 54.1,
+          "score": 64.7,
           "counted": 34
         },
         "Harfanglab": {
