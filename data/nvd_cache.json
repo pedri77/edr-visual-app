@@ -627,6 +627,13 @@
       "score": 4.3,
       "published": "2026-05-15",
       "description": "phpMyFAQ before 4.1.2 contains an insufficient authorization vulnerability in admin-api routes that allows authenticated ordinary users to access administrative endpoints by only checking login status instead of verifying backend privileges"
+    },
+    {
+      "id": "CVE-2026-54322",
+      "severity": "High",
+      "score": 7.7,
+      "published": "2026-06-23",
+      "description": "Daytona is a secure and elastic infrastructure runtime for AI-generated code execution and agent workflows. Prior to 0.185.0, Daytona's organization role update and delete endpoints authorized the caller as an owner of the organization name"
     }
   ],
   "FortiEDR": [

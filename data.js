@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-06-22",
+  "lastImport": "2026-06-29",
   "vendors": [
     {
       "id": "Auditd",
@@ -1064,6 +1064,15 @@ window.EDR_DATA = {
           "score": 7.8,
           "published": "2023-02-08",
           "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+          "note": "",
+          "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-54322",
+          "severity": "High",
+          "score": 7.7,
+          "published": "2026-06-23",
+          "description": "Daytona is a secure and elastic infrastructure runtime for AI-generated code execution and agent workflows. Prior to 0.185.0, Daytona's organization role update and delete endpoints authorized the caller as an owner of the organization name",
           "note": "",
           "source": "nvd"
         },
