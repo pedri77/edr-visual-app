@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-07-06",
+  "lastImport": "2026-07-13",
   "vendors": [
     {
       "id": "Auditd",
@@ -267,7 +267,7 @@ window.EDR_DATA = {
       "perOs": {
         "windows": {
           "present": true,
-          "score": 82.5
+          "score": 87.7
         },
         "linux": {
           "present": true,
@@ -1163,7 +1163,7 @@ window.EDR_DATA = {
       "perOs": {
         "windows": {
           "present": true,
-          "score": 69.3
+          "score": 72.8
         },
         "linux": {
           "present": true,
@@ -3178,7 +3178,7 @@ window.EDR_DATA = {
             "Cybereason": "partial",
             "Cylance": "no",
             "ESET Inspect": "partial",
-            "Elastic": "no",
+            "Elastic": "partial",
             "FortiEDR": "no",
             "Harfanglab": "yes",
             "LimaCharlie": "partial",
@@ -3693,14 +3693,14 @@ window.EDR_DATA = {
           "sub": "USB Device Unmount",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "partial",
             "CrowdStrike": "yes",
             "Cybereason": "yes",
             "Cylance": "no",
             "ESET Inspect": "yes",
-            "Elastic": "no",
+            "Elastic": "enabling",
             "FortiEDR": "no",
             "Harfanglab": "partial",
             "LimaCharlie": "partial",
@@ -3722,14 +3722,14 @@ window.EDR_DATA = {
           "sub": "USB Device Mount",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "Carbon Black": "partial",
             "Cortex XDR": "partial",
             "CrowdStrike": "yes",
             "Cybereason": "yes",
             "Cylance": "no",
             "ESET Inspect": "yes",
-            "Elastic": "no",
+            "Elastic": "enabling",
             "FortiEDR": "no",
             "Harfanglab": "partial",
             "LimaCharlie": "partial",
@@ -3751,7 +3751,7 @@ window.EDR_DATA = {
           "sub": "Group Policy Modification",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "Carbon Black": "no",
             "Cortex XDR": "eventlog",
             "CrowdStrike": "no",
@@ -4164,7 +4164,7 @@ window.EDR_DATA = {
             "Cybereason": "no",
             "Cylance": "yes",
             "ESET Inspect": "yes",
-            "Elastic": "eventlog",
+            "Elastic": "enabling",
             "FortiEDR": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "eventlog",
@@ -4213,7 +4213,7 @@ window.EDR_DATA = {
           "counted": 57
         },
         "C-Prot": {
-          "score": 82.5,
+          "score": 87.7,
           "counted": 57
         },
         "Carbon Black": {
@@ -4241,7 +4241,7 @@ window.EDR_DATA = {
           "counted": 57
         },
         "Elastic": {
-          "score": 69.3,
+          "score": 72.8,
           "counted": 57
         },
         "FortiEDR": {
@@ -4933,7 +4933,9 @@ window.EDR_DATA = {
           "ESET Inspect": {
             "Partially": "Only for binaries created on disk."
           },
-          "Elastic": "",
+          "Elastic": {
+            "Partially": "Observed through Mark of the Web / Zone.Identifier file metadata associated with downloaded files, rather than a dedicated file download event."
+          },
           "FortiEDR": "",
           "Harfanglab": "",
           "LimaCharlie": {
@@ -5982,11 +5984,11 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0016": {
-            "score": 33.3,
+            "score": 100.0,
             "features": 3
           },
           "DS0026": {
-            "score": 0.0,
+            "score": 100.0,
             "features": 1
           },
           "DS0023": {
@@ -6412,7 +6414,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0022": {
-            "score": 80.0,
+            "score": 85.0,
             "features": 10
           },
           "DS0002": {
@@ -6424,7 +6426,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0029": {
-            "score": 70.0,
+            "score": 80.0,
             "features": 5
           },
           "DS0024": {
@@ -6444,7 +6446,7 @@ window.EDR_DATA = {
             "features": 1
           },
           "DS0016": {
-            "score": 0.0,
+            "score": 46.7,
             "features": 3
           },
           "DS0026": {
@@ -6464,7 +6466,7 @@ window.EDR_DATA = {
             "features": 3
           },
           "DS0012": {
-            "score": 60.0,
+            "score": 70.0,
             "features": 1
           }
         },
