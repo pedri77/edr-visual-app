@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-07-13",
+  "lastImport": "2026-07-20",
   "vendors": [
     {
       "id": "Auditd",
@@ -963,6 +963,15 @@ window.EDR_DATA = {
           "description": "Planting a custom configuration file\n\nin \n\nESET Inspect Connector allow load a malicious DLL.",
           "note": "",
           "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-6423",
+          "severity": "Unknown",
+          "score": null,
+          "published": "2026-07-16",
+          "description": "A local privilege escalation vulnerability in ESET Inspect Connector. \nThe vulnerability was caused by improper authentication in an IPC channel.",
+          "note": "",
+          "source": "nvd"
         }
       ],
       "incidents": [
@@ -1542,6 +1551,15 @@ window.EDR_DATA = {
           "severity": "Medium",
           "score": 5.5,
           "published": "2026-06-09",
+          "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
+          "note": "",
+          "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-56178",
+          "severity": "Medium",
+          "score": 5.5,
+          "published": "2026-07-14",
           "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
           "note": "",
           "source": "nvd"

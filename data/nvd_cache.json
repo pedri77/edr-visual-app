@@ -127,6 +127,13 @@
       "score": 5.5,
       "published": "2026-06-09",
       "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally."
+    },
+    {
+      "id": "CVE-2026-56178",
+      "severity": "Medium",
+      "score": 5.5,
+      "published": "2026-07-14",
+      "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally."
     }
   ],
   "SentinelOne": [],
@@ -527,6 +534,13 @@
       "score": null,
       "published": "2026-01-30",
       "description": "Planting a custom configuration file\n\nin \n\nESET Inspect Connector allow load a malicious DLL."
+    },
+    {
+      "id": "CVE-2026-6423",
+      "severity": "Unknown",
+      "score": null,
+      "published": "2026-07-16",
+      "description": "A local privilege escalation vulnerability in ESET Inspect Connector. \nThe vulnerability was caused by improper authentication in an IPC channel."
     }
   ],
   "Elastic": [
