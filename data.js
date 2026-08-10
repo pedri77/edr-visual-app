@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-08-03",
+  "lastImport": "2026-08-10",
   "vendors": [
     {
       "id": "Auditd",
@@ -2483,15 +2483,6 @@ window.EDR_DATA = {
           "source": "nvd"
         },
         {
-          "id": "CVE-2024-8424",
-          "severity": "High",
-          "score": 7.8,
-          "published": "2024-11-08",
-          "description": "Improper Privilege Management vulnerability in WatchGuard EPDR, Panda AD360 and Panda Dome on Windows (PSANHost.exe module) allows arbitrary file delete with SYSTEM permissions.\nThis issue affects EPDR: before 8.00.23.0000; Panda AD360: bef",
-          "note": "",
-          "source": "nvd"
-        },
-        {
           "id": "CVE-2023-26237",
           "severity": "Medium",
           "score": 6.7,
@@ -2515,6 +2506,15 @@ window.EDR_DATA = {
           "score": 5.5,
           "published": "2023-10-05",
           "description": "An issue was discovered in WatchGuard EPDR 8.0.21.0002. Due to a weak implementation of a password check, it is possible to obtain credentials to access the management console as a non-privileged user.",
+          "note": "",
+          "source": "nvd"
+        },
+        {
+          "id": "CVE-2024-8424",
+          "severity": "Unknown",
+          "score": null,
+          "published": "2024-11-08",
+          "description": "Improper Privilege Management vulnerability in WatchGuard EPDR, Panda AD360 and Panda Dome on Windows (PSANHost.exe module) allows arbitrary file delete with SYSTEM permissions.",
           "note": "",
           "source": "nvd"
         }
