@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-08-10",
+  "lastImport": "2026-08-17",
   "vendors": [
     {
       "id": "Auditd",
@@ -236,7 +236,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 27.6
+          "score": 27.1
         }
       }
     },
@@ -773,7 +773,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 32.8
+          "score": 32.2
         }
       }
     },
@@ -993,7 +993,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 31.9
+          "score": 31.4
         }
       }
     },
@@ -1180,7 +1180,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 39.8
+          "score": 40.8
         }
       }
     },
@@ -1397,7 +1397,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 31.9
+          "score": 31.4
         }
       }
     },
@@ -1440,7 +1440,7 @@ window.EDR_DATA = {
           "severity": "High",
           "score": 8.8,
           "published": "2021-09-15",
-          "description": "<p>Microsoft is investigating reports of a remote code execution vulnerability in MSHTML that affects Microsoft Windows. Microsoft is aware of targeted attacks that attempt to exploit this vulnerability by using specially-crafted Microsoft ",
+          "description": "Microsoft is investigating reports of a remote code execution vulnerability in MSHTML that affects Microsoft Windows. Microsoft is aware of targeted attacks that attempt to exploit this vulnerability by using specially-crafted Microsoft Off",
           "note": "",
           "source": "nvd"
         },
@@ -1601,7 +1601,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 29.3
+          "score": 28.8
         }
       }
     },
@@ -1730,7 +1730,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 80.2
+          "score": 78.8
         }
       }
     },
@@ -1833,7 +1833,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 19.0
+          "score": 18.6
         }
       }
     },
@@ -9419,6 +9419,20 @@ window.EDR_DATA = {
           }
         },
         {
+          "category": "Process Activity",
+          "sub": "Library/Module Loaded",
+          "values": {
+            "Phorion": "no",
+            "BitDefender": "no",
+            "CrowdStrike": "no",
+            "ESET Inspect": "no",
+            "Elastic": "yes",
+            "LimaCharlie": "no",
+            "MDE": "no",
+            "Qualys": "no"
+          }
+        },
+        {
           "category": "File Activity",
           "sub": "File Creation",
           "values": {
@@ -10329,40 +10343,40 @@ window.EDR_DATA = {
       ],
       "scores": {
         "BitDefender": {
-          "score": 27.6,
-          "counted": 58
+          "score": 27.1,
+          "counted": 59
         },
         "C-Prot": {
           "score": 81.0,
           "counted": 58
         },
         "CrowdStrike": {
-          "score": 32.8,
-          "counted": 58
+          "score": 32.2,
+          "counted": 59
         },
         "ESET Inspect": {
-          "score": 31.9,
-          "counted": 58
+          "score": 31.4,
+          "counted": 59
         },
         "Elastic": {
-          "score": 39.8,
-          "counted": 58
+          "score": 40.8,
+          "counted": 59
         },
         "LimaCharlie": {
-          "score": 31.9,
-          "counted": 58
+          "score": 31.4,
+          "counted": 59
         },
         "MDE": {
-          "score": 29.3,
-          "counted": 58
+          "score": 28.8,
+          "counted": 59
         },
         "Phorion": {
-          "score": 80.2,
-          "counted": 58
+          "score": 78.8,
+          "counted": 59
         },
         "Qualys": {
-          "score": 19.0,
-          "counted": 58
+          "score": 18.6,
+          "counted": 59
         },
         "Uptycs": {
           "score": 27.1,
@@ -10383,6 +10397,16 @@ window.EDR_DATA = {
         {
           "Telemetry Feature Category": null,
           "Sub-Category": "Process Termination",
+          "LimaCharlie": "",
+          "Elastic": "",
+          "BitDefender": "",
+          "Qualys": "",
+          "CrowdStrike": "",
+          "MDE": ""
+        },
+        {
+          "Telemetry Feature Category": null,
+          "Sub-Category": "Library/Module Loaded",
           "LimaCharlie": "",
           "Elastic": "",
           "BitDefender": "",

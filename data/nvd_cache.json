@@ -56,7 +56,7 @@
       "severity": "High",
       "score": 8.8,
       "published": "2021-09-15",
-      "description": "<p>Microsoft is investigating reports of a remote code execution vulnerability in MSHTML that affects Microsoft Windows. Microsoft is aware of targeted attacks that attempt to exploit this vulnerability by using specially-crafted Microsoft "
+      "description": "Microsoft is investigating reports of a remote code execution vulnerability in MSHTML that affects Microsoft Windows. Microsoft is aware of targeted attacks that attempt to exploit this vulnerability by using specially-crafted Microsoft Off"
     },
     {
       "id": "CVE-2022-23278",
