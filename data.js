@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-08-31",
+  "lastImport": "2026-09-07",
   "vendors": [
     {
       "id": "Auditd",
@@ -275,7 +275,7 @@ window.EDR_DATA = {
         },
         "macos": {
           "present": true,
-          "score": 81.0
+          "score": 90.5
         }
       }
     },
@@ -1172,7 +1172,7 @@ window.EDR_DATA = {
       "perOs": {
         "windows": {
           "present": true,
-          "score": 72.8
+          "score": 75.6
         },
         "linux": {
           "present": true,
@@ -2449,7 +2449,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 75.0
+          "score": 80.9
         },
         "macos": {
           "present": true,
@@ -2935,7 +2935,7 @@ window.EDR_DATA = {
             "Cybereason": "no",
             "Cylance": "eventlog",
             "ESET Inspect": "yes",
-            "Elastic": "eventlog",
+            "Elastic": "yes",
             "FortiEDR": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "eventlog",
@@ -3428,7 +3428,7 @@ window.EDR_DATA = {
             "Cybereason": "yes",
             "Cylance": "eventlog",
             "ESET Inspect": "yes",
-            "Elastic": "eventlog",
+            "Elastic": "yes",
             "FortiEDR": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "eventlog",
@@ -3457,7 +3457,7 @@ window.EDR_DATA = {
             "Cybereason": "yes",
             "Cylance": "eventlog",
             "ESET Inspect": "no",
-            "Elastic": "eventlog",
+            "Elastic": "yes",
             "FortiEDR": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "eventlog",
@@ -3515,7 +3515,7 @@ window.EDR_DATA = {
             "Cybereason": "yes",
             "Cylance": "no",
             "ESET Inspect": "yes",
-            "Elastic": "eventlog",
+            "Elastic": "yes",
             "FortiEDR": "eventlog",
             "Harfanglab": "yes",
             "LimaCharlie": "yes",
@@ -4259,7 +4259,7 @@ window.EDR_DATA = {
           "counted": 57
         },
         "Elastic": {
-          "score": 72.8,
+          "score": 75.6,
           "counted": 57
         },
         "FortiEDR": {
@@ -6436,7 +6436,7 @@ window.EDR_DATA = {
             "features": 10
           },
           "DS0002": {
-            "score": 70.0,
+            "score": 80.0,
             "features": 4
           },
           "DS0028": {
@@ -6452,11 +6452,11 @@ window.EDR_DATA = {
             "features": 3
           },
           "DS0003": {
-            "score": 60.0,
+            "score": 86.7,
             "features": 3
           },
           "DS0019": {
-            "score": 60.0,
+            "score": 73.3,
             "features": 3
           },
           "DS0027": {
@@ -8264,7 +8264,7 @@ window.EDR_DATA = {
             "Qualys": "pending",
             "SentinelOne": "pending",
             "Sysmon": "pending",
-            "Uptycs": "pending"
+            "Uptycs": "yes"
           }
         },
         {
@@ -8285,7 +8285,7 @@ window.EDR_DATA = {
             "Qualys": "pending",
             "SentinelOne": "pending",
             "Sysmon": "pending",
-            "Uptycs": "pending"
+            "Uptycs": "yes"
           }
         }
       ],
@@ -8364,7 +8364,7 @@ window.EDR_DATA = {
           "counted": 34
         },
         "Uptycs": {
-          "score": 75.0,
+          "score": 80.9,
           "counted": 34
         }
       },
@@ -9597,7 +9597,7 @@ window.EDR_DATA = {
           "sub": "Privilege Escalation (sudo etc.)",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
@@ -9869,7 +9869,7 @@ window.EDR_DATA = {
           "sub": "System Extension Uninstalled",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
@@ -9885,7 +9885,7 @@ window.EDR_DATA = {
           "sub": "DriverKit Extension Loaded",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
@@ -9949,7 +9949,7 @@ window.EDR_DATA = {
           "sub": "Quarantine Flag Set",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
@@ -9965,7 +9965,7 @@ window.EDR_DATA = {
           "sub": "Quarantine Flag Cleared",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "yes",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "yes",
@@ -9997,7 +9997,7 @@ window.EDR_DATA = {
           "sub": "XProtect Detection Logged",
           "values": {
             "BitDefender": "no",
-            "C-Prot": "no",
+            "C-Prot": "partial",
             "CrowdStrike": "no",
             "ESET Inspect": "no",
             "Elastic": "no",
@@ -10347,7 +10347,7 @@ window.EDR_DATA = {
           "counted": 59
         },
         "C-Prot": {
-          "score": 81.0,
+          "score": 90.5,
           "counted": 58
         },
         "CrowdStrike": {
@@ -10816,6 +10816,9 @@ window.EDR_DATA = {
           "LimaCharlie": "",
           "Elastic": "",
           "BitDefender": "",
+          "C-Prot": {
+            "Partially": "C-Prot logs an event when a process accesses the XProtect metadata store, including process path and PIDs. This is indirect file-access telemetry, not a direct detection event; no signature match or verdict is exposed."
+          },
           "Qualys": "",
           "CrowdStrike": "",
           "MDE": ""
