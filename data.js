@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-09-07",
+  "lastImport": "2026-09-14",
   "vendors": [
     {
       "id": "Auditd",
