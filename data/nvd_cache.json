@@ -27,6 +27,13 @@
       "score": 6.5,
       "published": "2025-10-08",
       "description": "A logic error exists in the Falcon sensor for Windows that could allow an attacker, with the prior ability to execute code on a host, to delete arbitrary files. CrowdStrike released a security fix for this issue in Falcon sensor for Windows"
+    },
+    {
+      "id": "CVE-2026-40058",
+      "severity": "High",
+      "score": 8.8,
+      "published": "2026-09-15",
+      "description": "CrowdStrike released a security update to address a vulnerability in the Falcon sensor for Windows. The vulnerability only exists when the Microsoft Office File Malicious Macro Removal Windows policy setting is enabled and customers remain "
     }
   ],
   "MDE": [

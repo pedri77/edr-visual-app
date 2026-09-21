@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-09-14",
+  "lastImport": "2026-09-21",
   "vendors": [
     {
       "id": "Auditd",
@@ -700,6 +700,15 @@ window.EDR_DATA = {
           "score": 8.1,
           "published": "2025-02-12",
           "description": "CrowdStrike uses industry-standard TLS (transport layer security) to secure communications from the Falcon sensor to the CrowdStrike cloud. CrowdStrike has identified a validation logic error in the Falcon sensor for Linux, Falcon Kubernete",
+          "note": "",
+          "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-40058",
+          "severity": "High",
+          "score": 8.8,
+          "published": "2026-09-15",
+          "description": "CrowdStrike released a security update to address a vulnerability in the Falcon sensor for Windows. The vulnerability only exists when the Microsoft Office File Malicious Macro Removal Windows policy setting is enabled and customers remain ",
           "note": "",
           "source": "nvd"
         },
