@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-10-05",
+  "lastImport": "2026-10-12",
   "vendors": [
     {
       "id": "Auditd",
@@ -2122,6 +2122,15 @@ window.EDR_DATA = {
           "score": 7.5,
           "published": "2025-06-24",
           "description": "SysmonElixir is a system monitor HTTP service in Elixir. Prior to version 1.0.1, the /read endpoint reads any file from the server's /etc/passwd by default. In v1.0.1, a whitelist was added that limits reading to only files under priv/data.",
+          "note": "",
+          "source": "nvd"
+        },
+        {
+          "id": "CVE-2026-78413",
+          "severity": "Medium",
+          "score": 5.5,
+          "published": "2026-10-05",
+          "description": "Velociraptor allows collection of VQL queries packaged into Artifacts from endpoints. These artifacts can be used to do anything and usually run with elevated permissions. To limit access to some dangerous artifact, Velociraptor allows for ",
           "note": "",
           "source": "nvd"
         },
