@@ -2,7 +2,7 @@
 // Fuente: tsale/EDR-Telemetry + data/vendor_metadata.json
 window.EDR_DATA = {
   "source": "https://github.com/tsale/EDR-Telemetry",
-  "lastImport": "2026-10-26",
+  "lastImport": "2026-11-02",
   "vendors": [
     {
       "id": "Auditd",
@@ -271,7 +271,7 @@ window.EDR_DATA = {
         },
         "linux": {
           "present": true,
-          "score": 86.8
+          "score": 89.7
         },
         "macos": {
           "present": true,
@@ -1887,8 +1887,8 @@ window.EDR_DATA = {
           "score": 52.9
         },
         "macos": {
-          "present": false,
-          "score": 0
+          "present": true,
+          "score": 90.0
         }
       }
     },
@@ -8293,7 +8293,7 @@ window.EDR_DATA = {
             "BitDefender": "pending",
             "Cortex XDR": "pending",
             "Carbon Black Cloud": "pending",
-            "C-Prot": "pending",
+            "C-Prot": "yes",
             "CrowdStrike": "pending",
             "ESET Inspect": "pending",
             "Elastic": "yes",
@@ -8342,7 +8342,7 @@ window.EDR_DATA = {
           "counted": 34
         },
         "C-Prot": {
-          "score": 86.8,
+          "score": 89.7,
           "counted": 34
         },
         "CrowdStrike": {
@@ -9417,7 +9417,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "yes",
             "Qualys": "yes",
-            "Uptycs": "pending"
+            "Uptycs": "pending",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9463,7 +9464,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "yes",
             "Qualys": "yes",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9479,7 +9481,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "yes",
             "Qualys": "yes",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9495,7 +9498,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9543,7 +9547,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9559,7 +9564,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9623,7 +9629,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "pending"
+            "Uptycs": "pending",
+            "SentinelOne": "no"
           }
         },
         {
@@ -9639,7 +9646,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9687,7 +9695,8 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9703,7 +9712,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9719,7 +9729,8 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9751,7 +9762,8 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9767,7 +9779,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9783,7 +9796,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9799,7 +9813,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9815,7 +9830,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9831,7 +9847,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9847,7 +9864,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -9943,7 +9961,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "yes",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10007,7 +10026,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "no",
             "Qualys": "no",
-            "Uptycs": "pending"
+            "Uptycs": "pending",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10071,7 +10091,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "no"
           }
         },
         {
@@ -10087,7 +10108,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "no"
           }
         },
         {
@@ -10103,7 +10125,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "no",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10183,7 +10206,8 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10199,7 +10223,8 @@ window.EDR_DATA = {
             "MDE": "partial",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10247,7 +10272,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10263,7 +10289,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "no",
             "Qualys": "yes",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10279,7 +10306,8 @@ window.EDR_DATA = {
             "MDE": "yes",
             "Phorion": "partial",
             "Qualys": "yes",
-            "Uptycs": "yes"
+            "Uptycs": "yes",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10311,7 +10339,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         },
         {
@@ -10343,7 +10372,8 @@ window.EDR_DATA = {
             "MDE": "no",
             "Phorion": "yes",
             "Qualys": "no",
-            "Uptycs": "no"
+            "Uptycs": "no",
+            "SentinelOne": "yes"
           }
         }
       ],
@@ -10357,7 +10387,8 @@ window.EDR_DATA = {
         "MDE",
         "Phorion",
         "Qualys",
-        "Uptycs"
+        "Uptycs",
+        "SentinelOne"
       ],
       "scores": {
         "BitDefender": {
@@ -10399,6 +10430,10 @@ window.EDR_DATA = {
         "Uptycs": {
           "score": 27.1,
           "counted": 58
+        },
+        "SentinelOne": {
+          "score": 90.0,
+          "counted": 30
         }
       },
       "partials": [
@@ -11228,6 +11263,20 @@ window.EDR_DATA = {
           "DS0013": {
             "score": 0.0,
             "features": 2
+          }
+        },
+        "SentinelOne": {
+          "DS0009": {
+            "score": 100.0,
+            "features": 1
+          },
+          "DS0022": {
+            "score": 100.0,
+            "features": 3
+          },
+          "DS0029": {
+            "score": 100.0,
+            "features": 1
           }
         }
       },
